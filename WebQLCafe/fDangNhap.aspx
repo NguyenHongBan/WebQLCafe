@@ -7,101 +7,92 @@
     <title>QUẢN LÝ CÀ PHÊ</title>
     <style type="text/css">
         .auto-style1 {
-            height: 82px;
-            text-align:center;
-            font:bold;
-            background-color: #CC9900;
-            color: #663300;
-            font-size: 35px;
-            font-family:Arial
+            width: 199px;
+            text-align: center;
+            background-color: #CC9966;
         }
         .auto-style2 {
-            width: 300px;
+            width: 534px;
+            background-color: #CC9966;
+            font: bold; 
+            font-family:Arial; 
+            font-size: 20px; 
+            color: #663300;
+            
+        }
+        .auto-style3 {
+            width: 199px;
+            height: 23px;
             background-color: #CC9966;
         }
         .auto-style4 {
-            width: 215px;
+            width: 534px;
+            height: 23px;
+            background-color: #CC9966;
+        }
+        .auto-style5 {
+            width: 199px;
+            text-align: center;
+            height: 52px;
             background-color: #CC9966;
         }
         .auto-style6 {
-            width: 323%;
+            width: 534px;
+            height: 52px;
+            background-color: #CC9966;
         }
         .auto-style7 {
-            width: 280px;
-            text-align: center;
-            color: #663300;
-            font-size: 25px;
-            font-family: Arial;
-        }
-        .rblQuyen{
-            width: 283px;
-            font:bold;
-            color: #663300;
-            font-size: 25px;
-            font-family:Arial
+            width: 78%;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <table style="width:100%;">
+            <table class="auto-style7">
                 <tr>
-                    <td class="auto-style1" colspan="2">QUẢN LÝ CÀ PHÊ</td>
+                    <td colspan="2" style="font: bold; text-align:center; font-size: 40px; font-family:Arial; background-color: #CC9900; color: #663300">Đăng Nhập</td>
                 </tr>
                 <tr>
-                    <td class="auto-style4">
-                        <asp:Image ID="Image1" runat="server" />
+                    <td class="auto-style1">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style5" style="font: bold; font-family:Arial; font-size: 20px; color: #663300">Mã Nhân Viên</td>
+                    <td class="auto-style6">
+                        <asp:TextBox ID="txtMaNV" runat="server" Height="42px" Width="705px"></asp:TextBox>
                     </td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style1" style="font: bold; font-family:Arial; font-size: 20px; color: #663300">Mật Khẩu</td>
                     <td class="auto-style2">
-                        <table class="auto-style6">
-                            <tr>
-                                <td class="auto-style7">&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style7">Mã nhân viên</td>
-                                <td>
-                                    <asp:TextBox ID="TextBox1" runat="server" Width="566px" Height="30px"></asp:TextBox>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style7">&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style7">Mật khẩu</td>
-                                <td>
-                                    <asp:TextBox ID="TextBox2" runat="server" Width="562px" Height="30px"></asp:TextBox>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style7">&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style7">&nbsp;</td>
-                                <td class="rblQuyen">
-                                    <asp:RadioButtonList ID="rblQuyen" runat="server">
-                                        <asp:ListItem Text="QuanLy">Quản lý</asp:ListItem>
-                                        <asp:ListItem Text="QuanLySP">Quản lý sản phẩm</asp:ListItem>
-                                    </asp:RadioButtonList>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style7">&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style7">&nbsp;</td>
-                                <td>
-                                    <asp:Button ID="btnDangNhap" runat="server" Text="Đăng nhập" Width="212px" />
-                                </td>
-                            </tr>
-                        </table>
+                        <asp:TextBox ID="txtMatKhau" runat="server" Height="42px" Width="705px"></asp:TextBox>
                     </td>
                 </tr>
-                </table>
+                <tr>
+                    <td class="auto-style3"></td>
+                    <td class="auto-style4"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style1" style="font: bold; font-family:Arial; font-size: 20px; color: #663300">Quyền</td>
+                    <td class="auto-style2">
+                        <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+                            <asp:ListItem Value="NVQL">NV Quản Lý</asp:ListItem>
+                            <asp:ListItem Value="NVQLSP">NV Quản Lý Sản Phẩm</asp:ListItem>
+                        </asp:RadioButtonList>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">&nbsp;</td>
+                    <td class="auto-style2">
+                        <asp:Button ID="btnDangNhap" runat="server" Text="Đăng Nhập" Height="47px" Width="182px" BackColor="#FFCC00" Font-Bold="true" Font-Size="20px" OnClick="btnDangNhap_Click" />
+                    </td>
+                </tr>
+            </table>
         </div>
     </form>
 </body>
