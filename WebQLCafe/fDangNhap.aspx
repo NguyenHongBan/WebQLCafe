@@ -5,9 +5,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>QUẢN LÝ CÀ PHÊ</title>
-    <style>
-
-    </style>
+    <link href="Models/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="Models/fonts/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="Models/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="Models/css/ui.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <section class="section-conten padding-y" style="min-height:84vh">
