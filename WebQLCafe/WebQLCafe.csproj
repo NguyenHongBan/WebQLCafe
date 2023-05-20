@@ -72,6 +72,7 @@
     <Content Include="fHoaDon.aspx" />
     <Content Include="fLoaiSP.aspx" />
     <Content Include="fNhanVien.aspx" />
+    <Content Include="fQuenMK.aspx" />
     <Content Include="fSanPham.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Models\css\bootstrap.css" />
@@ -138,6 +139,13 @@
     </Compile>
     <Compile Include="fNhanVien.aspx.designer.cs">
       <DependentUpon>fNhanVien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fQuenMK.aspx.cs">
+      <DependentUpon>fQuenMK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fQuenMK.aspx.designer.cs">
+      <DependentUpon>fQuenMK.aspx</DependentUpon>
     </Compile>
     <Compile Include="fSanPham.aspx.cs">
       <DependentUpon>fSanPham.aspx</DependentUpon>
