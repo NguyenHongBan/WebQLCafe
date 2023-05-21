@@ -16,12 +16,12 @@
 	<div class="card mx-auto" style="max-width: 380px; margin-top:100px;">
       <div class="card-body">
       <h4 class="card-title mb-4">Sign in</h4>
-      <form>
+          <form id="form1" runat="server">
           <div class="form-group">
-			 <input name="" class="form-control" placeholder="Username" type="text">
+              <input id="txtUsername" class="form-control" placeholder="Username" type="text" />
           </div> 
           <div class="form-group">
-			<input name="" class="form-control" placeholder="Password" type="password">
+              <input id="txtPassword" class="form-control" placeholder="Password" type="password" />
           </div> 
           
           <div class="form-group">
@@ -29,9 +29,9 @@
             <label class="float-left custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" checked=""> <div class="custom-control-label"> Remember </div> </label>
           </div>
           <div class="form-group">
-              <button type="submit" class="btn btn-primary btn-block"> Login  </button>
+              <asp:Button ID="Button1" class="btn btn-primary btn-block" runat="server" Text="Button" OnClick="Button1_Click" />
           </div> 
-      </form>
+          </form>
       </div> 
     </div> 
 </section>
