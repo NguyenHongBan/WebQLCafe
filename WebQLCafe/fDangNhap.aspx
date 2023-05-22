@@ -5,12 +5,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>QUẢN LÝ CÀ PHÊ</title>
+    <link href="Models/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <!-- jQuery -->
     <script src="Models/js/jquery-2.0.0.min.js" type="text/javascript"></script>
+
+    <!-- Bootstrap4 files-->
     <script src="Models/js/bootstrap.bundle.min.js" type="text/javascript"></script>
-    <link href="Models/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="Models/fonts/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="Models/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Font awesome 5 -->
+    <link href="Models/fonts/fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
+
+    <!-- custom style -->
+    <link href="Models/css/ui.css" rel="stylesheet" type="text/css"/>
     <link href="Models/css/responsive.css" rel="stylesheet" type="text/css" />
-    <link href="Models/css/ui.css" rel="stylesheet" type="text/css" />
+
+    <!-- custom javascript -->
     <script src="Models/js/script.js" type="text/javascript"></script>
 </head>
 <body>

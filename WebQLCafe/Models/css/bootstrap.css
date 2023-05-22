@@ -2234,8 +2234,9 @@ fieldset:disabled a.btn {
   pointer-events: none; }
 
 .btn-primary {
-  x-shadow: 0 0 0 0.2rem rgba(38, 192, 58, 0.5);
-            ox-shadddd
+  color: #fff;
+  background-color: #FF9966;
+  border-color: #FF9966; }
   .btn-primary:hover {
     color: #fff;
     background-color: #d95a00;

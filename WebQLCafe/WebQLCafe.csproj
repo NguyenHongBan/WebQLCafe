@@ -251,6 +251,10 @@
     <Content Include="Models\images\icons\.DS_Store" />
     <Content Include="Models\images\items\.DS_Store" />
     <Content Include="Models\images\posts\.DS_Store" />
+    <Content Include="Models\css\.DS_Store" />
+    <Content Include="Models\css\bootstrap.css.map" />
+    <Content Include="Models\css\responsive.css.map" />
+    <Content Include="Models\css\ui.css.map" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
