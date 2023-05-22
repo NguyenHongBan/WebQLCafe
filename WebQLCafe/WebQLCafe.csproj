@@ -170,6 +170,7 @@
     <Content Include="Models\js\bootstrap.bundle.min.js" />
     <Content Include="Models\js\jquery-2.0.0.min.js" />
     <Content Include="Models\js\script.js" />
+    <Content Include="style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
