@@ -21,27 +21,32 @@ namespace WebQLCafe
 
         protected void lbtNhanVien_Click(object sender, EventArgs e)
         {
-
+            Session.Abandon();
+            Response.Redirect("fNhanVien.aspx");
         }
 
         protected void lbtLoaiSP_Click(object sender, EventArgs e)
         {
-
+            Session.Abandon();
+            Response.Redirect("fLoaiSP.aspx");
         }
 
         protected void lbtSanPham_Click(object sender, EventArgs e)
         {
-
+            Session.Abandon();
+            Response.Redirect("fSanPham.aspx");
         }
 
         protected void lbtHoaDon_Click(object sender, EventArgs e)
         {
-
+            Session.Abandon();
+            Response.Redirect("fHoaDon.aspx");
         }
 
         protected void lbtDoanhThu_Click(object sender, EventArgs e)
         {
-
+            Session.Abandon();
+            Response.Redirect("fDoanhThu.aspx");
         }
     }
 }
