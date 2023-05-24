@@ -13,5 +13,35 @@ namespace WebQLCafe
         {
 
         }
+
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
+
+        protected void lbtNhanVien_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void lbtLoaiSP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void lbtSanPham_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void lbtHoaDon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void lbtDoanhThu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -96,6 +96,9 @@
     <Content Include="Models\fonts\fontawesome\webfonts\fa-regular-400.svg" />
     <Content Include="Models\fonts\fontawesome\webfonts\fa-solid-900.svg" />
     <Content Include="Models\fonts\roboto\font.css" />
+    <Content Include="Models\images\anhlogo\3.png" />
+    <Content Include="Models\images\anhlogo\logocoffe.jpg" />
+    <Content Include="Models\images\anhlogo\pngtree-coffee-cup-brown-image_54847.jpg" />
     <Content Include="Models\images\avatars\avatar1.jpg" />
     <Content Include="Models\images\avatars\avatar2.jpg" />
     <Content Include="Models\images\avatars\avatar3.jpg" />

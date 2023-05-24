@@ -7,7 +7,34 @@
     <title></title>
     <style type="text/css">
         .auto-style1 {
-            width: 429px;
+            width: 334px;
+        }
+        .auto-style2 {
+            text-align: center;
+        }
+        .auto-style3 {
+            text-decoration: none;
+            font-size: x-large;
+            color: #000000;
+        }
+        .auto-style4 {
+            width: 334px;
+            height: 183px;
+            text-align: center;
+        }
+        .auto-style5 {
+            height: 183px;
+        }
+        .auto-style6 {
+            width: 334px;
+            text-align: center;
+        }
+        .auto-style7 {
+            font-size: 16pt;
+        }
+        .auto-style8 {
+            font-size: 14pt;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -16,39 +43,108 @@
         <div>
             <table style="width:100%;">
                 <tr>
-                    <td class="auto-style1">
-                        <asp:ImageButton ID="ImageButton1" runat="server" Height="53px" Width="423px" />
+                    <td class="auto-style4" style="background-color: #FFCC99">
+                        <asp:ImageButton ID="ImageButton1" runat="server" Height="160px" Width="160px" ImageUrl="~/Models/images/anhlogo/3.png" OnClick="ImageButton1_Click" />
                     </td>
-                    <td>
+                    <td class="auto-style5" style="background-color: #996633">
                         <table style="width:100%;">
                             <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
+                                <td style="background-color: #996633">&nbsp;</td>
+                                <td style="background-color: #996633">&nbsp;</td>
+                                <td style="background-color: #996633">&nbsp;</td>
+                                <td style="background-color: #996633">&nbsp;</td>
+                                <td style="background-color: #996633">&nbsp;</td>
                             </tr>
                             <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
+                                <td class="auto-style2" style="background-color: #996633"><strong>
+                                    <asp:LinkButton ID="lbtNhanVien" runat="server" CssClass="auto-style3" OnClick="lbtNhanVien_Click">Nhân Viên</asp:LinkButton>
+                                    </strong></td>
+                                <td class="auto-style2" style="background-color: #996633"><strong>
+                                    <asp:LinkButton ID="lbtLoaiSP" runat="server" CssClass="auto-style3" OnClick="lbtLoaiSP_Click">Loại Sản Phẩm</asp:LinkButton>
+                                    </strong></td>
+                                <td class="auto-style2" style="background-color: #996633"><strong>
+                                    <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style3" OnClick="lbtSanPham_Click">Sản Phẩm</asp:LinkButton>
+                                    </strong></td>
+                                <td class="auto-style2" style="background-color: #996633"><strong>
+                                    <asp:LinkButton ID="lbtHoaDon" runat="server" CssClass="auto-style3" OnClick="lbtHoaDon_Click">Hóa Đơn</asp:LinkButton>
+                                    </strong></td>
+                                <td class="auto-style2" style="background-color: #996633"><strong>
+                                    <asp:LinkButton ID="lbtDoanhThu" runat="server" CssClass="auto-style3" OnClick="lbtDoanhThu_Click">Doanh Thu</asp:LinkButton>
+                                    </strong></td>
                             </tr>
                             <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
+                                <td style="background-color: #996633">&nbsp;</td>
+                                <td style="background-color: #996633">&nbsp;</td>
+                                <td style="background-color: #996633">&nbsp;</td>
+                                <td style="background-color: #996633">&nbsp;</td>
+                                <td style="background-color: #996633">&nbsp;</td>
                             </tr>
                         </table>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style1">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style1" style="background-color: #FFCC99">&nbsp;</td>
+                    <td>
+                        <table style="width:100%;">
+                            <tr>
+                                <td style="background-color: #FFCC99"><strong>
+                                    <asp:Label ID="lblIDLoaiSP" runat="server" CssClass="auto-style7" Text="ID Loại Sản Phẩm"></asp:Label>
+                                    </strong></td>
+                                <td style="background-color: #FFCC99">
+                                    <asp:TextBox ID="txtIDLoaiSP" runat="server" Height="30px" Width="450px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #FFCC99"><strong>
+                                    <asp:Label ID="lblTenLoai" runat="server" CssClass="auto-style7" Text="Tên Loại"></asp:Label>
+                                    </strong></td>
+                                <td style="background-color: #FFCC99">
+                                    <asp:TextBox ID="txtTenLoai" runat="server" Height="30px" Width="450px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #FFCC99">&nbsp;</td>
+                                <td style="background-color: #FFCC99">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
                 </tr>
                 <tr>
-                    <td class="auto-style1">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style6" style="background-color: #FFCC99"><strong>
+                        <asp:Button ID="btnThem" runat="server" CssClass="auto-style8" Height="35px" Text="Thêm " Width="100px" />
+                        </strong></td>
+                    <td rowspan="4" style="background-color: #FFFFCC">
+                        <asp:GridView ID="GridView1" runat="server" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black">
+                            <FooterStyle BackColor="#CCCCCC" />
+                            <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                            <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
+                            <RowStyle BackColor="White" />
+                            <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                            <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                            <SortedAscendingHeaderStyle BackColor="#808080" />
+                            <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                            <SortedDescendingHeaderStyle BackColor="#383838" />
+                        </asp:GridView>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style6" style="background-color: #FFCC99"><strong>
+                        <asp:Button ID="btnSua" runat="server" CssClass="auto-style8" Height="35px" Text="Sửa" Width="100px" />
+                        </strong></td>
+                </tr>
+                <tr>
+                    <td class="auto-style6" style="background-color: #FFCC99"><strong>
+                        <asp:Button ID="btnXoa" runat="server" CssClass="auto-style8" Height="35px" Text="Xóa" Width="100px" />
+                        </strong></td>
+                </tr>
+                <tr>
+                    <td class="auto-style6" style="background-color: #FFCC99"><strong>
+                        <asp:Button ID="btnLamMoi" runat="server" CssClass="auto-style8" Height="35px" Text="Làm Mới" Width="100px" />
+                        </strong></td>
+                </tr>
+                <tr>
+                    <td class="auto-style1" style="background-color: #FFCC99">&nbsp;</td>
+                    <td style="background-color: #FFCC99">&nbsp;</td>
                 </tr>
             </table>
         </div>
