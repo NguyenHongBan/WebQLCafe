@@ -10,7 +10,7 @@
 
 namespace WebQLCafe
 {
-    public partial class fQuenMK
+    public partial class fHoaDon_NVT
     {
 
         /// <summary>

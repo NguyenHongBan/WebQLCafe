@@ -70,10 +70,12 @@
     <Content Include="fDangNhap.aspx" />
     <Content Include="fDoanhThu.aspx" />
     <Content Include="fHoaDon.aspx" />
+    <Content Include="fHoaDon_NVT.aspx" />
     <Content Include="fLoaiSP.aspx" />
+    <Content Include="fLoaiSP_NVT.aspx" />
     <Content Include="fNhanVien.aspx" />
-    <Content Include="fQuenMK.aspx" />
     <Content Include="fSanPham.aspx" />
+    <Content Include="fSanPham_NVT.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Models\css\bootstrap.css" />
     <Content Include="Models\css\responsive.css" />
@@ -198,12 +200,26 @@
     <Compile Include="fHoaDon.aspx.designer.cs">
       <DependentUpon>fHoaDon.aspx</DependentUpon>
     </Compile>
+    <Compile Include="fHoaDon_NVT.aspx.cs">
+      <DependentUpon>fHoaDon_NVT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fHoaDon_NVT.aspx.designer.cs">
+      <DependentUpon>fHoaDon_NVT.aspx</DependentUpon>
+    </Compile>
     <Compile Include="fLoaiSP.aspx.cs">
       <DependentUpon>fLoaiSP.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="fLoaiSP.aspx.designer.cs">
       <DependentUpon>fLoaiSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fLoaiSP_NVT.aspx.cs">
+      <DependentUpon>fLoaiSP_NVT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fLoaiSP_NVT.aspx.designer.cs">
+      <DependentUpon>fLoaiSP_NVT.aspx</DependentUpon>
     </Compile>
     <Compile Include="fNhanVien.aspx.cs">
       <DependentUpon>fNhanVien.aspx</DependentUpon>
@@ -212,19 +228,19 @@
     <Compile Include="fNhanVien.aspx.designer.cs">
       <DependentUpon>fNhanVien.aspx</DependentUpon>
     </Compile>
-    <Compile Include="fQuenMK.aspx.cs">
-      <DependentUpon>fQuenMK.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="fQuenMK.aspx.designer.cs">
-      <DependentUpon>fQuenMK.aspx</DependentUpon>
-    </Compile>
     <Compile Include="fSanPham.aspx.cs">
       <DependentUpon>fSanPham.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="fSanPham.aspx.designer.cs">
       <DependentUpon>fSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fSanPham_NVT.aspx.cs">
+      <DependentUpon>fSanPham_NVT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fSanPham_NVT.aspx.designer.cs">
+      <DependentUpon>fSanPham_NVT.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WebQLCafe
 {
-    public partial class fQuenMK : System.Web.UI.Page
+    public partial class fSanPham_NVT : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
