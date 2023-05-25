@@ -121,58 +121,58 @@
             <tr>
                 <td class="auto-style42" style="background-color: #FFCC66"><span class="auto-style38">Mã đơn hàng</span></td>
                 <td class="auto-style45" style="background-color: #FFCC66">
-                    <asp:DropDownList ID="DropDownList2" runat="server" Height="24px" Width="251px">
+                    <asp:DropDownList ID="ddlMDH" runat="server" Height="24px" Width="251px">
                     </asp:DropDownList>
                 </td>
                 <td class="auto-style48" style="background-color: #FFCC66">Mã khách hàng</td>
                 <td class="auto-style51">
-                    <asp:DropDownList ID="DropDownList5" runat="server" Height="24px" Width="251px">
+                    <asp:DropDownList ID="ddlMKH" runat="server" Height="24px" Width="251px">
                     </asp:DropDownList>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style44" style="background-color: #FFCC66">Mã sản phẩm</td>
                 <td class="auto-style46" style="background-color: #FFCC66">
-                    <asp:DropDownList ID="DropDownList3" runat="server" Height="24px" Width="251px">
+                    <asp:DropDownList ID="ddlMSP" runat="server" Height="24px" Width="251px">
                     </asp:DropDownList>
                 </td>
                 <td class="auto-style49" style="background-color: #FFCC66">Ngày</td>
                 <td class="auto-style52" style="background-color: #FFCC66">
-                    <asp:TextBox ID="TextBox8" runat="server" Height="19px" Width="241px"></asp:TextBox>
+                    <asp:TextBox ID="txtNgay" runat="server" Height="19px" Width="241px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style36" style="background-color: #FFCC66">Mã nhân viên</td>
                 <td class="auto-style47" style="background-color: #FFCC66">
-                    <asp:DropDownList ID="DropDownList4" runat="server" Height="24px" Width="251px">
+                    <asp:DropDownList ID="ddlMNV" runat="server" Height="24px" Width="251px">
                     </asp:DropDownList>
                 </td>
                 <td class="auto-style50" style="background-color: #FFCC66">Giờ</td>
                 <td class="auto-style10" style="background-color: #FFCC66">
-                    <asp:TextBox ID="TextBox9" runat="server" Height="19px" Width="241px"></asp:TextBox>
+                    <asp:TextBox ID="txtGio" runat="server" Height="19px" Width="241px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style44" style="background-color: #FFCC66">Địa chỉ
                     </td>
                 <td class="auto-style46" style="background-color: #FFCC66">
-                    <asp:TextBox ID="TextBox7" runat="server" Height="19px" Width="241px"></asp:TextBox>
+                    <asp:TextBox ID="txtĐC" runat="server" Height="19px" Width="241px"></asp:TextBox>
                 </td>
                 <td class="auto-style57" style="background-color: #FFCC66" colspan="2">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style53" style="background-color: #FFCC66" colspan="2"><strong>
-                    <asp:Button ID="Button1" runat="server" CssClass="auto-style54" ForeColor="#FF3300" Height="35px" Text="Đóng" Width="133px" />
+                    <asp:Button ID="btnDong" runat="server" CssClass="auto-style54" ForeColor="#FF3300" Height="35px" Text="Đóng" Width="133px" />
                     </strong>
                     </td>
                 <td class="auto-style55" style="background-color: #FFCC66" colspan="2">
-                    <asp:Button ID="Button2" runat="server" CssClass="auto-style56" Height="33px" Text="Tìm kiếm" Width="92px" />
-                    <asp:Button ID="Button5" runat="server" CssClass="auto-style56" Height="33px" Text="Làm mới" Width="92px" />
+                    <asp:Button ID="btnTK" runat="server" CssClass="auto-style56" Height="33px" Text="Tìm kiếm" Width="92px" />
+                    <asp:Button ID="btnLM" runat="server" CssClass="auto-style56" Height="33px" Text="Làm mới" Width="92px" />
                 </td>
             </tr>
             </table>
         </div>
-        <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="164px" Width="1485px">
+        <asp:GridView ID="GrvHĐ" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="164px" Width="1485px">
             <AlternatingRowStyle BackColor="White" />
             <EditRowStyle BackColor="#2461BF" />
             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
