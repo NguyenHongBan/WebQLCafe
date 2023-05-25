@@ -116,7 +116,38 @@
         <div>
         <table class="auto-style32">
             <tr>
-                <td class="auto-style33" colspan="4" style="background-color: #FFCC66"><strong>HÓA ĐƠN</strong></td>
+                <td class="auto-style33" colspan="4" style="background-color: #FFCC66">
+                    <table style="width:100%;">
+                        <tr>
+                            <td rowspan="3">&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table style="width:100%;">
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style42" style="background-color: #FFCC66"><span class="auto-style38">Mã đơn hàng</span></td>
@@ -172,7 +203,7 @@
             </tr>
             </table>
         </div>
-        <asp:GridView ID="GrvHĐ" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="164px" Width="1485px">
+        <asp:GridView ID="GrvHĐ" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="164px" Width="1814px">
             <AlternatingRowStyle BackColor="White" />
             <EditRowStyle BackColor="#2461BF" />
             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
