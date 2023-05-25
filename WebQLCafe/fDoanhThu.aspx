@@ -56,29 +56,6 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Doanh thu</h1>
-  </header>
-  
-  <label for="search">Tìm kiếm trong ngày:</label>
-  <input type="text" id="search" name="search">
-  
-  <label for="total">Tổng tiền:</label>
-  <input type="text" id="total" name="total"><br />
-    <br />
-  <button type="button" id="close">Đóng </button>
-  <table>
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Tên sản phẩm</th>
-        <th>Giá</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Dữ liệu sẽ được thêm vào đây -->
-    </tbody>
-  </table>
-</body>
+  </body>
 </html>
 
