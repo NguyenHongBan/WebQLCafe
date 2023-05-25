@@ -12,10 +12,10 @@
             height: 992px;
         }
         .auto-style4 {
-            width: 547px;
+            width: 404px;
         }
         .auto-style5 {
-            width: 547px;
+            width: 404px;
             height: 225px;
             text-align: center;
         }
@@ -32,7 +32,7 @@
             width: 713px;
         }
         .auto-style9 {
-            width: 547px;
+            width: 404px;
             height: 606px;
         }
         .auto-style10 {
@@ -97,7 +97,7 @@
         <table class="auto-style3">
             <tr>
                 <td class="auto-style5">
-                    <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Models/images/anhlogo/3.png" Width="133px" />
+                    <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Models/images/anhlogo/3.png" Width="200px" />
                 </td>
                 <td class="auto-style7"><strong style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">QUẢN LÝ CÀ PHÊ</strong></td>
                 <td class="auto-style6"></td>
