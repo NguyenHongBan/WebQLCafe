@@ -33,7 +33,7 @@
                 <br />
                 <br />
                 <br />
-                <asp:Button ID="btnLogin" runat="server" Text="Login" />
+                <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
                 </label>
 				&nbsp;
 			</div>
