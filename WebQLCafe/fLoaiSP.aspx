@@ -53,8 +53,6 @@
 </head>
 <body style="height: 1010px">
     <form id="form1" runat="server">
-<<<<<<< HEAD
-=======
         <div>
             <table class="auto-style9">
                 <tr>
@@ -163,7 +161,6 @@
                 </tr>
             </table>
         </div>
->>>>>>> 4c2c9beb6b4be155f75b1de04bc70e3a4f71e153
     </form>
 </body>
 </html>
