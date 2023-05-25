@@ -12,10 +12,10 @@
             height: 992px;
         }
         .auto-style4 {
-            width: 404px;
+            width: 551px;
         }
         .auto-style5 {
-            width: 404px;
+            width: 551px;
             height: 225px;
             text-align: center;
         }
@@ -32,7 +32,7 @@
             width: 713px;
         }
         .auto-style9 {
-            width: 404px;
+            width: 551px;
             height: 606px;
         }
         .auto-style10 {
@@ -96,15 +96,15 @@
     <form id="form1" runat="server">
         <table class="auto-style3">
             <tr>
-                <td class="auto-style5">
+                <td class="auto-style5" style="background-color: #CD853F">
                     <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Models/images/anhlogo/3.png" Width="200px" />
                 </td>
-                <td class="auto-style7"><strong style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">QUẢN LÝ CÀ PHÊ</strong></td>
-                <td class="auto-style6"></td>
+                <td class="auto-style7" style="background-color: #CD853F"><strong style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">QUẢN LÝ CÀ PHÊ</strong></td>
+                <td class="auto-style6" style="background-color: #CD853F"></td>
             </tr>
             <tr>
-                <td class="auto-style9"></td>
-                <td class="auto-style10">
+                <td class="auto-style9" style="background-color: #FFCC99"></td>
+                <td class="auto-style10" style="background-color: #FFCC99">
                     <table class="auto-style13">
                         <tr>
                             <td class="auto-style14" colspan="2"><strong style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">ĐĂNG NHẬP HỆ THỐNG</strong></td>
@@ -138,12 +138,12 @@
                         </tr>
                     </table>
                 </td>
-                <td class="auto-style11"></td>
+                <td class="auto-style11" style="background-color: #FFCC99"></td>
             </tr>
             <tr>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style8">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style4" style="background-color: #FFCC99">&nbsp;</td>
+                <td class="auto-style8" style="background-color: #FFCC99">&nbsp;</td>
+                <td style="background-color: #FFCC99">&nbsp;</td>
             </tr>
         </table>
     </form>
