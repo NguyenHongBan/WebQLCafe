@@ -12,7 +12,7 @@
             height: 992px;
         }
         .auto-style4 {
-            width: 551px;
+       551px;
         }
         .auto-style5 {
             width: 551px;
@@ -32,7 +32,7 @@
             width: 713px;
         }
         .auto-style9 {
-            width: 551px;
+            width: 551      width: 551px;
             height: 606px;
         }
         .auto-style10 {
@@ -90,6 +90,19 @@
         .newStyle2 {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         }
+
+
+        .newStyle3 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .newStyle4 {
+            background-color: #3399FF;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            font-size: 16pt;
+        }
+
+
     </style>
 </head>
 <body style="height: 1010px">
@@ -134,7 +147,9 @@
                                 </strong></td>
                         </tr>
                         <tr>
-                            <td colspan="2">&nbsp;</td>
+                            <td colspan="2" class="auto-style22"><strong>
+                                <asp:Button ID="btnDangNhap" runat="server" CssClass="newStyle4" Text="Đăng Nhập" />
+                                </strong></td>
                         </tr>
                     </table>
                 </td>
