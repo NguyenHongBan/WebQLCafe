@@ -233,24 +233,24 @@
                         <tr>
                             <td class="auto-style29"><strong>Mã Đơn Hàng</strong></td>
                             <td class="auto-style30">
-                                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="newStyle13" Height="30px" Width="450px">
+                                <asp:DropDownList ID="ddlMaDH" runat="server" CssClass="newStyle13" Height="30px" Width="450px">
                                 </asp:DropDownList>
                             </td>
                             <td class="auto-style31"><strong>Mã Khách Hàng</strong></td>
                             <td class="auto-style32">
-                                <asp:DropDownList ID="DropDownList2" runat="server" CssClass="newStyle15" Height="30px" Width="450px">
+                                <asp:DropDownList ID="ddlMaKH" runat="server" CssClass="newStyle15" Height="30px" Width="450px">
                                 </asp:DropDownList>
                             </td>
                         </tr>
                         <tr>
                             <td class="auto-style25"><strong>Mã Nhân Viên</strong></td>
                             <td class="auto-style26">
-                                <asp:DropDownList ID="DropDownList3" runat="server" CssClass="newStyle14" Height="30px" Width="450px">
+                                <asp:DropDownList ID="ddlMaNV" runat="server" CssClass="newStyle14" Height="30px" Width="450px">
                                 </asp:DropDownList>
                             </td>
                             <td class="auto-style27"><strong>Ngày</strong></td>
                             <td class="auto-style28">
-                                <asp:TextBox ID="TextBox1" runat="server" CssClass="newStyle16" Height="30px" Width="450px"></asp:TextBox>
+                                <asp:TextBox ID="txtNgay" runat="server" CssClass="newStyle16" Height="30px" Width="450px"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
@@ -269,7 +269,7 @@
             <tr>
                 <td class="auto-style2" style="background-color: #FFCC99">&nbsp;</td>
                 <td style="background-color: #FFFFCC">
-                    <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" CssClass="newStyle17" ForeColor="Black" GridLines="Horizontal" Height="430px" Width="1470px">
+                    <asp:GridView ID="GridViewHoaDon" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" CssClass="newStyle17" ForeColor="Black" GridLines="Horizontal" Height="430px" Width="1470px">
                         <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
                         <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
                         <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />

@@ -24,58 +24,139 @@ namespace WebQLCafe
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// txxMSP control.
+        /// ImageButton1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txxMSP;
+        protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
 
         /// <summary>
-        /// ddlLSP control.
+        /// btnDangXuat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlLSP;
+        protected global::System.Web.UI.WebControls.Button btnDangXuat;
 
         /// <summary>
-        /// txtSP control.
+        /// lbtNhanVien control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSP;
+        protected global::System.Web.UI.WebControls.LinkButton lbtNhanVien;
 
         /// <summary>
-        /// txtGSP control.
+        /// lbtLoaiSP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtGSP;
+        protected global::System.Web.UI.WebControls.LinkButton lbtLoaiSP;
 
         /// <summary>
-        /// ddlSize control.
+        /// lbtSanPham control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlSize;
+        protected global::System.Web.UI.WebControls.LinkButton lbtSanPham;
 
         /// <summary>
-        /// txtSearchSP control.
+        /// lbtHoaDon control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSearchSP;
+        protected global::System.Web.UI.WebControls.LinkButton lbtHoaDon;
+
+        /// <summary>
+        /// lbtDoanhThu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lbtDoanhThu;
+
+        /// <summary>
+        /// txtMaSP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtMaSP;
+
+        /// <summary>
+        /// txtTenSP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTenSP;
+
+        /// <summary>
+        /// ddlLoaiSP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlLoaiSP;
+
+        /// <summary>
+        /// ddlKichCo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlKichCo;
+
+        /// <summary>
+        /// txtSoLuong control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSoLuong;
+
+        /// <summary>
+        /// txtGiaBan control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtGiaBan;
+
+        /// <summary>
+        /// txtMota control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtMota;
+
+        /// <summary>
+        /// fulHinhAnh control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fulHinhAnh;
 
         /// <summary>
         /// btnThem control.
@@ -105,21 +186,21 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.Button btnXoa;
 
         /// <summary>
-        /// btnReset control.
+        /// btnLamMoi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnReset;
+        protected global::System.Web.UI.WebControls.Button btnLamMoi;
 
         /// <summary>
-        /// GrvSP control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GrvSP;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }

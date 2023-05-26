@@ -69,40 +69,40 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.LinkButton lbtHoaDon;
 
         /// <summary>
-        /// DropDownList1 control.
+        /// ddlMaDH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList ddlMaDH;
 
         /// <summary>
-        /// DropDownList2 control.
+        /// ddlMaKH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+        protected global::System.Web.UI.WebControls.DropDownList ddlMaKH;
 
         /// <summary>
-        /// DropDownList3 control.
+        /// ddlMaNV control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
+        protected global::System.Web.UI.WebControls.DropDownList ddlMaNV;
 
         /// <summary>
-        /// TextBox1 control.
+        /// txtNgay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtNgay;
 
         /// <summary>
         /// btnTimKiem control.
@@ -123,12 +123,12 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.Button btnLamMoi;
 
         /// <summary>
-        /// GridView2 control.
+        /// GridViewHoaDonNVT control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView2;
+        protected global::System.Web.UI.WebControls.GridView GridViewHoaDonNVT;
     }
 }

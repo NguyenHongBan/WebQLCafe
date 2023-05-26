@@ -12,7 +12,7 @@
         }
         .auto-style1 {
             width: 100%;
-            height: 1000px;
+            height: 998px;
         }
         .auto-style2 {
             text-align: center;
@@ -60,12 +60,50 @@
             text-align: center;
             width: 290px;
         }
+        .auto-style42 {
+            width: 444px;
+        }
+        .auto-style43 {
+            width: 445px;
+            text-align: center;
+        }
+        .auto-style44 {
+            width: 444px;
+            text-align: center;
+            height: 40px;
+        }
+        .auto-style45 {
+            height: 41px;
+        }
+        .auto-style8 {
+            font-size: 14pt;
+            font-weight: bold;
+        }
+        .auto-style46 {
+            text-align: center;
+            height: 81px;
+        }
+        .auto-style47 {
+            text-align: center;
+            height: 81px;
+        }
+        .auto-style48 {
+            text-align: center;
+            height: 81px;
+        }
+        .auto-style49 {
+            width: 334px;
+            height: 194px;
+        }
+        .auto-style50 {
+            height: 194px;
+        }
     </style>
 </head>
 <body style="height: 1010px">
     <form id="form1" runat="server">
         <table class="auto-style1">
-            <tr>
+            <tr style="background-color: #CB853F">
                 <td class="auto-style2">
                     <asp:ImageButton ID="ImageButton1" runat="server" Height="141px" ImageUrl="~/Models/images/anhlogo/3.png" Width="133px" />
                 </td>
@@ -87,7 +125,7 @@
                                 <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style36">Sản Phẩm</asp:LinkButton>
                                 </strong></td>
                             <td class="auto-style41"><strong>
-                                <asp:LinkButton ID="lbtHoaDon" runat="server" CssClass="auto-style36">Hóa Đơn</asp:LinkButton>
+                                <asp:LinkButton ID="lbtHoaDon" runat="server" CssClass="auto-style36" OnClick="lbtHoaDon_Click1">Hóa Đơn</asp:LinkButton>
                                 </strong></td>
                             <td>&nbsp;</td>
                         </tr>
@@ -101,47 +139,67 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td>
-                    <table style="width:100%;">
+                <td class="auto-style49" style="background-color: #FFCC99"></td>
+                <td class="auto-style50" style="background-color: #FFCC99">
+                    <table style="width:100%; background-color: #FFCC99;">
                         <tr>
-                            <td>ID Loại Sản Phẩm</td>
-                            <td>
-                                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                            <td class="auto-style44"><strong>
+                                    <asp:Label ID="lblIDLoaiSP" runat="server" CssClass="newStyle2" Text="ID Loại Sản Phẩm"></asp:Label>
+                                    </strong></td>
+                            <td class="auto-style45">
+                                    <asp:TextBox ID="txtIDLoaiSP" runat="server" Height="30px" Width="450px"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
-                            <td>Tên Loại</td>
+                            <td class="auto-style43"><strong>
+                                    <asp:Label ID="lblTenLoai" runat="server" CssClass="newStyle2" Text="Tên Loại"></asp:Label>
+                                    </strong></td>
                             <td>
-                                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtTenLoai" runat="server" Height="30px" Width="450px"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
-                            <td>&nbsp;</td>
+                            <td class="auto-style42">&nbsp;</td>
                             <td>&nbsp;</td>
                         </tr>
                     </table>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style3">
+                <td class="auto-style3" style="background-color: #FFCC99">
                     <table style="width:100%;">
                         <tr>
-                            <td>&nbsp;</td>
+                            <td class="auto-style46"><strong>
+                        <asp:Button ID="btnThem" runat="server" CssClass="auto-style8" Height="35px" Text="Thêm " Width="100px" />
+                        </strong></td>
                         </tr>
                         <tr>
-                            <td>&nbsp;</td>
+                            <td class="auto-style46"><strong>
+                        <asp:Button ID="btnSua" runat="server" CssClass="auto-style8" Height="35px" Text="Sửa" Width="100px" />
+                        </strong></td>
                         </tr>
                         <tr>
-                            <td>&nbsp;</td>
+                            <td class="auto-style47"><strong>
+                        <asp:Button ID="btnXoa" runat="server" CssClass="auto-style8" Height="35px" Text="Xóa" Width="100px" />
+                        </strong></td>
                         </tr>
                         <tr>
-                            <td>&nbsp;</td>
+                            <td class="auto-style48"><strong>
+                        <asp:Button ID="btnLamMoi" runat="server" CssClass="auto-style8" Height="35px" Text="Làm Mới" Width="100px" />
+                        </strong></td>
                         </tr>
                     </table>
                 </td>
-                <td>
-                    <asp:GridView ID="GridView1" runat="server">
+                <td style="background-color: #FFFFCC">
+                    <asp:GridView ID="GridViewLoaiSPNVT" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Height="551px" Width="1469px">
+                        <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+                        <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+                        <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+                        <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                        <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+                        <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                        <SortedDescendingHeaderStyle BackColor="#242121" />
                     </asp:GridView>
                 </td>
             </tr>

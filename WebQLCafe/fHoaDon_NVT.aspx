@@ -154,13 +154,13 @@
                             </tr>
                             <tr>
                                 <td class="auto-style44"><strong>
-                                    <asp:LinkButton ID="lbtLoaiSP" runat="server" CssClass="auto-style42">Loại Sản Phẩm</asp:LinkButton>
+                                    <asp:LinkButton ID="lbtLoaiSP" runat="server" CssClass="auto-style42" OnClick="lbtLoaiSP_Click">Loại Sản Phẩm</asp:LinkButton>
                                     </strong></td>
                                 <td class="auto-style36"><strong>
-                                    <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style42">Sản Phẩm</asp:LinkButton>
+                                    <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style42" OnClick="lbtSanPham_Click">Sản Phẩm</asp:LinkButton>
                                     </strong></td>
                                 <td class="auto-style36"><strong>
-                                    <asp:LinkButton ID="lbtHoaDon" runat="server" CssClass="auto-style42">Hóa Đơn</asp:LinkButton>
+                                    <asp:LinkButton ID="lbtHoaDon" runat="server" CssClass="auto-style42" OnClick="lbtHoaDon_Click">Hóa Đơn</asp:LinkButton>
                                     </strong></td>
                                 <td>&nbsp;</td>
                             </tr>
@@ -180,24 +180,24 @@
                             <tr>
                                 <td class="auto-style29"><strong>Mã Đơn Hàng</strong></td>
                                 <td class="auto-style30">
-                                    <asp:DropDownList ID="DropDownList1" runat="server" CssClass="newStyle13" Height="30px" Width="450px">
+                                    <asp:DropDownList ID="ddlMaDH" runat="server" CssClass="newStyle13" Height="30px" Width="450px">
                                     </asp:DropDownList>
                                 </td>
                                 <td class="auto-style31"><strong>Mã Khách Hàng</strong></td>
                                 <td class="auto-style32">
-                                    <asp:DropDownList ID="DropDownList2" runat="server" CssClass="newStyle15" Height="30px" Width="450px">
+                                    <asp:DropDownList ID="ddlMaKH" runat="server" CssClass="newStyle15" Height="30px" Width="450px">
                                     </asp:DropDownList>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="auto-style25"><strong>Mã Nhân Viên</strong></td>
                                 <td class="auto-style26">
-                                    <asp:DropDownList ID="DropDownList3" runat="server" CssClass="newStyle14" Height="30px" Width="450px">
+                                    <asp:DropDownList ID="ddlMaNV" runat="server" CssClass="newStyle14" Height="30px" Width="450px">
                                     </asp:DropDownList>
                                 </td>
                                 <td class="auto-style27"><strong>Ngày</strong></td>
                                 <td class="auto-style28">
-                                    <asp:TextBox ID="TextBox1" runat="server" CssClass="newStyle16" Height="30px" Width="450px"></asp:TextBox>
+                                    <asp:TextBox ID="txtNgay" runat="server" CssClass="newStyle16" Height="30px" Width="450px"></asp:TextBox>
                                 </td>
                             </tr>
                             <tr>
@@ -216,7 +216,7 @@
                 <tr>
                     <td class="auto-style3" style="background-color: #FFCC99">&nbsp;</td>
                     <td style="background-color: #FFFFCC">
-                        <asp:GridView ID="GridView2" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Height="424px" Width="1470px">
+                        <asp:GridView ID="GridViewHoaDonNVT" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Height="424px" Width="1470px">
                             <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
                             <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
                             <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
