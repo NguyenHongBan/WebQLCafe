@@ -56,7 +56,7 @@
             font-size: 24pt;
         }
         .auto-style15 {
-            text-align: right;
+            text-align: center;
             height: 40px;
         }
         .auto-style16 {
@@ -148,7 +148,7 @@
                         </tr>
                         <tr>
                             <td colspan="2" class="auto-style22"><strong>
-                                <asp:Button ID="btnDangNhap" runat="server" CssClass="newStyle4" Text="Đăng Nhập" />
+                                <asp:Button ID="btnDangNhap" runat="server" CssClass="newStyle4" Text="Đăng Nhập" OnClick="btnDangNhap_Click" />
                                 </strong></td>
                         </tr>
                     </table>
