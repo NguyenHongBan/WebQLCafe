@@ -32,7 +32,8 @@
             width: 713px;
         }
         .auto-style9 {
-            width: 551      width: 551px;
+            width: 551px ;
+            width: 551px;
             height: 606px;
         }
         .auto-style10 {
@@ -125,13 +126,13 @@
                         <tr>
                             <td class="auto-style19"><strong style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Mã Nhân Viên</strong></td>
                             <td class="auto-style20">
-                                <asp:TextBox ID="TextBox1" runat="server" Height="35px" Width="420px"></asp:TextBox>
+                                <asp:TextBox ID="txtNhanVien" runat="server" Height="35px" Width="420px"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
                             <td class="auto-style16"><strong style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Mật Khẩu</strong></td>
                             <td class="auto-style17">
-                                <asp:TextBox ID="TextBox2" runat="server" Height="35px" Width="420px"></asp:TextBox>
+                                <asp:TextBox ID="txtMK" runat="server" Height="35px" Width="420px"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
