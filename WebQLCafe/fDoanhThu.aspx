@@ -52,7 +52,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style5" colspan="2" style="background-color: #FFCC66">
-                        <asp:GridView ID="GrvDT" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="1453px">
+                        <asp:GridView ID="GrvDT" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="1482px">
                             <AlternatingRowStyle BackColor="White" />
                             <EditRowStyle BackColor="#2461BF" />
                             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
