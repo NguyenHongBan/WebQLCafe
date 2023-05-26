@@ -7,215 +7,281 @@
     <title></title>
     <style type="text/css">
 
-        .auto-style33 {
-            height: 49px;
+        .newStyle1 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+        }
+        .newStyle2 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .newStyle3 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .newStyle4 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .newStyle5 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .newStyle6 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .auto-style2 {
+            width: 334px;
+        }
+        .auto-style4 {
             text-align: center;
+        }
+        .newStyle7 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .auto-style5 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-size: x-large;
+            text-decoration: none;
+            color: #000000;
         }
-        .auto-style42 {
-            height: 48px;
-            width: 401px;
-            text-align: right;
+        .auto-style6 {
+            width: 100%;
+            height: 1001px;
         }
-        .auto-style38 {
-            font-size: large;
+        .auto-style7 {
+            width: 100%;
+            height: 220px;
         }
-        .auto-style45 {
-            height: 48px;
-            width: 363px;
-            text-align: left;
+        .auto-style8 {
+            width: 334px;
+            height: 327px;
         }
-        .auto-style48 {
-            height: 48px;
-            text-align: right;
-            width: 260px;
-            font-size: large;
+        .auto-style9 {
+            height: 327px;
         }
-        .auto-style51 {
-            height: 48px;
-            width: 480px;
-            text-align: left;
-            font-size: large;
-            background-color: #FFCC66;
+        .auto-style11 {
+            width: 185px;
         }
-        .auto-style44 {
-            height: 53px;
-            font-size: large;
-            width: 401px;
-            text-align: right;
+        .auto-style12 {
+            width: 561px;
         }
-        .auto-style46 {
-            height: 53px;
-            font-size: large;
-            width: 363px;
-            text-align: left;
-        }
-        .auto-style49 {
-            height: 53px;
-            text-align: right;
-            width: 260px;
-            font-size: large;
-        }
-        .auto-style52 {
-            height: 53px;
-            text-align: left;
-            width: 480px;
-        }
-        .auto-style36 {
-            height: 55px;
-            font-size: large;
-            width: 401px;
-            text-align: right;
-        }
-        .auto-style47 {
-            height: 55px;
-            font-size: large;
-            width: 363px;
-            text-align: left;
-        }
-        .auto-style50 {
-            height: 55px;
-            text-align: right;
-            width: 260px;
-            font-size: large;
-        }
-        .auto-style10 {
-            height: 55px;
-            text-align: left;
-            width: 480px;
-        }
-        .auto-style57 {
-            height: 53px;
-            text-align: right;
-        }
-        .auto-style53 {
-            height: 53px;
-            font-size: large;
+        .auto-style14 {
+            width: 173px;
             text-align: center;
         }
-        .auto-style54 {
-            font-weight: bold;
-            font-size: medium;
-            margin-bottom: 0px;
-        }
-        .auto-style55 {
-            height: 53px;
+        .auto-style25 {
             text-align: center;
+            width: 185px;
+            height: 76px;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
         }
-        .auto-style56 {
-            font-size: medium;
+        .auto-style26 {
+            width: 561px;
+            height: 76px;
+        }
+        .auto-style27 {
+            text-align: center;
+            width: 173px;
+            height: 76px;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
+        .auto-style28 {
+            height: 76px;
+        }
+        .auto-style29 {
+            text-align: center;
+            width: 185px;
+            height: 82px;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
+        .auto-style30 {
+            width: 561px;
+            height: 82px;
+        }
+        .auto-style31 {
+            text-align: center;
+            width: 173px;
+            height: 82px;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
         }
         .auto-style32 {
+            height: 82px;
+        }
+        .newStyle8 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .auto-style33 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: large;
+        }
+        .newStyle9 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .newStyle10 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .newStyle11 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .newStyle12 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .newStyle13 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .newStyle14 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .newStyle15 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .newStyle16 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .newStyle17 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .newStyle18 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .auto-style34 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            color: #FF0000;
+        }
+        .auto-style35 {
             width: 100%;
-            height: 340px;
+            height: 101px;
+        }
+        .newStyle19 {
+            background-color: #CB853F;
+        }
+        .auto-style36 {
+            background-color: #CB853F;
+            height: 215px;
+        }
+        .auto-style37 {
+            background-color: #CB853F;
+            height: 215px;
+            text-align: center;
+        }
+        .auto-style38 {
+            text-align: right;
+        }
+        .auto-style39 {
+            text-align: left;
+        }
+        .newStyle20 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         }
         </style>
 </head>
-<body>
+<body style="height: 1010px">
     <form id="form1" runat="server">
-        <div>
-        <table class="auto-style32">
+        <table class="auto-style6">
             <tr>
-                <td class="auto-style33" colspan="4" style="background-color: #FFCC66">
-                    <table style="width:100%;">
+                <td class="auto-style37">
+                    <asp:ImageButton ID="ImageButton1" runat="server" Height="141px" ImageUrl="~/Models/images/anhlogo/3.png" Width="133px" />
+                </td>
+                <td class="auto-style36">
+                    <table class="auto-style35">
                         <tr>
-                            <td rowspan="3">&nbsp;</td>
                             <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td class="auto-style38"><strong>
+                                <asp:Button ID="btnDangXuat" runat="server" CssClass="auto-style34" Height="40px" Text="Đăng Xuất" Width="150px" />
+                                </strong></td>
                         </tr>
                         <tr>
-                            <td>
-                                <table style="width:100%;">
-                                    <tr>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                    </tr>
-                                </table>
-                            </td>
+                            <td class="auto-style4"><strong>
+                                <asp:LinkButton ID="lbtNhanVien" runat="server" CssClass="auto-style5">Nhân Viên</asp:LinkButton>
+                                </strong></td>
+                            <td class="auto-style4"><strong>
+                                <asp:LinkButton ID="lbtLoaiSP" runat="server" CssClass="auto-style5" OnClick="lbtLoaiSP_Click1">Loại Sản Phẩm</asp:LinkButton>
+                                </strong></td>
+                            <td class="auto-style4"><strong>
+                                <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style5">Sản Phẩm</asp:LinkButton>
+                                </strong></td>
+                            <td class="auto-style4"><strong>
+                                <asp:LinkButton ID="lbtHoaDon" runat="server" CssClass="auto-style5" OnClick="lbtHoaDon_Click1">Hóa Đơn</asp:LinkButton>
+                                </strong></td>
+                            <td class="auto-style4"><strong>
+                                <asp:LinkButton ID="lbtDoanhThu" runat="server" CssClass="auto-style5">Doanh Thu</asp:LinkButton>
+                                </strong></td>
+                            <td class="auto-style4">&nbsp;</td>
                         </tr>
                         <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
                             <td>&nbsp;</td>
                         </tr>
                     </table>
                 </td>
             </tr>
-            <tr>
-                <td class="auto-style42" style="background-color: #FFCC66"><span class="auto-style38">Mã đơn hàng</span></td>
-                <td class="auto-style45" style="background-color: #FFCC66">
-                    <asp:DropDownList ID="ddlMDH" runat="server" Height="24px" Width="251px">
-                    </asp:DropDownList>
-                </td>
-                <td class="auto-style48" style="background-color: #FFCC66">Mã khách hàng</td>
-                <td class="auto-style51">
-                    <asp:DropDownList ID="ddlMKH" runat="server" Height="24px" Width="251px">
-                    </asp:DropDownList>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style44" style="background-color: #FFCC66">Mã sản phẩm</td>
-                <td class="auto-style46" style="background-color: #FFCC66">
-                    <asp:DropDownList ID="ddlMSP" runat="server" Height="24px" Width="251px">
-                    </asp:DropDownList>
-                </td>
-                <td class="auto-style49" style="background-color: #FFCC66">Ngày</td>
-                <td class="auto-style52" style="background-color: #FFCC66">
-                    <asp:TextBox ID="txtNgay" runat="server" Height="19px" Width="241px"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style36" style="background-color: #FFCC66">Mã nhân viên</td>
-                <td class="auto-style47" style="background-color: #FFCC66">
-                    <asp:DropDownList ID="ddlMNV" runat="server" Height="24px" Width="251px">
-                    </asp:DropDownList>
-                </td>
-                <td class="auto-style50" style="background-color: #FFCC66">Giờ</td>
-                <td class="auto-style10" style="background-color: #FFCC66">
-                    <asp:TextBox ID="txtGio" runat="server" Height="19px" Width="241px"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style44" style="background-color: #FFCC66">Địa chỉ
-                    </td>
-                <td class="auto-style46" style="background-color: #FFCC66">
-                    <asp:TextBox ID="txtĐC" runat="server" Height="19px" Width="241px"></asp:TextBox>
-                </td>
-                <td class="auto-style57" style="background-color: #FFCC66" colspan="2">&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style53" style="background-color: #FFCC66" colspan="2"><strong>
-                    <asp:Button ID="btnDong" runat="server" CssClass="auto-style54" ForeColor="#FF3300" Height="35px" Text="Đóng" Width="133px" />
-                    </strong>
-                    </td>
-                <td class="auto-style55" style="background-color: #FFCC66" colspan="2">
-                    <asp:Button ID="btnTK" runat="server" CssClass="auto-style56" Height="33px" Text="Tìm kiếm" Width="92px" />
-                    <asp:Button ID="btnLM" runat="server" CssClass="auto-style56" Height="33px" Text="Làm mới" Width="92px" />
+            <tr style="background-color: #FFCC99">
+                <td class="auto-style8"></td>
+                <td class="auto-style9">
+                    <table class="auto-style7">
+                        <tr>
+                            <td class="auto-style29"><strong>Mã Đơn Hàng</strong></td>
+                            <td class="auto-style30">
+                                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="newStyle13" Height="30px" Width="450px">
+                                </asp:DropDownList>
+                            </td>
+                            <td class="auto-style31"><strong>Mã Khách Hàng</strong></td>
+                            <td class="auto-style32">
+                                <asp:DropDownList ID="DropDownList2" runat="server" CssClass="newStyle15" Height="30px" Width="450px">
+                                </asp:DropDownList>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style25"><strong>Mã Nhân Viên</strong></td>
+                            <td class="auto-style26">
+                                <asp:DropDownList ID="DropDownList3" runat="server" CssClass="newStyle14" Height="30px" Width="450px">
+                                </asp:DropDownList>
+                            </td>
+                            <td class="auto-style27"><strong>Ngày</strong></td>
+                            <td class="auto-style28">
+                                <asp:TextBox ID="TextBox1" runat="server" CssClass="newStyle16" Height="30px" Width="450px"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style11">&nbsp;</td>
+                            <td class="auto-style12">&nbsp;</td>
+                            <td class="auto-style14"><strong>
+                                <asp:Button ID="btnTimKiem" runat="server" CssClass="auto-style33" Height="35px" Text="Tìm Kiếm" Width="100px" />
+                                </strong></td>
+                            <td class="auto-style39"><strong>
+                                <asp:Button ID="btnLamMoi" runat="server" CssClass="auto-style33" Height="35px" Text="Làm Mới" Width="100px" />
+                                </strong></td>
+                        </tr>
+                    </table>
                 </td>
             </tr>
-            </table>
-        </div>
-        <asp:GridView ID="GrvHĐ" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="164px" Width="1814px">
-            <AlternatingRowStyle BackColor="White" />
-            <EditRowStyle BackColor="#2461BF" />
-            <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-            <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
-            <RowStyle BackColor="#EFF3FB" />
-            <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
-            <SortedAscendingCellStyle BackColor="#F5F7FB" />
-            <SortedAscendingHeaderStyle BackColor="#6D95E1" />
-            <SortedDescendingCellStyle BackColor="#E9EBEF" />
-            <SortedDescendingHeaderStyle BackColor="#4870BE" />
-        </asp:GridView>
+            <tr>
+                <td class="auto-style2" style="background-color: #FFCC99">&nbsp;</td>
+                <td style="background-color: #FFFFCC">
+                    <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" CssClass="newStyle17" ForeColor="Black" GridLines="Horizontal" Height="430px" Width="1470px">
+                        <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+                        <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+                        <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+                        <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                        <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+                        <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                        <SortedDescendingHeaderStyle BackColor="#242121" />
+                    </asp:GridView>
+                </td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>

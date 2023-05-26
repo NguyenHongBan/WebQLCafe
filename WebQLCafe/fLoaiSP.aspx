@@ -12,11 +12,6 @@
         .auto-style2 {
             text-align: center;
         }
-        .auto-style3 {
-            text-decoration: none;
-            font-size: x-large;
-            color: #400000;
-        }
         .auto-style4 {
             width: 334px;
             height: 215px;
@@ -49,6 +44,23 @@
             text-align: center;
             height: 80px;
         }
+        .auto-style34 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            color: #FF0000;
+        }
+        .auto-style35 {
+            text-align: right;
+        }
+        .newStyle1 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .auto-style36 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+            font-size: x-large;
+            color: #000000;
+        }
     </style>
 </head>
 <body style="height: 1010px">
@@ -67,25 +79,30 @@
                                 <td style="background-color: #CB853F; font-family: Arial;">&nbsp;</td>
                                 <td style="background-color: #CB853F; font-family: Arial;">&nbsp;</td>
                                 <td style="background-color: #CB853F; font-family: Arial;">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style2" style="background-color: #CB853F; font-family: Arial;"><strong>
-                                    <asp:LinkButton ID="lbtNhanVien" runat="server" CssClass="auto-style3" OnClick="lbtNhanVien_Click">Nhân Viên</asp:LinkButton>
-                                    </strong></td>
-                                <td class="auto-style2" style="background-color: #CB853F; font-family: Arial;"><strong>
-                                    <asp:LinkButton ID="lbtLoaiSP" runat="server" CssClass="auto-style3" OnClick="lbtLoaiSP_Click">Loại Sản Phẩm</asp:LinkButton>
-                                    </strong></td>
-                                <td class="auto-style2" style="background-color: #CB853F; font-family: Arial;"><strong>
-                                    <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style3" OnClick="lbtSanPham_Click">Sản Phẩm</asp:LinkButton>
-                                    </strong></td>
-                                <td class="auto-style2" style="background-color: #CB853F; font-family: Arial;"><strong>
-                                    <asp:LinkButton ID="lbtHoaDon" runat="server" CssClass="auto-style3" OnClick="lbtHoaDon_Click">Hóa Đơn</asp:LinkButton>
-                                    </strong></td>
-                                <td class="auto-style2" style="background-color: #CB853F; font-family: Arial;"><strong>
-                                    <asp:LinkButton ID="lbtDoanhThu" runat="server" CssClass="auto-style3" OnClick="lbtDoanhThu_Click">Doanh Thu</asp:LinkButton>
+                                <td style="background-color: #CB853F; font-family: Arial;" class="auto-style35"><strong>
+                                    <asp:Button ID="btnDangXuat" runat="server" CssClass="auto-style34" Height="40px" Text="Đăng Xuất" Width="150px" />
                                     </strong></td>
                             </tr>
                             <tr>
+                                <td class="auto-style2" style="background-color: #CB853F; font-family: Arial;"><strong>
+                                    <asp:LinkButton ID="lbtNhanVien" runat="server" CssClass="auto-style36" OnClick="lbtNhanVien_Click">Nhân Viên</asp:LinkButton>
+                                    </strong></td>
+                                <td class="auto-style2" style="background-color: #CB853F; font-family: Arial;"><strong>
+                                    <asp:LinkButton ID="lbtLoaiSP" runat="server" CssClass="auto-style36" OnClick="lbtLoaiSP_Click">Loại Sản Phẩm</asp:LinkButton>
+                                    </strong></td>
+                                <td class="auto-style2" style="background-color: #CB853F; font-family: Arial;"><strong>
+                                    <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style36" OnClick="lbtSanPham_Click">Sản Phẩm</asp:LinkButton>
+                                    </strong></td>
+                                <td class="auto-style2" style="background-color: #CB853F; font-family: Arial;"><strong>
+                                    <asp:LinkButton ID="lbtHoaDon" runat="server" CssClass="auto-style36" OnClick="lbtHoaDon_Click">Hóa Đơn</asp:LinkButton>
+                                    </strong></td>
+                                <td class="auto-style2" style="background-color: #CB853F; font-family: Arial;"><strong>
+                                    <asp:LinkButton ID="lbtDoanhThu" runat="server" CssClass="auto-style36" OnClick="lbtDoanhThu_Click">Doanh Thu</asp:LinkButton>
+                                    </strong></td>
+                                <td class="auto-style35" style="background-color: #CB853F; font-family: Arial;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #CB853F; font-family: Arial;">&nbsp;</td>
                                 <td style="background-color: #CB853F; font-family: Arial;">&nbsp;</td>
                                 <td style="background-color: #CB853F; font-family: Arial;">&nbsp;</td>
                                 <td style="background-color: #CB853F; font-family: Arial;">&nbsp;</td>
