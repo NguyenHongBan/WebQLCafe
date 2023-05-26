@@ -101,7 +101,7 @@
         }
         .auto-style57 {
             height: 53px;
-            text-align: right;
+            text-align: left;
         }
     </style>
 </head>
@@ -126,7 +126,7 @@
             </tr>
             <tr>
                 <td class="auto-style44" style="background-color: #FFCC66">Tên nhân viên</td>
-                <td class="auto-style46" style="background-color: #FFCC66">&nbsp;<asp:TextBox ID="txtTNV" runat="server" Width="209px"></asp:TextBox>
+                <td class="auto-style46" style="background-color: #FFCC66"><asp:TextBox ID="txtTNV" runat="server" Width="209px"></asp:TextBox>
                 </td>
                 <td class="auto-style49" style="background-color: #FFCC66"><span class="auto-style38"> Điện thoại</span></td>
                 <td class="auto-style52" style="background-color: #FFCC66">&nbsp;<asp:TextBox ID="txtSĐT" runat="server" Width="209px"></asp:TextBox>
@@ -134,7 +134,7 @@
             </tr>
             <tr>
                 <td class="auto-style36" style="background-color: #FFCC66">Ngày sinh</td>
-                <td class="auto-style47" style="background-color: #FFCC66">&nbsp;<asp:TextBox ID="txtNS" runat="server" Width="209px"></asp:TextBox>
+                <td class="auto-style47" style="background-color: #FFCC66"><asp:TextBox ID="txtNS" runat="server" Width="209px"></asp:TextBox>
                 </td>
                 <td class="auto-style50" style="background-color: #FFCC66"><span class="auto-style38"> Email</span></td>
                 <td class="auto-style10" style="background-color: #FFCC66">&nbsp;<asp:TextBox ID="txtEmail" runat="server" Width="209px"></asp:TextBox>
@@ -146,7 +146,9 @@
                 <td class="auto-style46" style="background-color: #FFCC66">
                     <asp:TextBox ID="txtĐC" runat="server" Width="209px"></asp:TextBox>
                 </td>
-                <td class="auto-style57" style="background-color: #FFCC66" colspan="2">&nbsp;</td>
+                <td class="auto-style57" style="background-color: #FFCC66" colspan="2">
+                    <asp:Label ID="lblThongbao" runat="server"></asp:Label>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style53" style="background-color: #FFCC66" colspan="2"><strong>
@@ -154,15 +156,17 @@
                     </strong>
                     </td>
                 <td class="auto-style55" style="background-color: #FFCC66" colspan="2">
-                    <asp:Button ID="btnThem" runat="server" CssClass="auto-style56" Height="33px" Text="Thêm" Width="92px" />
+                    <asp:Button ID="btnThem" runat="server" CssClass="auto-style56" Height="33px" Text="Thêm" Width="92px" OnClick="btnThem_Click"  />
                     <asp:Button ID="btnSua" runat="server" CssClass="auto-style56" Height="33px" Text="Sửa" Width="92px" />
-                    <asp:Button ID="btnXoa" runat="server" CssClass="auto-style56" Height="33px" Text="Xóa" Width="92px" />
-                    <asp:Button ID="btnReset" runat="server" CssClass="auto-style56" Height="33px" Text="Làm mới" Width="92px" />
-                </td>
+                    <asp:Button ID="btnXoa" runat="server" CssClass="auto-style56" Height="33px" Text="Xóa" Width="92px" OnClick="btnXoa_Click" />
+                    <asp:Button ID="btnReset" runat="server"  CssClass="auto-style56" Height="33px" Text="Làm mới" Width="92px" OnClick="btnReset_Click"   />
+               
+                    </td>
+
             </tr>
             <tr>
                 <td class="auto-style53" style="background-color: #FFFF66" colspan="4">
-                    <asp:GridView ID="GrvNhanVien" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="201px" Width="1606px">
+                    <asp:GridView ID="GrvNhanVien" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="201px" Width="384px" OnSelectedIndexChanged="GrvNhanVien_SelectedIndexChanged">
                         <AlternatingRowStyle BackColor="White" />
                         <EditRowStyle BackColor="#2461BF" />
                         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
