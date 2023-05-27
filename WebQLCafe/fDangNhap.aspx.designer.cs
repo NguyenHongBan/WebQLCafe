@@ -33,13 +33,13 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
 
         /// <summary>
-        /// txtNhanVien control.
+        /// txtMaNhanVien control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNhanVien;
+        protected global::System.Web.UI.WebControls.TextBox txtMaNhanVien;
 
         /// <summary>
         /// txtMK control.
@@ -67,15 +67,6 @@ namespace WebQLCafe
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox ckbAdmin;
-
-        /// <summary>
-        /// lblLoi control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLoi;
 
         /// <summary>
         /// btnDangNhap control.

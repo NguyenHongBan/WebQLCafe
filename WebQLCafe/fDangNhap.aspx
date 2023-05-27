@@ -148,7 +148,7 @@
                         <tr>
                             <td class="auto-style19"><strong style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Mã Nhân Viên</strong></td>
                             <td class="auto-style20">
-                                <asp:TextBox ID="txtNhanVien" runat="server" Height="35px" Width="420px"></asp:TextBox>
+                                <asp:TextBox ID="txtMaNhanVien" runat="server" Height="35px" Width="420px"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
@@ -168,12 +168,6 @@
                             <td class="auto-style22"><strong>
                                 <asp:CheckBox ID="ckbAdmin" runat="server" CssClass="auto-style24" Text="Quản lý" />
                                 </strong></td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style12">&nbsp;</td>
-                            <td class="auto-style22">
-                                <asp:Label ID="lblLoi" runat="server" CssClass="auto-style25" Text="Label"></asp:Label>
-                            </td>
                         </tr>
                         <tr>
                             <td colspan="2" class="auto-style22"><strong>

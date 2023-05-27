@@ -24,7 +24,12 @@ namespace WebQLCafe
 
         protected void btnDangNhap_Click(object sender, EventArgs e)
         {
-            DangNhap();
+            QLCaffe3Entities db = new QLCaffe3Entities();
+
+            if (txtMaNhanVien.Text == "")
+            {
+                Response.Write("<script language='JavaScript'> alert('Chưa nhập Mã Nhân Viên!'); </script>");
+            }
         }
     }
 }
