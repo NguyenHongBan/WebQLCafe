@@ -28,7 +28,54 @@ namespace WebQLCafe
 
             if (txtMaNhanVien.Text == "")
             {
-                Response.Write("<script language='JavaScript'> alert('Chưa nhập Mã Nhân Viên!'); </script>");
+
+                lblThongBao.Text = "Mã Nhân Viên đang trống";
+                txtMaNhanVien.Focus();
+
+            }
+            else if (txtMK.Text == "")
+            {
+                lblThongBao.Text = "Mật Khẩu đang trống";
+                txtMK.Focus();            }
+            else
+            {
+                var query1 = from a in db.NhanViens select a.MaNV;
+                
+                foreach(var a in query1)
+                {
+                    if (a == txtMaNhanVien.Text)
+                    {
+                        var query2 = from b in db.NhanViens where b.MaNV == a select b.MatKhau;
+                        foreach (var b in query2)
+                        {
+                            if (b == txtMK.Text)
+                            {
+                                var query3 = from c in db.NhanViens where c.MaNV == a select c.Quyen;
+                                foreach (var c in query3)
+                                {
+                                    if (c == "1")
+                                    {
+                                        Session.Abandon();
+                                        Response.Redirect("fNhanVien.aspx");
+                                    }
+                                    else if (c == "0")
+                                    {
+                                        Session.Abandon();
+                                        Response.Redirect("fLoaiSP_NVT.aspx");
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                lblThongBao.Text = "Mật Khẩu không chính xác!";
+                            }
+                        }
+                    }
+                    else
+                    {
+                        lblThongBao.Text = "Mã Nhân Viên không chính xác!";
+                    }
+                }
             }
         }
     }

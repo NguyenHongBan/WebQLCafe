@@ -60,13 +60,13 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.CheckBox ckbHienMK;
 
         /// <summary>
-        /// ckbAdmin control.
+        /// lblThongBao control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox ckbAdmin;
+        protected global::System.Web.UI.WebControls.Label lblThongBao;
 
         /// <summary>
         /// btnDangNhap control.

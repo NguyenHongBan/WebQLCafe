@@ -120,9 +120,16 @@
             font-size: large;
         }
         .auto-style25 {
+            color: #FF0000;
+        }
+        .newStyle6 {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-size: large;
-            color: #FF0000;
+        }
+        .auto-style26 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            font-weight: bold;
         }
 
 
@@ -148,13 +155,17 @@
                         <tr>
                             <td class="auto-style19"><strong style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Mã Nhân Viên</strong></td>
                             <td class="auto-style20">
-                                <asp:TextBox ID="txtMaNhanVien" runat="server" Height="35px" Width="420px"></asp:TextBox>
+                                <strong>
+                                <asp:TextBox ID="txtMaNhanVien" runat="server" Height="35px" Width="420px" CssClass="auto-style26"></asp:TextBox>
+                                </strong>
                             </td>
                         </tr>
                         <tr>
                             <td class="auto-style16"><strong style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Mật Khẩu</strong></td>
                             <td class="auto-style17">
-                                <asp:TextBox ID="txtMK" runat="server" Height="35px" Width="420px"></asp:TextBox>
+                                <strong>
+                                <asp:TextBox ID="txtMK" runat="server" Height="35px" Width="420px" CssClass="auto-style26"></asp:TextBox>
+                                </strong>
                             </td>
                         </tr>
                         <tr>
@@ -164,9 +175,9 @@
                                 </strong></td>
                         </tr>
                         <tr>
-                            <td class="auto-style12"><strong style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Đăng nhập với quyền</strong></td>
+                            <td class="auto-style12">&nbsp;</td>
                             <td class="auto-style22"><strong>
-                                <asp:CheckBox ID="ckbAdmin" runat="server" CssClass="auto-style24" Text="Quản lý" />
+                                <asp:Label ID="lblThongBao" runat="server" CssClass="auto-style25" Text="Thông báo"></asp:Label>
                                 </strong></td>
                         </tr>
                         <tr>
@@ -176,7 +187,7 @@
                         </tr>
                     </table>
                 </td>
-                <td class="auto-style11" style="background-color: #FFCC99"></td>
+                <td class="auto-style11" style="background-color: #FFCC99">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style4" style="background-color: #FFCC99">&nbsp;</td>
