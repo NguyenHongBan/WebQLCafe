@@ -21,11 +21,8 @@
         .auto-style4 {
             height: 215px;
         }
-        .auto-style5 {
-            width: 575px;
-        }
         .auto-style6 {
-            width: 330px;
+            width: 468px;
             text-align: center;
         }
         .auto-style7 {
@@ -35,28 +32,111 @@
             font-size: 14pt;
             font-weight: bold;
         }
+        .auto-style34 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            color: #FF0000;
+        }
+        .auto-style35 {
+            text-align: right;
+        }
+        .newStyle1 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: x-large;
+        }
+        .auto-style36 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: x-large;
+            text-decoration: none;
+            color: #000000;
+        }
+        .newStyle2 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: x-large;
+        }
+        .auto-style42 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+        .auto-style44 {
+            height: 44px;
+        }
+        .auto-style45 {
+            width: 100%;
+            height: 43px;
+        }
+        .auto-style46 {
+            height: 31px;
+        }
+        .auto-style47 {
+            width: 334px;
+            height: 401px;
+        }
+        .auto-style48 {
+            height: 401px;
+        }
+        .newStyle3 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
+        .auto-style49 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            text-align: center;
+        }
+        .newStyle4 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
+        .auto-style50 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            text-align: right;
+            width: 759px;
+        }
         </style>
     </head>
 <body style="height: 1010px">
     <form id="form1" runat="server">
         <table class="auto-style1">
             <tr>
-                <td class="auto-style2">
+                <td class="auto-style2" style="background-color: #CB853F">
                     <asp:Image ID="Image1" runat="server" Height="141px" Width="133px" ImageUrl="~/Models/images/anhlogo/3.png" />
                 </td>
-                <td class="auto-style4">
+                <td class="auto-style4" style="background-color: #CB853F">
                     <table style="width:100%;">
                         <tr>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td class="auto-style35"><strong>
+                                    <asp:Button ID="btnDangXuat" runat="server" CssClass="auto-style34" Height="40px" Text="Đăng Xuất" Width="150px" />
+                                    </strong></td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style7"><strong>
+                                <asp:LinkButton ID="lbtNhanVien" runat="server" CssClass="auto-style36" OnClick="lbtNhanVien_Click">Nhân Viên</asp:LinkButton>
+                                </strong></td>
+                            <td class="auto-style7"><strong>
+                                <asp:LinkButton ID="lbtLoaiSP" runat="server" CssClass="auto-style36">Loại Sản Phẩm</asp:LinkButton>
+                                </strong></td>
+                            <td class="auto-style7"><strong>
+                                <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style36">Sản Phẩm</asp:LinkButton>
+                                </strong></td>
+                            <td class="auto-style7"><strong>
+                                <asp:LinkButton ID="lbtHoaDon" runat="server" CssClass="auto-style36">Hóa Đơn</asp:LinkButton>
+                                </strong></td>
+                            <td class="auto-style7"><strong>
+                                <asp:LinkButton ID="lbtDoanhThu" runat="server" CssClass="auto-style36">Doanh Thu</asp:LinkButton>
+                                </strong></td>
+                            <td>&nbsp;</td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
-                        </tr>
-                        <tr>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
@@ -65,80 +145,85 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td>
+                <td class="auto-style47" style="background-color: #FFCC99"></td>
+                <td class="auto-style48" style="background-color: #FFCC99">
                     <table style="width:100%;">
                         <tr>
-                            <td class="auto-style7">Mã nhân viên</td>
-                            <td>
-                                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                            <td class="auto-style49"><strong>Mã nhân viên</strong></td>
+                            <td class="auto-style44">
+                                <asp:TextBox ID="txtMaNV" runat="server" Height="30px" Width="300px"></asp:TextBox>
                             </td>
-                            <td class="auto-style7">Mật khẩu</td>
-                            <td>
-                                <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style7">Tên nhân viên</td>
-                            <td>
-                                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-                            </td>
-                            <td class="auto-style7">Điện thoại</td>
-                            <td>
-                                <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                            <td class="auto-style49"><strong>Mật khẩu</strong></td>
+                            <td class="auto-style44">
+                                <asp:TextBox ID="txtMatKhau" runat="server" Height="30px" Width="300px"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
-                            <td class="auto-style7">Giới tính</td>
-                            <td>
-                                <asp:DropDownList ID="DropDownList1" runat="server">
+                            <td class="auto-style49"><strong>Tên nhân viên</strong></td>
+                            <td class="auto-style44">
+                                <asp:TextBox ID="txtTenNV" runat="server" Height="30px" Width="300px"></asp:TextBox>
+                            </td>
+                            <td class="auto-style49"><strong>Điện thoại</strong></td>
+                            <td class="auto-style44">
+                                <asp:TextBox ID="txtDienThoai" runat="server" Height="30px" Width="300px"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style49"><strong>Giới tính</strong></td>
+                            <td class="auto-style44">
+                                <asp:DropDownList ID="ddlGioTinh" runat="server" Height="30px" Width="300px">
                                 </asp:DropDownList>
                             </td>
-                            <td class="auto-style7">Email</td>
-                            <td>
-                                <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                            <td class="auto-style49"><strong>Email</strong></td>
+                            <td class="auto-style44">
+                                <asp:TextBox ID="txtEmail" runat="server" Height="30px" Width="300px"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
-                            <td class="auto-style7">Ngày sinh</td>
-                            <td>
-                                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                            <td class="auto-style49"><strong>Ngày sinh</strong></td>
+                            <td class="auto-style44">
+                                <asp:TextBox ID="txtNgaySinh" runat="server" Height="30px" Width="300px"></asp:TextBox>
                             </td>
-                            <td class="auto-style7">Quyền đăng nhập</td>
-                            <td>
-                                <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+                            <td class="auto-style49"><strong>Quyền đăng nhập</strong></td>
+                            <td class="auto-style44">
+                                <asp:DropDownList ID="ddlQuyenDN" runat="server" Height="30px" Width="300px">
+                                </asp:DropDownList>
                             </td>
                         </tr>
                         <tr>
-                            <td class="auto-style7">Địa chỉ</td>
-                            <td>
-                                <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                            <td class="auto-style49"><strong>Địa chỉ</strong></td>
+                            <td class="auto-style44">
+                                <asp:TextBox ID="txDiaChi" runat="server" Height="30px" Width="300px"></asp:TextBox>
                             </td>
-                            <td class="auto-style7">&nbsp;</td>
-                            <td>&nbsp;</td>
+                            <td class="auto-style49"></td>
+                            <td class="auto-style44"></td>
                         </tr>
                         <tr>
-                            <td class="auto-style7">&nbsp;</td>
+                            <td class="auto-style49">&nbsp;</td>
                             <td>&nbsp;</td>
-                            <td class="auto-style7">&nbsp;</td>
+                            <td class="auto-style49">&nbsp;</td>
                             <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                    <table class="auto-style45">
+                        <tr>
+                            <td class="auto-style50"><strong>Tìm kiếm theo mã nhân viên</strong></td>
+                            <td class="auto-style6">
+                                <asp:TextBox ID="txtTimKiem" runat="server" Height="30px" Width="350px"></asp:TextBox>
+                            </td>
+                            <td>
+                                <strong>
+                                <asp:Button ID="btnTimKiem" runat="server" CssClass="auto-style42" Height="35px" Text="Tìm Kiếm" Width="100px" />
+                                </strong>
+                            </td>
                         </tr>
                     </table>
                     <table style="width:100%;">
                         <tr>
-                            <td class="auto-style5">&nbsp;</td>
-                            <td class="auto-style6">Tìm kiếm theo mã nhân viên</td>
-                            <td>
-                                <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
-                            </td>
-                        </tr>
-                    </table>
-                    <table style="width:100%;">
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
+                            <td class="auto-style46"></td>
+                            <td class="auto-style46"></td>
+                            <td class="auto-style46"></td>
+                            <td class="auto-style46"></td>
                         </tr>
                         <tr>
                             <td class="auto-style7"><strong>
@@ -158,9 +243,9 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td>
-                    <asp:GridView ID="GridView1" runat="server">
+                <td class="auto-style3" style="background-color: #FFCC99">&nbsp;</td>
+                <td style="background-color: #FFFFCC">
+                    <asp:GridView ID="GridView1" runat="server" Height="348px" Width="1469px">
                     </asp:GridView>
                 </td>
             </tr>
