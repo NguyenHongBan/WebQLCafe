@@ -44,12 +44,6 @@
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-size: x-large;
         }
-        .auto-style36 {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            font-size: x-large;
-            text-decoration: none;
-            color: #000000;
-        }
         .newStyle2 {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-size: x-large;
@@ -94,6 +88,20 @@
             text-align: right;
             width: 759px;
         }
+        .newStyle5 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
+        .newStyle6 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: x-large;
+            font-weight: 700;
+            color: #000000;
+        }
+        .newStyle7 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: x-large;
+        }
         </style>
     </head>
 <body style="height: 1010px">
@@ -116,21 +124,13 @@
                                     </strong></td>
                         </tr>
                         <tr>
-                            <td class="auto-style7"><strong>
-                                <asp:LinkButton ID="lbtNhanVien" runat="server" CssClass="auto-style36" OnClick="lbtNhanVien_Click">Nhân Viên</asp:LinkButton>
-                                </strong></td>
-                            <td class="auto-style7"><strong>
-                                <asp:LinkButton ID="lbtLoaiSP" runat="server" CssClass="auto-style36">Loại Sản Phẩm</asp:LinkButton>
-                                </strong></td>
-                            <td class="auto-style7"><strong>
-                                <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style36">Sản Phẩm</asp:LinkButton>
-                                </strong></td>
-                            <td class="auto-style7"><strong>
-                                <asp:LinkButton ID="lbtHoaDon" runat="server" CssClass="auto-style36">Hóa Đơn</asp:LinkButton>
-                                </strong></td>
-                            <td class="auto-style7"><strong>
-                                <asp:LinkButton ID="lbtDoanhThu" runat="server" CssClass="auto-style36">Doanh Thu</asp:LinkButton>
-                                </strong></td>
+                            <td class="auto-style7">
+                                <asp:LinkButton ID="LinkButton1" runat="server">LinkButton</asp:LinkButton>
+                            </td>
+                            <td class="auto-style7">&nbsp;</td>
+                            <td class="auto-style7">&nbsp;</td>
+                            <td class="auto-style7">&nbsp;</td>
+                            <td class="auto-style7">&nbsp;</td>
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
