@@ -19,6 +19,11 @@ namespace WebQLCafe
             //}
         }
 
+        protected void lbtNhanVien_Click(object sender, EventArgs e)
+        {
+
+        }
+
         //protected void HienThiThongTinNhanVien()
         //{
         //    // Kết nối đến cơ sở dữ liệu
@@ -109,7 +114,7 @@ namespace WebQLCafe
         //        {
         //            // Thêm tham số cho câu lệnh SQL kiểm tra
         //            checkCommand.Parameters.AddWithValue("@MaNV", maNhanVien);
-                    
+
         //            int existingCount = (int)checkCommand.ExecuteScalar();
 
         //            if (existingCount > 0)
@@ -172,7 +177,7 @@ namespace WebQLCafe
 
         //}
 
-        
+
 
         //protected void btnXoa_Click(object sender, EventArgs e)
         //{
@@ -200,7 +205,7 @@ namespace WebQLCafe
         //            if (rowsAffected > 0)
         //            {
         //                // Xóa thành công
-                        
+
         //                string script = "alert('Xóa thành công!');";
         //                script += "window.location.href='fNhanVien.aspx';";
         //                ClientScript.RegisterStartupScript(this.GetType(), "Thông báo", script, true);
