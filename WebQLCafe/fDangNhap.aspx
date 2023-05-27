@@ -104,6 +104,19 @@
         }
 
 
+        .auto-style23 {
+            background-color: #3399FF;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            font-size: 16pt;
+            color: #FFFFFF;
+        }
+        .auto-style24 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
+
+
     </style>
 </head>
 <body style="height: 1010px">
@@ -138,18 +151,18 @@
                         <tr>
                             <td class="auto-style18"></td>
                             <td class="auto-style15"><strong>
-                                <asp:CheckBox ID="ckbHienMK" runat="server" CssClass="newStyle1" Text="Hiển thị mật khẩu" />
+                                <asp:CheckBox ID="ckbHienMK" runat="server" CssClass="auto-style24" Text="Hiển thị mật khẩu" />
                                 </strong></td>
                         </tr>
                         <tr>
                             <td class="auto-style12"><strong style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Đăng nhập với quyền</strong></td>
                             <td class="auto-style22"><strong>
-                                <asp:CheckBox ID="ckbAdmin" runat="server" CssClass="newStyle2" Text="Quản lý" />
+                                <asp:CheckBox ID="ckbAdmin" runat="server" CssClass="auto-style24" Text="Quản lý" />
                                 </strong></td>
                         </tr>
                         <tr>
                             <td colspan="2" class="auto-style22"><strong>
-                                <asp:Button ID="btnDangNhap" runat="server" CssClass="newStyle4" Text="Đăng Nhập" OnClick="btnDangNhap_Click" />
+                                <asp:Button ID="btnDangNhap" runat="server" CssClass="auto-style23" Text="Đăng Nhập" OnClick="btnDangNhap_Click" />
                                 </strong></td>
                         </tr>
                     </table>
