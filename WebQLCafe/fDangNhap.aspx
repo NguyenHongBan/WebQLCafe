@@ -115,6 +115,15 @@
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-size: large;
         }
+        .newStyle5 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
+        .auto-style25 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            color: #FF0000;
+        }
 
 
     </style>
@@ -159,6 +168,12 @@
                             <td class="auto-style22"><strong>
                                 <asp:CheckBox ID="ckbAdmin" runat="server" CssClass="auto-style24" Text="Quản lý" />
                                 </strong></td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style12">&nbsp;</td>
+                            <td class="auto-style22">
+                                <asp:Label ID="lblLoi" runat="server" CssClass="auto-style25" Text="Label"></asp:Label>
+                            </td>
                         </tr>
                         <tr>
                             <td colspan="2" class="auto-style22"><strong>
