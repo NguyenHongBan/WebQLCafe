@@ -122,19 +122,19 @@
                     </tr>
                     <tr>
                         <td class="auto-style2"><strong>
-                            <asp:LinkButton ID="lbtNhanVien" runat="server" CssClass="auto-style40">Nhân Viên</asp:LinkButton>
+                            <asp:LinkButton ID="lbtNhanVien" runat="server" CssClass="auto-style40" OnClick="lbtNhanVien_Click">Nhân Viên</asp:LinkButton>
                             </strong></td>
                         <td class="auto-style2"><strong>
-                            <asp:LinkButton ID="lbtLoaiSP" runat="server" CssClass="auto-style40">Loại Sản Phẩm</asp:LinkButton>
+                            <asp:LinkButton ID="lbtLoaiSP" runat="server" CssClass="auto-style40" OnClick="lbtLoaiSP_Click">Loại Sản Phẩm</asp:LinkButton>
                             </strong></td>
                         <td class="auto-style2"><strong>
-                            <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style40">Sản Phẩm</asp:LinkButton>
+                            <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style40" OnClick="lbtSanPham_Click">Sản Phẩm</asp:LinkButton>
                             </strong></td>
                         <td class="auto-style2"><strong>
-                            <asp:LinkButton ID="lbtHoaDon" runat="server" CssClass="auto-style40">Hóa Đơn</asp:LinkButton>
+                            <asp:LinkButton ID="lbtHoaDon" runat="server" CssClass="auto-style40" OnClick="lbtHoaDon_Click">Hóa Đơn</asp:LinkButton>
                             </strong></td>
                         <td class="auto-style2"><strong>
-                            <asp:LinkButton ID="lbtDoanhThu" runat="server" CssClass="auto-style40">Doanh Thu</asp:LinkButton>
+                            <asp:LinkButton ID="lbtDoanhThu" runat="server" CssClass="auto-style40" OnClick="lbtDoanhThu_Click">Doanh Thu</asp:LinkButton>
                             </strong></td>
                         <td>&nbsp;</td>
                     </tr>

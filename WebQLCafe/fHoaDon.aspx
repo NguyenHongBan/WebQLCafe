@@ -199,19 +199,19 @@
                         </tr>
                         <tr>
                             <td class="auto-style4"><strong>
-                                <asp:LinkButton ID="lbtNhanVien" runat="server" CssClass="auto-style5">Nhân Viên</asp:LinkButton>
+                                <asp:LinkButton ID="lbtNhanVien" runat="server" CssClass="auto-style5" OnClick="lbtNhanVien_Click1">Nhân Viên</asp:LinkButton>
                                 </strong></td>
                             <td class="auto-style4"><strong>
                                 <asp:LinkButton ID="lbtLoaiSP" runat="server" CssClass="auto-style5" OnClick="lbtLoaiSP_Click1">Loại Sản Phẩm</asp:LinkButton>
                                 </strong></td>
                             <td class="auto-style4"><strong>
-                                <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style5">Sản Phẩm</asp:LinkButton>
+                                <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style5" OnClick="lbtSanPham_Click">Sản Phẩm</asp:LinkButton>
                                 </strong></td>
                             <td class="auto-style4"><strong>
                                 <asp:LinkButton ID="lbtHoaDon" runat="server" CssClass="auto-style5" OnClick="lbtHoaDon_Click1">Hóa Đơn</asp:LinkButton>
                                 </strong></td>
                             <td class="auto-style4"><strong>
-                                <asp:LinkButton ID="lbtDoanhThu" runat="server" CssClass="auto-style5">Doanh Thu</asp:LinkButton>
+                                <asp:LinkButton ID="lbtDoanhThu" runat="server" CssClass="auto-style5" OnClick="lbtDoanhThu_Click">Doanh Thu</asp:LinkButton>
                                 </strong></td>
                             <td class="auto-style4">&nbsp;</td>
                         </tr>

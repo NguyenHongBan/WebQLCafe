@@ -83,7 +83,7 @@
         <table class="auto-style1">
             <tr style="background-color: #CB853F">
                 <td class="auto-style2">
-                    <asp:ImageButton ID="ImageButton1" runat="server" Height="141px" ImageUrl="~/Models/images/anhlogo/3.png" Width="133px" />
+                    <asp:ImageButton ID="ImageButton1" runat="server" Height="141px" ImageUrl="~/Models/images/anhlogo/3.png" Width="133px" OnClick="ImageButton1_Click" />
                 </td>
                 <td class="auto-style4">
                     <table class="auto-style39">
@@ -99,19 +99,19 @@
                         </tr>
                         <tr>
                             <td class="auto-style37"><strong>
-                                <asp:LinkButton ID="lbtNhanVien" runat="server" CssClass="auto-style36">Nhân Viên</asp:LinkButton>
+                                <asp:LinkButton ID="lbtNhanVien" runat="server" CssClass="auto-style36" OnClick="lbtNhanVien_Click">Nhân Viên</asp:LinkButton>
                                 </strong></td>
                             <td class="auto-style37"><strong>
-                                <asp:LinkButton ID="lbtLoaiSP" runat="server" CssClass="auto-style36">Loại Sản Phẩm</asp:LinkButton>
+                                <asp:LinkButton ID="lbtLoaiSP" runat="server" CssClass="auto-style36" OnClick="lbtLoaiSP_Click">Loại Sản Phẩm</asp:LinkButton>
                                 </strong></td>
                             <td class="auto-style37"><strong>
-                                <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style36">Sản Phẩm</asp:LinkButton>
+                                <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style36" OnClick="lbtSanPham_Click">Sản Phẩm</asp:LinkButton>
                                 </strong></td>
                             <td class="auto-style37"><strong>
-                                <asp:LinkButton ID="lbtHoaDon" runat="server" CssClass="auto-style36">Hóa Đơn</asp:LinkButton>
+                                <asp:LinkButton ID="lbtHoaDon" runat="server" CssClass="auto-style36" OnClick="lbtHoaDon_Click">Hóa Đơn</asp:LinkButton>
                                 </strong></td>
                             <td class="auto-style37"><strong>
-                                <asp:LinkButton ID="lbtDoanhThu" runat="server" CssClass="auto-style36">Doanh Thu</asp:LinkButton>
+                                <asp:LinkButton ID="lbtDoanhThu" runat="server" CssClass="auto-style36" OnClick="lbtDoanhThu_Click">Doanh Thu</asp:LinkButton>
                                 </strong></td>
                             <td>&nbsp;</td>
                         </tr>

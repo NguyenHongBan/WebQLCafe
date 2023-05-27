@@ -136,16 +136,16 @@
                                 </strong>
                             </td>
                             <td class="auto-style7"><strong>
-                                <asp:LinkButton ID="lbtLoaiSP" runat="server" CssClass="auto-style36">Loại Sản Phẩm</asp:LinkButton>
+                                <asp:LinkButton ID="lbtLoaiSP" runat="server" CssClass="auto-style36" OnClick="lbtLoaiSP_Click">Loại Sản Phẩm</asp:LinkButton>
                                 </strong></td>
                             <td class="auto-style7"><strong>
-                                <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style36">Sản Phẩm</asp:LinkButton>
+                                <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style36" OnClick="lbtSanPham_Click">Sản Phẩm</asp:LinkButton>
                                 </strong></td>
                             <td class="auto-style7"><strong>
-                                <asp:LinkButton ID="lbtHoaDon" runat="server" CssClass="auto-style36">Hóa Đơn</asp:LinkButton>
+                                <asp:LinkButton ID="lbtHoaDon" runat="server" CssClass="auto-style36" OnClick="lbtHoaDon_Click">Hóa Đơn</asp:LinkButton>
                                 </strong></td>
                             <td class="auto-style7"><strong>
-                                <asp:LinkButton ID="lbtDoanhThu" runat="server" CssClass="auto-style36">Doanh Thu</asp:LinkButton>
+                                <asp:LinkButton ID="lbtDoanhThu" runat="server" CssClass="auto-style36" OnClick="lbtDoanhThu_Click">Doanh Thu</asp:LinkButton>
                                 </strong></td>
                             <td>&nbsp;</td>
                         </tr>

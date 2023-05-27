@@ -79,7 +79,6 @@
     <Content Include="fSanPham_NVT.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Models\images\anhlogo\3.png" />
-    <Content Include="style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

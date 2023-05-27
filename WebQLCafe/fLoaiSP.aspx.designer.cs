@@ -87,31 +87,13 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.LinkButton lbtDoanhThu;
 
         /// <summary>
-        /// lblIDLoaiSP control.
+        /// txtIDLoai control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblIDLoaiSP;
-
-        /// <summary>
-        /// txtIDLoaiSP control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIDLoaiSP;
-
-        /// <summary>
-        /// lblTenLoai control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTenLoai;
+        protected global::System.Web.UI.WebControls.TextBox txtIDLoai;
 
         /// <summary>
         /// txtTenLoai control.
@@ -159,12 +141,12 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.Button btnLamMoi;
 
         /// <summary>
-        /// GridViewLoaiSP control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridViewLoaiSP;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }
