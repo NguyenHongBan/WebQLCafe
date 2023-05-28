@@ -77,6 +77,7 @@ namespace WebQLCafe
                     }
                 }
             }
+            Response.Redirect("fNhanVien.aspx");
         }
 
         protected void ckbHienMK_CheckedChanged1(object sender, EventArgs e)

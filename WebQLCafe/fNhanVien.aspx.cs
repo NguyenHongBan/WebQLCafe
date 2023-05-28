@@ -12,6 +12,7 @@ namespace WebQLCafe
 {
     public partial class fNhanVien : System.Web.UI.Page
     {
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -289,13 +290,56 @@ namespace WebQLCafe
             txtDienThoai.Text = grvNhanVien.Rows[selectedRowIndex].Cells[1].Text;
             txtEmail.Text = grvNhanVien.Rows[selectedRowIndex].Cells[1].Text;
             txtMatKhau.Text = grvNhanVien.Rows[selectedRowIndex].Cells[1].Text;
-            // Lấy giá trị từ cơ sở dữ liệu cho các trường dữ liệu khác
-            //...
-
+            
             // Làm mới lại GridView
             grvNhanVien.SelectedIndex = -1;
         }
+        protected void gvNhanVien_SelectedIndexChanged1(object sender, EventArgs e)
+        {
+            // Lấy chỉ mục của dòng được chọn
+            int selectedIndex = grvNhanVien.SelectedIndex;
 
-        
+            // Kiểm tra xem có dòng nào được chọn không
+           
+                // Lấy dòng được chọn từ GridView
+                GridViewRow selectedRow = grvNhanVien.Rows[selectedIndex];
+
+                // Lấy giá trị từ các ô trong dòng được chọn
+                string MaNV = selectedRow.Cells[1].Text;
+                string MatKhau= selectedRow.Cells[2].Text;
+                string TenNhanVien = selectedRow.Cells[3].Text;
+                string GioiTinh = selectedRow.Cells[4].Text;
+                string NgaySinh = selectedRow.Cells[5].Text;
+                string DienThoai = selectedRow.Cells[6].Text;
+                string EmailNV = selectedRow.Cells[7].Text;
+                
+                
+                // Đặt giá trị vào các ô nhập thông tin tương ứng
+                txtMaNV.Text = MaNV;
+                txtMatKhau.Text = MatKhau;
+                txtTenNV.Text = TenNhanVien;
+                ddlGioiTinh.Text = GioiTinh;
+                txtNgaySinh.Text = NgaySinh;
+                txtDienThoai.Text = DienThoai;
+                txtEmail.Text = EmailNV;
+               
+                
+                
+            }
+
+        protected void btnCapNhat_Click(object sender, EventArgs e)
+        {
+
+            
+           
+        }
+
+        protected void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("fDangNhap.aspx");
+        }
     }
-}
+       
+
+
+    }

@@ -36,6 +36,7 @@
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-weight: bold;
             color: #FF0000;
+            font-size: medium;
         }
         .auto-style35 {
             text-align: right;
@@ -51,6 +52,7 @@
         .auto-style42 {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-weight: bold;
+            font-size: medium;
         }
         .auto-style44 {
             height: 44px;
@@ -113,6 +115,9 @@
             font-weight: bold;
             margin-bottom: 0px;
         }
+        .auto-style52 {
+            font-size: medium;
+        }
         </style>
     </head>
 <body style="height: 1010px">
@@ -151,7 +156,7 @@
                                 <asp:LinkButton ID="lbtDoanhThu" runat="server" CssClass="auto-style36" OnClick="lbtDoanhThu_Click">Doanh Thu</asp:LinkButton>
                                 </strong></td>
                             <td class="auto-style7"><strong>
-                                    <asp:Button ID="btnDangXuat" runat="server" CssClass="auto-style34" Height="40px" Text="Đăng Xuất" Width="150px" />
+                                    <asp:Button ID="btnDangXuat" runat="server" CssClass="auto-style34" Height="40px" Text="Đăng Xuất" Width="150px" OnClick="btnDangXuat_Click" />
                                     </strong></td>
                         </tr>
                         <tr>
@@ -192,7 +197,7 @@
                         <tr>
                             <td class="auto-style49"><strong>Giới tính</strong></td>
                             <td class="auto-style44">
-                                <asp:DropDownList ID="ddlGioiTinh" runat="server" Height="30px" Width="300px">
+                                <asp:DropDownList ID="ddlGioiTinh" runat="server" Height="30px" Width="300px" CssClass="auto-style52">
                                     <asp:ListItem Value="True">Nam</asp:ListItem>
                                     <asp:ListItem Value="False">Nữ</asp:ListItem>
                                 </asp:DropDownList>
@@ -209,7 +214,7 @@
                             </td>
                             <td class="auto-style49"><strong>Quyền đăng nhập</strong></td>
                             <td class="auto-style44">
-                                <asp:DropDownList ID="ddlQuyenDN" runat="server" Height="30px" Width="300px">
+                                <asp:DropDownList ID="ddlQuyenDN" runat="server" Height="30px" Width="300px" CssClass="auto-style52">
                                     <asp:ListItem>Admin</asp:ListItem>
                                     <asp:ListItem>Nhân Viên</asp:ListItem>
                                 </asp:DropDownList>
@@ -255,7 +260,7 @@
                         <asp:Button ID="btnThem" runat="server" CssClass="auto-style51" Height="35px" Text="Thêm " Width="100px" OnClick="btnThem_Click"  />
                         </strong></td>
                             <td class="auto-style7"><strong>
-                        <asp:Button ID="btnCapNhat" runat="server" CssClass="auto-style8" Height="35px" Text="Cập nhật" Width="115px" />
+                        <asp:Button ID="btnCapNhat" runat="server" CssClass="auto-style8" Height="35px" Text="Cập nhật" Width="115px" OnClick="btnCapNhat_Click" />
                         </strong></td>
                             <td class="auto-style7"><strong>
                         <asp:Button ID="btnXoa" runat="server" CssClass="auto-style8" Height="35px" Text="Xóa" Width="100px" OnClick="btnXoa_Click" />
@@ -270,16 +275,18 @@
             <tr>
                 <td class="auto-style3" style="background-color: #FFCC99">&nbsp;</td>
                 <td style="background-color: #FFFFCC" class="auto-style7">
-                    <asp:GridView ID="grvNhanVien" runat="server" Height="348px" Width="1469px" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4">
-                        <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />
-                        <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="#FFFFCC" />
-                        <PagerStyle BackColor="#FFFFCC" ForeColor="#330099" HorizontalAlign="Center" />
-                        <RowStyle BackColor="White" ForeColor="#330099" />
-                        <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="#663399" />
-                        <SortedAscendingCellStyle BackColor="#FEFCEB" />
-                        <SortedAscendingHeaderStyle BackColor="#AF0101" />
-                        <SortedDescendingCellStyle BackColor="#F6F0C0" />
-                        <SortedDescendingHeaderStyle BackColor="#7E0000" />
+                    <asp:GridView ID="grvNhanVien" runat="server" Height="348px" Width="1469px" AutoGenerateColumns="False" CssClass="auto-style52" OnSelectedIndexChanged="gvNhanVien_SelectedIndexChanged1">
+                        <Columns>
+                            <asp:BoundField DataField="MaNV" HeaderText="Mã nhân viên" />
+                            <asp:BoundField DataField="TenNhanVien" HeaderText="Tên nhân viên" />
+                            <asp:BoundField DataField="GioiTinh" HeaderText="Giới tính" />
+                            <asp:BoundField DataField="NgaySinh" HeaderText="Ngày sinh" />
+                            <asp:BoundField DataField="DienThoai" HeaderText="Điện thoại" />
+                            <asp:BoundField DataField="EmailNV" HeaderText="Email" />
+                            <asp:BoundField DataField="DiaChi" HeaderText="Địa chỉ" />
+                            <asp:CommandField ShowSelectButton="True" SelectText="Chọn" />
+                        </Columns>
+                        
                     </asp:GridView>
                 </td>
             </tr>

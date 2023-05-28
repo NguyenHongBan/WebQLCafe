@@ -86,9 +86,7 @@
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
-                            <td class="auto-style35"><strong>
-                                    <asp:Button ID="btnDangXuat" runat="server" CssClass="auto-style34" Height="40px" Text="Đăng Xuất" Width="150px" />
-                                    </strong></td>
+                            <td class="auto-style35">&nbsp;</td>
                         </tr>
                         <tr>
                             <td class="auto-style41"><strong>
@@ -106,7 +104,9 @@
                             <td class="auto-style41"><strong>
                             <asp:LinkButton ID="lbtDoanhThu" runat="server" CssClass="auto-style40" OnClick="lbtDoanhThu_Click">Doanh Thu</asp:LinkButton>
                             </strong></td>
-                            <td>&nbsp;</td>
+                            <td class="auto-style41"><strong>
+                                    <asp:Button ID="btnDangXuat" runat="server" CssClass="auto-style34" Height="40px" Text="Đăng Xuất" Width="150px" OnClick="btnDangXuat_Click" />
+                                    </strong></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -149,16 +149,16 @@
                         </tr>
                         <tr>
                             <td class="auto-style41">
-                        <asp:Button ID="btnThem" runat="server" CssClass="auto-style8" Height="35px" Text="Thêm " Width="100px" />
+                        <asp:Button ID="btnThem" runat="server" CssClass="auto-style8" Height="35px" Text="Thêm " Width="100px" OnClick="btnThem_Click" />
                             </td>
                             <td class="auto-style41">
                         <asp:Button ID="btnSua" runat="server" CssClass="auto-style8" Height="35px" Text="Sửa" Width="100px" />
                             </td>
                             <td class="auto-style41">
-                        <asp:Button ID="btnXoa" runat="server" CssClass="auto-style8" Height="35px" Text="Xóa" Width="100px" />
+                        <asp:Button ID="btnXoa" runat="server" CssClass="auto-style8" Height="35px" Text="Xóa" Width="100px" OnClick="btnXoa_Click" />
                             </td>
                             <td class="auto-style41">
-                        <asp:Button ID="btnLamMoi" runat="server" CssClass="auto-style8" Height="35px" Text="Làm Mới" Width="100px" />
+                        <asp:Button ID="btnLamMoi" runat="server" CssClass="auto-style8" Height="35px" Text="Làm Mới" Width="100px" OnClick="btnLamMoi_Click" />
                             </td>
                         </tr>
                     </table>
@@ -166,8 +166,12 @@
             </tr>
             <tr>
                 <td class="auto-style4" style="background-color: #FFCC99">&nbsp;</td>
-                <td style="background-color: #FFFFCC">
-                    <asp:GridView ID="GridView1" runat="server" Height="480px" Width="1470px">
+                <td style="background-color: #FFFFCC" class="auto-style41">
+                    <asp:GridView ID="grvLoaiSP" runat="server" Height="480px" Width="1470px" AutoGenerateColumns="False">
+                        <Columns>
+                            <asp:BoundField DataField="IDLoai" HeaderText="Mã sản phẩm" />
+                            <asp:BoundField DataField="TenLoai" HeaderText="Tên sản phẩm" />
+                        </Columns>
                     </asp:GridView>
                 </td>
             </tr>
