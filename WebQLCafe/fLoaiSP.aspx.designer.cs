@@ -33,15 +33,6 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
 
         /// <summary>
-        /// btnDangXuat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDangXuat;
-
-        /// <summary>
         /// lbtNhanVien control.
         /// </summary>
         /// <remarks>
@@ -85,6 +76,15 @@ namespace WebQLCafe
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lbtDoanhThu;
+
+        /// <summary>
+        /// btnDangXuat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnDangXuat;
 
         /// <summary>
         /// txtIDLoai control.
@@ -141,12 +141,12 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.Button btnLamMoi;
 
         /// <summary>
-        /// GridView1 control.
+        /// grvLoaiSP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView grvLoaiSP;
     }
 }

@@ -43,5 +43,25 @@ namespace WebQLCafe
             Session.Abandon();
             Response.Redirect("fDoanhThu.aspx");
         }
+
+        protected void btnThem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnSua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnXoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnLamMoi_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

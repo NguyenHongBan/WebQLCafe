@@ -15,13 +15,6 @@ namespace WebQLCafe
             
         }
 
-        #region Ham
-        void DangNhap()
-        {
-
-        }
-        #endregion
-
         protected void btnDangNhap_Click(object sender, EventArgs e)
         {
             QLCaffe3Entities db = new QLCaffe3Entities();
@@ -77,6 +70,7 @@ namespace WebQLCafe
                     }
                 }
             }
+            Response.Redirect("fNhanVien.aspx");
         }
 
         protected void ckbHienMK_CheckedChanged1(object sender, EventArgs e)
