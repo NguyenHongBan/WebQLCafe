@@ -119,9 +119,6 @@
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-size: large;
         }
-        .auto-style25 {
-            color: #FF0000;
-        }
         .newStyle6 {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-size: large;
@@ -130,6 +127,15 @@
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-size: large;
             font-weight: bold;
+        }
+
+
+        .newStyle7 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .auto-style27 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: #FF0000;
         }
 
 
@@ -171,13 +177,13 @@
                         <tr>
                             <td class="auto-style18"></td>
                             <td class="auto-style15"><strong>
-                                <asp:CheckBox ID="ckbHienMK" runat="server" CssClass="auto-style24" Text="Hiển thị mật khẩu" />
+                                <asp:CheckBox ID="ckbHienMK" runat="server" CssClass="auto-style24" Text="Hiển thị mật khẩu" AutoPostBack="True" OnCheckedChanged="ckbHienMK_CheckedChanged1" />
                                 </strong></td>
                         </tr>
                         <tr>
                             <td class="auto-style12">&nbsp;</td>
                             <td class="auto-style22"><strong>
-                                <asp:Label ID="lblThongBao" runat="server" CssClass="auto-style25" Text="Thông báo"></asp:Label>
+                                <asp:Label ID="lblThongBao" runat="server" CssClass="auto-style27" Text="Thông báo"></asp:Label>
                                 </strong></td>
                         </tr>
                         <tr>

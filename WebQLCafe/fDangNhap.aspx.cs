@@ -78,5 +78,17 @@ namespace WebQLCafe
                 }
             }
         }
+
+        protected void ckbHienMK_CheckedChanged1(object sender, EventArgs e)
+        {
+            if (ckbHienMK.Checked)
+            {
+                txtMK.TextMode = TextBoxMode.SingleLine;
+            }
+            else
+            {
+                txtMK.TextMode = TextBoxMode.Password;
+            }
+        }
     }
 }
