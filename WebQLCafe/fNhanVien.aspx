@@ -108,6 +108,11 @@
             text-decoration: none;
             color: #000000;
         }
+        .auto-style51 {
+            font-size: 14pt;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
         </style>
     </head>
 <body style="height: 1010px">
@@ -125,9 +130,7 @@
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
-                            <td class="auto-style35"><strong>
-                                    <asp:Button ID="btnDangXuat" runat="server" CssClass="auto-style34" Height="40px" Text="Đăng Xuất" Width="150px" />
-                                    </strong></td>
+                            <td class="auto-style35">&nbsp;</td>
                         </tr>
                         <tr>
                             <td class="auto-style7">
@@ -147,7 +150,9 @@
                             <td class="auto-style7"><strong>
                                 <asp:LinkButton ID="lbtDoanhThu" runat="server" CssClass="auto-style36" OnClick="lbtDoanhThu_Click">Doanh Thu</asp:LinkButton>
                                 </strong></td>
-                            <td>&nbsp;</td>
+                            <td class="auto-style7"><strong>
+                                    <asp:Button ID="btnDangXuat" runat="server" CssClass="auto-style34" Height="40px" Text="Đăng Xuất" Width="150px" />
+                                    </strong></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -187,7 +192,9 @@
                         <tr>
                             <td class="auto-style49"><strong>Giới tính</strong></td>
                             <td class="auto-style44">
-                                <asp:DropDownList ID="ddlGioTinh" runat="server" Height="30px" Width="300px">
+                                <asp:DropDownList ID="ddlGioiTinh" runat="server" Height="30px" Width="300px">
+                                    <asp:ListItem Value="True">Nam</asp:ListItem>
+                                    <asp:ListItem Value="False">Nữ</asp:ListItem>
                                 </asp:DropDownList>
                             </td>
                             <td class="auto-style49"><strong>Email</strong></td>
@@ -203,13 +210,15 @@
                             <td class="auto-style49"><strong>Quyền đăng nhập</strong></td>
                             <td class="auto-style44">
                                 <asp:DropDownList ID="ddlQuyenDN" runat="server" Height="30px" Width="300px">
+                                    <asp:ListItem>Admin</asp:ListItem>
+                                    <asp:ListItem>Nhân Viên</asp:ListItem>
                                 </asp:DropDownList>
                             </td>
                         </tr>
                         <tr>
                             <td class="auto-style49"><strong>Địa chỉ</strong></td>
                             <td class="auto-style44">
-                                <asp:TextBox ID="txDiaChi" runat="server" Height="30px" Width="300px"></asp:TextBox>
+                                <asp:TextBox ID="txtDiaChi" runat="server" Height="30px" Width="300px"></asp:TextBox>
                             </td>
                             <td class="auto-style49"></td>
                             <td class="auto-style44"></td>
@@ -229,7 +238,7 @@
                             </td>
                             <td>
                                 <strong>
-                                <asp:Button ID="btnTimKiem" runat="server" CssClass="auto-style42" Height="35px" Text="Tìm Kiếm" Width="100px" />
+                                <asp:Button ID="btnTimKiem" runat="server" CssClass="auto-style42" Height="35px" Text="Tìm Kiếm" Width="100px" OnClick="btnTimKiem_Click" />
                                 </strong>
                             </td>
                         </tr>
@@ -243,16 +252,16 @@
                         </tr>
                         <tr>
                             <td class="auto-style7"><strong>
-                        <asp:Button ID="btnThem" runat="server" CssClass="auto-style8" Height="35px" Text="Thêm " Width="100px" />
+                        <asp:Button ID="btnThem" runat="server" CssClass="auto-style51" Height="35px" Text="Thêm " Width="100px" OnClick="btnThem_Click"  />
                         </strong></td>
                             <td class="auto-style7"><strong>
-                        <asp:Button ID="btnSua" runat="server" CssClass="auto-style8" Height="35px" Text="Sửa" Width="100px" />
+                        <asp:Button ID="btnCapNhat" runat="server" CssClass="auto-style8" Height="35px" Text="Cập nhật" Width="115px" />
                         </strong></td>
                             <td class="auto-style7"><strong>
-                        <asp:Button ID="btnXoa" runat="server" CssClass="auto-style8" Height="35px" Text="Xóa" Width="100px" />
+                        <asp:Button ID="btnXoa" runat="server" CssClass="auto-style8" Height="35px" Text="Xóa" Width="100px" OnClick="btnXoa_Click" />
                         </strong></td>
                             <td class="auto-style7"><strong>
-                        <asp:Button ID="btnLamMoi" runat="server" CssClass="auto-style8" Height="35px" Text="Làm Mới" Width="100px" />
+                        <asp:Button ID="btnLamMoi" runat="server" CssClass="auto-style8" Height="35px" Text="Làm Mới" Width="100px" OnClick="btnLamMoi_Click" />
                         </strong></td>
                         </tr>
                     </table>
@@ -260,8 +269,17 @@
             </tr>
             <tr>
                 <td class="auto-style3" style="background-color: #FFCC99">&nbsp;</td>
-                <td style="background-color: #FFFFCC">
-                    <asp:GridView ID="GridView1" runat="server" Height="348px" Width="1469px">
+                <td style="background-color: #FFFFCC" class="auto-style7">
+                    <asp:GridView ID="grvNhanVien" runat="server" Height="348px" Width="1469px" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4">
+                        <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />
+                        <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="#FFFFCC" />
+                        <PagerStyle BackColor="#FFFFCC" ForeColor="#330099" HorizontalAlign="Center" />
+                        <RowStyle BackColor="White" ForeColor="#330099" />
+                        <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="#663399" />
+                        <SortedAscendingCellStyle BackColor="#FEFCEB" />
+                        <SortedAscendingHeaderStyle BackColor="#AF0101" />
+                        <SortedDescendingCellStyle BackColor="#F6F0C0" />
+                        <SortedDescendingHeaderStyle BackColor="#7E0000" />
                     </asp:GridView>
                 </td>
             </tr>

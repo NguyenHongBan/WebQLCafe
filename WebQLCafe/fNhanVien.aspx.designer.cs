@@ -33,15 +33,6 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.Image Image1;
 
         /// <summary>
-        /// btnDangXuat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDangXuat;
-
-        /// <summary>
         /// lbtNhanVien control.
         /// </summary>
         /// <remarks>
@@ -87,6 +78,15 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.LinkButton lbtDoanhThu;
 
         /// <summary>
+        /// btnDangXuat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnDangXuat;
+
+        /// <summary>
         /// txtMaNV control.
         /// </summary>
         /// <remarks>
@@ -123,13 +123,13 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.TextBox txtDienThoai;
 
         /// <summary>
-        /// ddlGioTinh control.
+        /// ddlGioiTinh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlGioTinh;
+        protected global::System.Web.UI.WebControls.DropDownList ddlGioiTinh;
 
         /// <summary>
         /// txtEmail control.
@@ -159,13 +159,13 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.DropDownList ddlQuyenDN;
 
         /// <summary>
-        /// txDiaChi control.
+        /// txtDiaChi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txDiaChi;
+        protected global::System.Web.UI.WebControls.TextBox txtDiaChi;
 
         /// <summary>
         /// txtTimKiem control.
@@ -195,13 +195,13 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.Button btnThem;
 
         /// <summary>
-        /// btnSua control.
+        /// btnCapNhat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSua;
+        protected global::System.Web.UI.WebControls.Button btnCapNhat;
 
         /// <summary>
         /// btnXoa control.
@@ -222,12 +222,12 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.Button btnLamMoi;
 
         /// <summary>
-        /// GridView1 control.
+        /// grvNhanVien control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView grvNhanVien;
     }
 }
