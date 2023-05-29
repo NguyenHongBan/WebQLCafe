@@ -257,6 +257,7 @@
                         <asp:BoundField DataField="Soluong" HeaderText="Số lượng" SortExpression="Soluong" />
                         <asp:BoundField DataField="GiaBan" HeaderText="Giá bán" SortExpression="GiaBan" />
                         <asp:BoundField DataField="MoTa" HeaderText="Mô tả" SortExpression="MoTa" />
+                        <asp:CommandField SelectText="Chọn" ShowSelectButton="True" />
                     </Columns>
                 </asp:GridView>
                 </div>
