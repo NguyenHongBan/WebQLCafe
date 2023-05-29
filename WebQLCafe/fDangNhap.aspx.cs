@@ -46,12 +46,12 @@ namespace WebQLCafe
                                 var query3 = from c in db.NhanViens where c.MaNV == a select c.Quyen;
                                 foreach (var c in query3)
                                 {
-                                    if (c == "1")
+                                    if (c == "Quản lý")
                                     {
                                         Session.Abandon();
                                         Response.Redirect("fNhanVien.aspx");
                                     }
-                                    else if (c == "0")
+                                    else if (c == "Nhân viên")
                                     {
                                         Session.Abandon();
                                         Response.Redirect("fLoaiSP_NVT.aspx");

@@ -74,9 +74,9 @@
           <Property Name="Soluong" Type="int" />
           <Property Name="GiaBan" Type="varchar(max)" />
           <Property Name="MoTa" Type="nvarchar" MaxLength="200" />
-          <Property Name="Anh" Type="image" />
+          <Property Name="Anh" Type="varchar" MaxLength="100" />
         </EntityType>
-        <Association Name="FK__ChiTietDo__IDHoa__32E0915F">
+        <Association Name="FK__ChiTietDo__IDHoa__398D8EEE">
           <End Role="HoaDon" Type="Self.HoaDon" Multiplicity="1" />
           <End Role="ChiTietDonHang" Type="Self.ChiTietDonHang" Multiplicity="*" />
           <ReferentialConstraint>
@@ -88,7 +88,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ChiTietDo__IDSan__33D4B598">
+        <Association Name="FK__ChiTietDo__IDSan__3A81B327">
           <End Role="SanPham" Type="Self.SanPham" Multiplicity="1" />
           <End Role="ChiTietDonHang" Type="Self.ChiTietDonHang" Multiplicity="*" />
           <ReferentialConstraint>
@@ -100,7 +100,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__HoaDon__IDKhachH__2F10007B">
+        <Association Name="FK__HoaDon__IDKhachH__2D27B809">
           <End Role="KhachHang" Type="Self.KhachHang" Multiplicity="1" />
           <End Role="HoaDon" Type="Self.HoaDon" Multiplicity="*" />
           <ReferentialConstraint>
@@ -112,7 +112,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__HoaDon__MaNV__300424B4">
+        <Association Name="FK__HoaDon__MaNV__2E1BDC42">
           <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="0..1" />
           <End Role="HoaDon" Type="Self.HoaDon" Multiplicity="*" />
           <ReferentialConstraint>
@@ -124,7 +124,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__SanPham__IDLoai__267ABA7A">
+        <Association Name="FK__SanPham__IDLoai__36B12243">
           <End Role="LoaiSP" Type="Self.LoaiSP" Multiplicity="0..1" />
           <End Role="SanPham" Type="Self.SanPham" Multiplicity="*" />
           <ReferentialConstraint>
@@ -144,23 +144,23 @@
           <EntitySet Name="LoaiSP" EntityType="Self.LoaiSP" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="NhanVien" EntityType="Self.NhanVien" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SanPham" EntityType="Self.SanPham" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__ChiTietDo__IDHoa__32E0915F" Association="Self.FK__ChiTietDo__IDHoa__32E0915F">
+          <AssociationSet Name="FK__ChiTietDo__IDHoa__398D8EEE" Association="Self.FK__ChiTietDo__IDHoa__398D8EEE">
             <End Role="HoaDon" EntitySet="HoaDon" />
             <End Role="ChiTietDonHang" EntitySet="ChiTietDonHang" />
           </AssociationSet>
-          <AssociationSet Name="FK__ChiTietDo__IDSan__33D4B598" Association="Self.FK__ChiTietDo__IDSan__33D4B598">
+          <AssociationSet Name="FK__ChiTietDo__IDSan__3A81B327" Association="Self.FK__ChiTietDo__IDSan__3A81B327">
             <End Role="SanPham" EntitySet="SanPham" />
             <End Role="ChiTietDonHang" EntitySet="ChiTietDonHang" />
           </AssociationSet>
-          <AssociationSet Name="FK__HoaDon__IDKhachH__2F10007B" Association="Self.FK__HoaDon__IDKhachH__2F10007B">
+          <AssociationSet Name="FK__HoaDon__IDKhachH__2D27B809" Association="Self.FK__HoaDon__IDKhachH__2D27B809">
             <End Role="KhachHang" EntitySet="KhachHang" />
             <End Role="HoaDon" EntitySet="HoaDon" />
           </AssociationSet>
-          <AssociationSet Name="FK__HoaDon__MaNV__300424B4" Association="Self.FK__HoaDon__MaNV__300424B4">
+          <AssociationSet Name="FK__HoaDon__MaNV__2E1BDC42" Association="Self.FK__HoaDon__MaNV__2E1BDC42">
             <End Role="NhanVien" EntitySet="NhanVien" />
             <End Role="HoaDon" EntitySet="HoaDon" />
           </AssociationSet>
-          <AssociationSet Name="FK__SanPham__IDLoai__267ABA7A" Association="Self.FK__SanPham__IDLoai__267ABA7A">
+          <AssociationSet Name="FK__SanPham__IDLoai__36B12243" Association="Self.FK__SanPham__IDLoai__36B12243">
             <End Role="LoaiSP" EntitySet="LoaiSP" />
             <End Role="SanPham" EntitySet="SanPham" />
           </AssociationSet>
@@ -179,8 +179,8 @@
           <Property Name="IDSanPham" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="SoLuong" Type="Int32" />
           <Property Name="ThanhTien" Type="Double" />
-          <NavigationProperty Name="HoaDon" Relationship="Self.FK__ChiTietDo__IDHoa__32E0915F" FromRole="ChiTietDonHang" ToRole="HoaDon" />
-          <NavigationProperty Name="SanPham" Relationship="Self.FK__ChiTietDo__IDSan__33D4B598" FromRole="ChiTietDonHang" ToRole="SanPham" />
+          <NavigationProperty Name="HoaDon" Relationship="Self.FK__ChiTietDo__IDHoa__398D8EEE" FromRole="ChiTietDonHang" ToRole="HoaDon" />
+          <NavigationProperty Name="SanPham" Relationship="Self.FK__ChiTietDo__IDSan__3A81B327" FromRole="ChiTietDonHang" ToRole="SanPham" />
         </EntityType>
         <EntityType Name="DoanhThu">
           <Key>
@@ -198,9 +198,9 @@
           <Property Name="IDKhachHang" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="NgayDatHang" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="MaNV" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="ChiTietDonHangs" Relationship="Self.FK__ChiTietDo__IDHoa__32E0915F" FromRole="HoaDon" ToRole="ChiTietDonHang" />
-          <NavigationProperty Name="KhachHang" Relationship="Self.FK__HoaDon__IDKhachH__2F10007B" FromRole="HoaDon" ToRole="KhachHang" />
-          <NavigationProperty Name="NhanVien" Relationship="Self.FK__HoaDon__MaNV__300424B4" FromRole="HoaDon" ToRole="NhanVien" />
+          <NavigationProperty Name="ChiTietDonHangs" Relationship="Self.FK__ChiTietDo__IDHoa__398D8EEE" FromRole="HoaDon" ToRole="ChiTietDonHang" />
+          <NavigationProperty Name="KhachHang" Relationship="Self.FK__HoaDon__IDKhachH__2D27B809" FromRole="HoaDon" ToRole="KhachHang" />
+          <NavigationProperty Name="NhanVien" Relationship="Self.FK__HoaDon__MaNV__2E1BDC42" FromRole="HoaDon" ToRole="NhanVien" />
         </EntityType>
         <EntityType Name="KhachHang">
           <Key>
@@ -211,7 +211,7 @@
           <Property Name="NgayDangKy" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="DienThoaiKH" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="EmailKH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="HoaDons" Relationship="Self.FK__HoaDon__IDKhachH__2F10007B" FromRole="KhachHang" ToRole="HoaDon" />
+          <NavigationProperty Name="HoaDons" Relationship="Self.FK__HoaDon__IDKhachH__2D27B809" FromRole="KhachHang" ToRole="HoaDon" />
         </EntityType>
         <EntityType Name="LoaiSP">
           <Key>
@@ -219,7 +219,7 @@
           </Key>
           <Property Name="IDLoai" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="TenLoai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="SanPhams" Relationship="Self.FK__SanPham__IDLoai__267ABA7A" FromRole="LoaiSP" ToRole="SanPham" />
+          <NavigationProperty Name="SanPhams" Relationship="Self.FK__SanPham__IDLoai__36B12243" FromRole="LoaiSP" ToRole="SanPham" />
         </EntityType>
         <EntityType Name="NhanVien">
           <Key>
@@ -234,7 +234,7 @@
           <Property Name="EmailNV" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="DiaChi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Quyen" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="HoaDons" Relationship="Self.FK__HoaDon__MaNV__300424B4" FromRole="NhanVien" ToRole="HoaDon" />
+          <NavigationProperty Name="HoaDons" Relationship="Self.FK__HoaDon__MaNV__2E1BDC42" FromRole="NhanVien" ToRole="HoaDon" />
         </EntityType>
         <EntityType Name="SanPham">
           <Key>
@@ -247,11 +247,11 @@
           <Property Name="Soluong" Type="Int32" />
           <Property Name="GiaBan" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="MoTa" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
-          <Property Name="Anh" Type="Binary" MaxLength="Max" FixedLength="false" />
-          <NavigationProperty Name="ChiTietDonHangs" Relationship="Self.FK__ChiTietDo__IDSan__33D4B598" FromRole="SanPham" ToRole="ChiTietDonHang" />
-          <NavigationProperty Name="LoaiSP" Relationship="Self.FK__SanPham__IDLoai__267ABA7A" FromRole="SanPham" ToRole="LoaiSP" />
+          <Property Name="Anh" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ChiTietDonHangs" Relationship="Self.FK__ChiTietDo__IDSan__3A81B327" FromRole="SanPham" ToRole="ChiTietDonHang" />
+          <NavigationProperty Name="LoaiSP" Relationship="Self.FK__SanPham__IDLoai__36B12243" FromRole="SanPham" ToRole="LoaiSP" />
         </EntityType>
-        <Association Name="FK__ChiTietDo__IDHoa__32E0915F">
+        <Association Name="FK__ChiTietDo__IDHoa__398D8EEE">
           <End Role="HoaDon" Type="Self.HoaDon" Multiplicity="1" />
           <End Role="ChiTietDonHang" Type="Self.ChiTietDonHang" Multiplicity="*" />
           <ReferentialConstraint>
@@ -263,7 +263,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ChiTietDo__IDSan__33D4B598">
+        <Association Name="FK__ChiTietDo__IDSan__3A81B327">
           <End Role="SanPham" Type="Self.SanPham" Multiplicity="1" />
           <End Role="ChiTietDonHang" Type="Self.ChiTietDonHang" Multiplicity="*" />
           <ReferentialConstraint>
@@ -275,7 +275,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__HoaDon__IDKhachH__2F10007B">
+        <Association Name="FK__HoaDon__IDKhachH__2D27B809">
           <End Role="KhachHang" Type="Self.KhachHang" Multiplicity="1" />
           <End Role="HoaDon" Type="Self.HoaDon" Multiplicity="*" />
           <ReferentialConstraint>
@@ -287,7 +287,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__HoaDon__MaNV__300424B4">
+        <Association Name="FK__HoaDon__MaNV__2E1BDC42">
           <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="0..1" />
           <End Role="HoaDon" Type="Self.HoaDon" Multiplicity="*" />
           <ReferentialConstraint>
@@ -299,7 +299,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__SanPham__IDLoai__267ABA7A">
+        <Association Name="FK__SanPham__IDLoai__36B12243">
           <End Role="LoaiSP" Type="Self.LoaiSP" Multiplicity="0..1" />
           <End Role="SanPham" Type="Self.SanPham" Multiplicity="*" />
           <ReferentialConstraint>
@@ -319,23 +319,23 @@
           <EntitySet Name="LoaiSPs" EntityType="Self.LoaiSP" />
           <EntitySet Name="NhanViens" EntityType="Self.NhanVien" />
           <EntitySet Name="SanPhams" EntityType="Self.SanPham" />
-          <AssociationSet Name="FK__ChiTietDo__IDHoa__32E0915F" Association="Self.FK__ChiTietDo__IDHoa__32E0915F">
+          <AssociationSet Name="FK__ChiTietDo__IDHoa__398D8EEE" Association="Self.FK__ChiTietDo__IDHoa__398D8EEE">
             <End Role="HoaDon" EntitySet="HoaDons" />
             <End Role="ChiTietDonHang" EntitySet="ChiTietDonHangs" />
           </AssociationSet>
-          <AssociationSet Name="FK__ChiTietDo__IDSan__33D4B598" Association="Self.FK__ChiTietDo__IDSan__33D4B598">
+          <AssociationSet Name="FK__ChiTietDo__IDSan__3A81B327" Association="Self.FK__ChiTietDo__IDSan__3A81B327">
             <End Role="SanPham" EntitySet="SanPhams" />
             <End Role="ChiTietDonHang" EntitySet="ChiTietDonHangs" />
           </AssociationSet>
-          <AssociationSet Name="FK__HoaDon__IDKhachH__2F10007B" Association="Self.FK__HoaDon__IDKhachH__2F10007B">
+          <AssociationSet Name="FK__HoaDon__IDKhachH__2D27B809" Association="Self.FK__HoaDon__IDKhachH__2D27B809">
             <End Role="KhachHang" EntitySet="KhachHangs" />
             <End Role="HoaDon" EntitySet="HoaDons" />
           </AssociationSet>
-          <AssociationSet Name="FK__HoaDon__MaNV__300424B4" Association="Self.FK__HoaDon__MaNV__300424B4">
+          <AssociationSet Name="FK__HoaDon__MaNV__2E1BDC42" Association="Self.FK__HoaDon__MaNV__2E1BDC42">
             <End Role="NhanVien" EntitySet="NhanViens" />
             <End Role="HoaDon" EntitySet="HoaDons" />
           </AssociationSet>
-          <AssociationSet Name="FK__SanPham__IDLoai__267ABA7A" Association="Self.FK__SanPham__IDLoai__267ABA7A">
+          <AssociationSet Name="FK__SanPham__IDLoai__36B12243" Association="Self.FK__SanPham__IDLoai__36B12243">
             <End Role="LoaiSP" EntitySet="LoaiSPs" />
             <End Role="SanPham" EntitySet="SanPhams" />
           </AssociationSet>

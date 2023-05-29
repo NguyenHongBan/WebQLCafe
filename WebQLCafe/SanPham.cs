@@ -27,7 +27,7 @@ namespace WebQLCafe
         public Nullable<int> Soluong { get; set; }
         public string GiaBan { get; set; }
         public string MoTa { get; set; }
-        public byte[] Anh { get; set; }
+        public string Anh { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; }
