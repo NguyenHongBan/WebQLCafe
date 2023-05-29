@@ -127,13 +127,13 @@
                             </tr>
                             <tr>
                                 <td class="auto-style39"><strong>
-                                    <asp:LinkButton ID="lbtLoaiSP" runat="server" CssClass="auto-style37">Loại Sản Phẩm</asp:LinkButton>
+                                    <asp:LinkButton ID="lbtLoaiSP" runat="server" CssClass="auto-style37" OnClick="lbtLoaiSP_Click">Loại Sản Phẩm</asp:LinkButton>
                                     </strong></td>
                                 <td class="auto-style36"><strong>
-                                    <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style37">Sản Phẩm</asp:LinkButton>
+                                    <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style37" OnClick="lbtSanPham_Click">Sản Phẩm</asp:LinkButton>
                                     </strong></td>
                                 <td class="auto-style36"><strong>
-                                    <asp:LinkButton ID="lbtHoaDon" runat="server" CssClass="auto-style37">Hóa Đơn</asp:LinkButton>
+                                    <asp:LinkButton ID="lbtHoaDon" runat="server" CssClass="auto-style37" OnClick="lbtHoaDon_Click">Hóa Đơn</asp:LinkButton>
                                     </strong></td>
                                 <td>&nbsp;</td>
                             </tr>

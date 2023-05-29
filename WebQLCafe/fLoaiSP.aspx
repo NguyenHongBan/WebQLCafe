@@ -171,6 +171,7 @@
                         <Columns>
                             <asp:BoundField DataField="IDLoai" HeaderText="Mã sản phẩm" />
                             <asp:BoundField DataField="TenLoai" HeaderText="Tên sản phẩm" />
+                            <asp:CommandField SelectText="Chọn" ShowSelectButton="True" />
                         </Columns>
                     </asp:GridView>
                 </td>
