@@ -247,18 +247,21 @@
         <tr>
             <td class="auto-style38" style="background-color: #FFCC99">&nbsp;</td>
             <td style="background-color: #FFFFCC">
-                <asp:GridView ID="GridView1" runat="server" Height="290px" Width="1471px" AutoGenerateColumns="False" DataKeyNames="IDSanPham" DataSourceID="SqlDataSource1">
-                    <Columns>
-                        <asp:BoundField DataField="IDSanPham" HeaderText="IDSanPham" ReadOnly="True" SortExpression="IDSanPham" />
-                        <asp:BoundField DataField="TenSanPham" HeaderText="TenSanPham" SortExpression="TenSanPham" />
-                        <asp:BoundField DataField="IDLoai" HeaderText="IDLoai" SortExpression="IDLoai" />
-                        <asp:BoundField DataField="KichCo" HeaderText="KichCo" SortExpression="KichCo" />
-                        <asp:BoundField DataField="Soluong" HeaderText="Soluong" SortExpression="Soluong" />
-                        <asp:BoundField DataField="GiaBan" HeaderText="GiaBan" SortExpression="GiaBan" />
-                        <asp:BoundField DataField="MoTa" HeaderText="MoTa" SortExpression="MoTa" />
-                    </Columns>
-                </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString %>" SelectCommand="SELECT * FROM [SanPham]"></asp:SqlDataSource>
+                <div class="auto-style2">
+                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IDSanPham" DataSourceID="sqlSanPham" Height="297px" Width="1469px">
+                        <Columns>
+                            <asp:BoundField DataField="IDSanPham" HeaderText="IDSanPham" ReadOnly="True" SortExpression="IDSanPham" />
+                            <asp:BoundField DataField="TenSanPham" HeaderText="TenSanPham" SortExpression="TenSanPham" />
+                            <asp:BoundField DataField="IDLoai" HeaderText="IDLoai" SortExpression="IDLoai" />
+                            <asp:BoundField DataField="KichCo" HeaderText="KichCo" SortExpression="KichCo" />
+                            <asp:BoundField DataField="Soluong" HeaderText="Soluong" SortExpression="Soluong" />
+                            <asp:BoundField DataField="GiaBan" HeaderText="GiaBan" SortExpression="GiaBan" />
+                            <asp:BoundField DataField="MoTa" HeaderText="MoTa" SortExpression="MoTa" />
+                            <asp:CommandField ShowSelectButton="True" />
+                        </Columns>
+                    </asp:GridView>
+                    <asp:SqlDataSource ID="sqlSanPham" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString %>" SelectCommand="SELECT * FROM [SanPham]"></asp:SqlDataSource>
+                </div>
             </td>
         </tr>
     </table>
