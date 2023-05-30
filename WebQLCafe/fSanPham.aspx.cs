@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.IO;
+using System.Data.Entity;
 
 namespace WebQLCafe
 {
@@ -114,29 +115,84 @@ namespace WebQLCafe
 
                     db.SanPhams.Add(sanPham);
                     db.SaveChanges();
+                    lblThongbao.Text = "Đã Thêm thành công";
                     GridViewSanPham.DataBind();
                 }
             }   
         }
 
+        private SanPham GetSanPham(string maSanPham)
+        {
+            using (QLCaffe3Entities db = new QLCaffe3Entities())
+            {
+                return db.SanPhams.FirstOrDefault(sp => sp.IDSanPham == maSanPham);
+            }
+        }
+
         protected void btnSua_Click(object sender, EventArgs e)
         {
+            string maSP = txtMaSP.Text;
+            SanPham sanPham = GetSanPham(maSP);
+            if (sanPham != null)
+            {
+                sanPham.TenSanPham = txtTenSP.Text;
+                sanPham.IDLoai = ddlLoaiSP.SelectedValue;
+                sanPham.KichCo = txtKichCo.Text;
+                sanPham.Soluong = int.Parse(txtSoLuong.Text);
+                sanPham.GiaBan = txtGiaBan.Text;
+                sanPham.MoTa = txtMota.Text;
 
+                if (fulHinhAnh.HasFile)
+                {
+                    string fileName = Path.GetFileName(fulHinhAnh.FileName);
+                    string filePath = Server.MapPath("~/Images/" + fileName);
+                    fulHinhAnh.SaveAs(fileName);
+                    sanPham.Anh = fileName;
+                }
+                using (QLCaffe3Entities db = new QLCaffe3Entities())
+                {
+                    db.Entry(sanPham).State = EntityState.Modified;
+                    db.SaveChanges();
+                    lblThongbao.Text = "Đã Sửa thông tin thành công";
+                }
+                GridViewSanPham.DataBind();
+            }
         }
 
         protected void btnXoa_Click(object sender, EventArgs e)
         {
-
+            string maSanPham = txtMaSP.Text;
+            using (QLCaffe3Entities db = new QLCaffe3Entities())
+            {
+                SanPham sanPham = db.SanPhams.FirstOrDefault(sp => sp.IDSanPham == maSanPham);
+                if (sanPham != null)
+                {
+                    db.SanPhams.Remove(sanPham);
+                    db.SaveChanges();
+                    lblThongbao.Text = "Đã xóa thành công";
+                    GridViewSanPham.DataBind();
+                    txtMaSP.Text = string.Empty;
+                    txtTenSP.Text = string.Empty;
+                    ddlLoaiSP.SelectedIndex = 0;
+                    txtKichCo.Text = string.Empty;
+                    txtSoLuong.Text = string.Empty;
+                    txtGiaBan.Text = string.Empty;
+                    txtMota.Text = string.Empty;
+                    fulHinhAnh.Attributes.Clear();
+                }
+            }
         }
 
         protected void btnLamMoi_Click(object sender, EventArgs e)
         {
-
-        }
-
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            txtMaSP.Text = string.Empty;
+            txtTenSP.Text = string.Empty;
+            ddlLoaiSP.SelectedIndex = 0;
+            txtKichCo.Text = string.Empty;
+            txtSoLuong.Text = string.Empty;
+            txtGiaBan.Text = string.Empty;
+            txtMota.Text = string.Empty;
+            fulHinhAnh.Attributes.Clear();
         }
 
         protected void GridViewSanPham_SelectedIndexChanged(object sender, EventArgs e)
