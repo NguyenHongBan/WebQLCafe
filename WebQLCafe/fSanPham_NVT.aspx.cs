@@ -68,7 +68,7 @@ namespace WebQLCafe
                     string filePath = Path.Combine(directoryPath, fileName);
                     fulHinhAnh.PostedFile.SaveAs(filePath);
 
-                    using (QLCaffe3Entities db = new QLCaffe3Entities())
+                    using (QLCaffe3Entities db1 = new QLCaffe3Entities())
                     {
                         SanPham sanPham = new SanPham
                         {
@@ -82,8 +82,8 @@ namespace WebQLCafe
                             Anh = fileName
                         };
 
-                        db.SanPhams.Add(sanPham);
-                        db.SaveChanges();
+                        db1.SanPhams.Add(sanPham);
+                        db1.SaveChanges();
                         lblThongbao.Text = "Đã Thêm thành công";
                         GridViewSanPhamNVT.DataBind();
                     }

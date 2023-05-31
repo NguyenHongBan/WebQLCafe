@@ -186,6 +186,15 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.Button btnTimKiem;
 
         /// <summary>
+        /// lblThongbao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblThongbao;
+
+        /// <summary>
         /// btnThem control.
         /// </summary>
         /// <remarks>
@@ -195,13 +204,13 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.Button btnThem;
 
         /// <summary>
-        /// btnCapNhat control.
+        /// btnSua control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCapNhat;
+        protected global::System.Web.UI.WebControls.Button btnSua;
 
         /// <summary>
         /// btnXoa control.
@@ -229,5 +238,14 @@ namespace WebQLCafe
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView grvNhanVien;
+
+        /// <summary>
+        /// SqlDataSourceNV control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceNV;
     }
 }
