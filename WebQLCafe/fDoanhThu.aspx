@@ -149,7 +149,7 @@
                         <tr>
                             <td class="auto-style41">&nbsp;</td>
                             <td><strong>
-                                <asp:Button ID="btnTimKiem" runat="server" CssClass="auto-style42" Height="35px" Text="Tìm Kiếm" Width="100px" />
+                                <asp:Button ID="btnTimKiem" runat="server" CssClass="auto-style42" Height="35px" Text="Tìm Kiếm" Width="100px" OnClick="btnTimKiem_Click" />
                                 </strong></td>
                         </tr>
                     </table>

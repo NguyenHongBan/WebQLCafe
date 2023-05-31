@@ -191,16 +191,5 @@
                     </table>
                 </td>
                 <td style="background-color: #FFFFCC" class="auto-style37">
-                    <asp:GridView ID="GridViewLoaiSPNVT" runat="server" Height="551px" Width="1469px" AutoGenerateColumns="False" OnSelectedIndexChanged="GridViewLoaiSPNVT_SelectedIndexChanged">
-                        <Columns>
-                            <asp:BoundField HeaderText="ID loại sản phẩm" />
-                            <asp:BoundField HeaderText="Tên loại" />
-                            <asp:CommandField SelectText="Chọn" ShowSelectButton="True" />
-                        </Columns>
+                    <asp:GridView ID="GridViewLoaiSP" runat="server" Height="550px" Width="1468px">
                     </asp:GridView>
-                </td>
-            </tr>
-        </table>
-    </form>
-    </body>
-</html>

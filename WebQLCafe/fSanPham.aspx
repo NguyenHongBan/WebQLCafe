@@ -247,7 +247,9 @@
             <td class="auto-style38" style="background-color: #FFCC99">&nbsp;</td>
             <td style="background-color: #FFFFCC">
                 <div class="auto-style2">
-                    <asp:GridView ID="GridViewSanPham" runat="server" AutoGenerateColumns="False" DataKeyNames="IDSanPham" DataSourceID="SqlDataSource1" Height="297px" Width="1469px" OnSelectedIndexChanged="GridViewSanPham_SelectedIndexChanged">
+                </div>
+                    <div class="auto-style2">
+                    <asp:GridView ID="GridViewSanPham" runat="server" AutoGenerateColumns="False" DataKeyNames="IDSanPham" DataSourceID="SqlDataSourceSP" Height="282px" Width="1468px" OnSelectedIndexChanged="GridViewSanPham_SelectedIndexChanged">
                         <Columns>
                             <asp:CommandField ShowSelectButton="True" />
                             <asp:BoundField DataField="IDSanPham" HeaderText="IDSanPham" ReadOnly="True" SortExpression="IDSanPham" />
@@ -260,8 +262,8 @@
                             <asp:BoundField DataField="Anh" HeaderText="Anh" SortExpression="Anh" />
                         </Columns>
                     </asp:GridView>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString2 %>" SelectCommand="SELECT * FROM [SanPham]"></asp:SqlDataSource>
-                </div>
+                    </div>
+                    <asp:SqlDataSource ID="SqlDataSourceSP" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString2 %>" SelectCommand="SELECT * FROM [SanPham]"></asp:SqlDataSource>
             </td>
         </tr>
     </table>

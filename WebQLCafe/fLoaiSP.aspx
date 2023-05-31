@@ -69,6 +69,15 @@
         .auto-style45 {
             height: 36px;
         }
+        .auto-style53 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            color: #FF0000;
+        }
+        .auto-style54 {
+            height: 36px;
+            text-align: center;
+        }
     </style>
 </head>
 <body style="height: 1010px">
@@ -143,8 +152,9 @@
                     <table style="width:100%;">
                         <tr>
                             <td class="auto-style45"></td>
-                            <td class="auto-style45"></td>
-                            <td class="auto-style45"></td>
+                            <td class="auto-style54" colspan="2"><strong>
+                            <asp:Label ID="lblThongbao" runat="server" CssClass="auto-style53" Text="Thông báo"></asp:Label>
+                            </strong></td>
                             <td class="auto-style45"></td>
                         </tr>
                         <tr>
@@ -152,7 +162,7 @@
                         <asp:Button ID="btnThem" runat="server" CssClass="auto-style8" Height="35px" Text="Thêm " Width="100px" OnClick="btnThem_Click" />
                             </td>
                             <td class="auto-style41">
-                        <asp:Button ID="btnSua" runat="server" CssClass="auto-style8" Height="35px" Text="Sửa" Width="100px" />
+                        <asp:Button ID="btnSua" runat="server" CssClass="auto-style8" Height="35px" Text="Sửa" Width="100px" OnClick="btnSua_Click" />
                             </td>
                             <td class="auto-style41">
                         <asp:Button ID="btnXoa" runat="server" CssClass="auto-style8" Height="35px" Text="Xóa" Width="100px" OnClick="btnXoa_Click" />
@@ -167,13 +177,14 @@
             <tr>
                 <td class="auto-style4" style="background-color: #FFCC99">&nbsp;</td>
                 <td style="background-color: #FFFFCC" class="auto-style41">
-                    <asp:GridView ID="grvLoaiSP" runat="server" Height="480px" Width="1470px" AutoGenerateColumns="False">
+                    <asp:GridView ID="grvLoaiSP" runat="server" Height="480px" Width="1470px" AutoGenerateColumns="False" DataKeyNames="IDLoai" DataSourceID="SqlDataSourceLSP" OnSelectedIndexChanged="grvLoaiSP_SelectedIndexChanged">
                         <Columns>
-                            <asp:BoundField DataField="IDLoai" HeaderText="Mã sản phẩm" />
-                            <asp:BoundField DataField="TenLoai" HeaderText="Tên sản phẩm" />
-                            <asp:CommandField SelectText="Chọn" ShowSelectButton="True" />
+                            <asp:CommandField ShowSelectButton="True" />
+                            <asp:BoundField DataField="IDLoai" HeaderText="IDLoai" ReadOnly="True" SortExpression="IDLoai" />
+                            <asp:BoundField DataField="TenLoai" HeaderText="TenLoai" SortExpression="TenLoai" />
                         </Columns>
                     </asp:GridView>
+                    <asp:SqlDataSource ID="SqlDataSourceLSP" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString2 %>" SelectCommand="SELECT * FROM [LoaiSP]"></asp:SqlDataSource>
                 </td>
             </tr>
         </table>

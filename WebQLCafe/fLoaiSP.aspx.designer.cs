@@ -105,6 +105,15 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.TextBox txtTenLoai;
 
         /// <summary>
+        /// lblThongbao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblThongbao;
+
+        /// <summary>
         /// btnThem control.
         /// </summary>
         /// <remarks>
@@ -148,5 +157,14 @@ namespace WebQLCafe
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView grvLoaiSP;
+
+        /// <summary>
+        /// SqlDataSourceLSP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceLSP;
     }
 }
