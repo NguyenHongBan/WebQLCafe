@@ -37,5 +37,82 @@ namespace WebQLCafe
             Session.Abandon();
             Response.Redirect("fHoaDon_NVT.aspx");
         }
+
+        protected void btnThem_Click(object sender, EventArgs e)
+        {
+            QLCaffe3Entities db = new QLCaffe3Entities();
+            LoaiSP lsp = new LoaiSP();
+
+            var lst = (from n in db.LoaiSPs where n.IDLoai.Contains(txtIDLoai.Text) select n).ToList();
+            if (lst.Count() > 0)
+            {
+                lblThongbao.Text = "Mã Loại sản phẩm đã được sử dụng";
+                txtIDLoai.Focus();
+            }
+            else
+            {
+                lsp.IDLoai = txtIDLoai.Text;
+                lsp.TenLoai = txtTenLoai.Text;
+                db.LoaiSPs.Add(lsp);
+                db.SaveChanges();
+                lblThongbao.Text = "Đã thêm thành công";
+                GridViewLoaiSP.DataBind();
+            }
+        }
+
+        protected void btnSua_Click(object sender, EventArgs e)
+        {
+            QLCaffe3Entities db = new QLCaffe3Entities();
+            LoaiSP lsp = new LoaiSP();
+
+            lsp = db.LoaiSPs.Where(s => s.IDLoai == txtIDLoai.Text).Single();
+            lsp.IDLoai = txtIDLoai.Text;
+            lsp.TenLoai = txtTenLoai.Text;
+
+            db.SaveChanges();
+            lblThongbao.Text = "Đã sửa thành công";
+            GridViewLoaiSP.DataBind();
+        }
+
+        protected void btnXoa_Click(object sender, EventArgs e)
+        {
+            QLCaffe3Entities db = new QLCaffe3Entities();
+            LoaiSP lsp = new LoaiSP();
+            lsp = db.LoaiSPs.Where(s => s.IDLoai == txtIDLoai.Text).Single();
+            lsp.IDLoai = txtIDLoai.Text;
+            lsp.TenLoai = txtTenLoai.Text;
+
+            db.LoaiSPs.Remove(lsp);
+            db.SaveChanges();
+            lblThongbao.Text = "Đã xóa thành công";
+            txtIDLoai.Text = string.Empty;
+            txtTenLoai.Text = string.Empty;
+            GridViewLoaiSP.DataBind();
+        }
+
+        protected void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            txtIDLoai.Text = string.Empty;
+            txtTenLoai.Text = string.Empty;
+        }
+
+        protected void GridViewLoaiSP_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int selectedIndex = GridViewLoaiSP.SelectedIndex;
+            GridViewRow selectedRow = GridViewLoaiSP.Rows[selectedIndex];
+            string value1 = selectedRow.Cells[1].Text;
+            string value2 = selectedRow.Cells[2].Text;
+
+            string decodedValue1 = HttpUtility.HtmlDecode(value1);
+            string decodedValue2 = HttpUtility.HtmlDecode(value2);
+
+            txtIDLoai.Text = decodedValue1;
+            txtTenLoai.Text = decodedValue2;
+        }
+
+        protected void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("fDangNhap.aspx");
+        }
     }
 }

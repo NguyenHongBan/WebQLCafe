@@ -17,11 +17,6 @@ namespace WebQLCafe
 
         }
 
-        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
-        {
-
-        }
-
         protected void lbtNhanVien_Click(object sender, EventArgs e)
         {
             Session.Abandon();
@@ -104,6 +99,8 @@ namespace WebQLCafe
             db.LoaiSPs.Remove(lsp);
             db.SaveChanges();
             lblThongbao.Text = "Đã xóa thành công";
+            txtIDLoai.Text = string.Empty;
+            txtTenLoai.Text = string.Empty;
             grvLoaiSP.DataBind();
         }
 
