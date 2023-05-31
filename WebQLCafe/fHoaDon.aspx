@@ -269,8 +269,15 @@
             <tr>
                 <td class="auto-style2" style="background-color: #FFCC99">&nbsp;</td>
                 <td style="background-color: #FFFFCC">
-                    <asp:GridView ID="GridViewHoaDon" runat="server" CssClass="newStyle17" Height="430px" Width="1470px">
+                    <asp:GridView ID="GridViewHoaDon" runat="server" CssClass="newStyle17" Height="430px" Width="1470px" AutoGenerateColumns="False" DataKeyNames="IDHoaDon" DataSourceID="SqlDataSourceHD">
+                        <Columns>
+                            <asp:BoundField DataField="IDHoaDon" HeaderText="IDHoaDon" ReadOnly="True" SortExpression="IDHoaDon"></asp:BoundField>
+                            <asp:BoundField DataField="IDKhachHang" HeaderText="IDKhachHang" SortExpression="IDKhachHang"></asp:BoundField>
+                            <asp:BoundField DataField="NgayDatHang" HeaderText="NgayDatHang" SortExpression="NgayDatHang"></asp:BoundField>
+                            <asp:BoundField DataField="MaNV" HeaderText="MaNV" SortExpression="MaNV"></asp:BoundField>
+                        </Columns>
                     </asp:GridView>
+                    <asp:SqlDataSource ID="SqlDataSourceHD" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString2 %>" SelectCommand="SELECT * FROM [HoaDon]"></asp:SqlDataSource>
                 </td>
             </tr>
         </table>
