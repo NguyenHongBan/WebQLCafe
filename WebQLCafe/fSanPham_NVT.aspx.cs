@@ -44,40 +44,51 @@ namespace WebQLCafe
 
         protected void btnThem_Click(object sender, EventArgs e)
         {
-            if (fulHinhAnh.HasFile)
+            QLCaffe3Entities db = new QLCaffe3Entities();
+            SanPham sp = new SanPham();
+            var lst = (from n in db.SanPhams where n.IDSanPham.Contains(txtMaSP.Text) select n).ToList();
+            if (lst.Count() > 0)
             {
-                string fileName = Path.GetFileName(fulHinhAnh.PostedFile.FileName);
-
-                string directoryPath = Server.MapPath("~/Images/");
-
-                if (!Directory.Exists(directoryPath))
-                {
-                    Directory.CreateDirectory(directoryPath);
-                }
-
-                string filePath = Path.Combine(directoryPath, fileName);
-                fulHinhAnh.PostedFile.SaveAs(filePath);
-
-                using (QLCaffe3Entities db = new QLCaffe3Entities())
-                {
-                    SanPham sanPham = new SanPham
-                    {
-                        IDSanPham = txtMaSP.Text,
-                        TenSanPham = txtTenSP.Text,
-                        IDLoai = ddlLoaiSP.Text,
-                        KichCo = txtKichCo.Text,
-                        Soluong = int.Parse(txtSoLuong.Text),
-                        GiaBan = txtGiaBan.Text,
-                        MoTa = txtMota.Text,
-                        Anh = fileName
-                    };
-
-                    db.SanPhams.Add(sanPham);
-                    db.SaveChanges();
-                    lblThongbao.Text = "Đã Thêm thành công";
-                    GridViewSanPhamNVT.DataBind();
-                }
+                lblThongbao.Text = "Mã Sản phẩm đã được sử dụng";
+                txtMaSP.Focus();
             }
+            else
+            {
+                if (fulHinhAnh.HasFile)
+                {
+                    string fileName = Path.GetFileName(fulHinhAnh.PostedFile.FileName);
+
+                    string directoryPath = Server.MapPath("~/Images/");
+
+                    if (!Directory.Exists(directoryPath))
+                    {
+                        Directory.CreateDirectory(directoryPath);
+                    }
+
+                    string filePath = Path.Combine(directoryPath, fileName);
+                    fulHinhAnh.PostedFile.SaveAs(filePath);
+
+                    using (QLCaffe3Entities db = new QLCaffe3Entities())
+                    {
+                        SanPham sanPham = new SanPham
+                        {
+                            IDSanPham = txtMaSP.Text,
+                            TenSanPham = txtTenSP.Text,
+                            IDLoai = ddlLoaiSP.Text,
+                            KichCo = txtKichCo.Text,
+                            Soluong = int.Parse(txtSoLuong.Text),
+                            GiaBan = txtGiaBan.Text,
+                            MoTa = txtMota.Text,
+                            Anh = fileName
+                        };
+
+                        db.SanPhams.Add(sanPham);
+                        db.SaveChanges();
+                        lblThongbao.Text = "Đã Thêm thành công";
+                        GridViewSanPhamNVT.DataBind();
+                    }
+                }
+            }        
         }
 
         private SanPham GetSanPham(string maSanPham)

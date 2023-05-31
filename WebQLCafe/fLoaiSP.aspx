@@ -113,7 +113,7 @@
                             <td class="auto-style41"><strong>
                             <asp:LinkButton ID="lbtDoanhThu" runat="server" CssClass="auto-style40" OnClick="lbtDoanhThu_Click">Doanh Thu</asp:LinkButton>
                             </strong></td>
-                            <td class="auto-style41"><strong>
+                            <td class="auto-style35"><strong>
                                     <asp:Button ID="btnDangXuat" runat="server" CssClass="auto-style34" Height="40px" Text="Đăng Xuất" Width="150px" OnClick="btnDangXuat_Click" />
                                     </strong></td>
                         </tr>

@@ -83,7 +83,7 @@
         <table class="auto-style1">
             <tr style="background-color: #CB853F">
                 <td class="auto-style2">
-                    <asp:ImageButton ID="ImageButton1" runat="server" Height="141px" ImageUrl="~/Models/images/anhlogo/3.png" Width="133px" OnClick="ImageButton1_Click" />
+                    <asp:ImageButton ID="ImageButton1" runat="server" Height="141px" ImageUrl="~/Models/images/anhlogo/3.png" Width="133px" />
                 </td>
                 <td class="auto-style4">
                     <table class="auto-style39">
@@ -94,7 +94,7 @@
                             <td class="auto-style40"></td>
                             <td class="auto-style40"></td>
                             <td class="auto-style35"><strong>
-                                    <asp:Button ID="btnDangXuat" runat="server" CssClass="auto-style34" Height="40px" Text="Đăng Xuất" Width="150px" />
+                                    <asp:Button ID="btnDangXuat" runat="server" CssClass="auto-style34" Height="40px" Text="Đăng Xuất" Width="150px" OnClick="btnDangXuat_Click" />
                                     </strong></td>
                         </tr>
                         <tr>
@@ -158,8 +158,16 @@
             <tr>
                 <td class="auto-style3" style="background-color: #FFCC99">&nbsp;</td>
                 <td style="background-color: #FFFFCC">
-                    <asp:GridView ID="GridView1" runat="server" Height="521px" Width="1472px">
+                    <div class="auto-style37">
+                    <asp:GridView ID="grvDoanhThu" runat="server" Height="521px" Width="1459px" AutoGenerateColumns="False" DataKeyNames="IDDoanhThu" DataSourceID="SqlDataSourceDT">
+                        <Columns>
+                            <asp:BoundField DataField="IDDoanhThu" HeaderText="IDDoanhThu" ReadOnly="True" SortExpression="IDDoanhThu" />
+                            <asp:BoundField DataField="Ngay" HeaderText="Ngay" SortExpression="Ngay" />
+                            <asp:BoundField DataField="SoTien" HeaderText="SoTien" SortExpression="SoTien" />
+                        </Columns>
                     </asp:GridView>
+                    </div>
+                    <asp:SqlDataSource ID="SqlDataSourceDT" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString2 %>" SelectCommand="SELECT * FROM [DoanhThu]"></asp:SqlDataSource>
                 </td>
             </tr>
         </table>

@@ -49,6 +49,7 @@ namespace WebQLCafe
 
         protected void btnDangXuat_Click(object sender, EventArgs e)
         {
+            Session.Abandon();
             Response.Redirect("fDangNhap.aspx");
         }
 

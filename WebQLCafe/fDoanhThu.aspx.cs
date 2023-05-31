@@ -14,11 +14,6 @@ namespace WebQLCafe
 
         }
 
-        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
-        {
-
-        }
-
         protected void lbtNhanVien_Click(object sender, EventArgs e)
         {
             Session.Abandon();
@@ -51,7 +46,13 @@ namespace WebQLCafe
 
         protected void btnTimKiem_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        protected void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("fDangNhap.aspx");
         }
     }
 }
