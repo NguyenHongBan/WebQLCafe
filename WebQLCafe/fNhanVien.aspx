@@ -215,11 +215,11 @@
                             <td class="auto-style49"><strong>Quyền đăng nhập</strong></td>
                             <td class="auto-style44">
                                 <asp:DropDownList ID="ddlQuyenDN" runat="server" Height="30px" Width="300px" CssClass="auto-style52">
-<<<<<<< HEAD
+
                                     <asp:ListItem>Quản lí</asp:ListItem>
-=======
+
                                     <asp:ListItem>Quản lý</asp:ListItem>
->>>>>>> 11e0bb094aa6cdd6f85341c55027da7d39dea856
+
                                     <asp:ListItem>Nhân Viên</asp:ListItem>
                                 </asp:DropDownList>
                             </td>
