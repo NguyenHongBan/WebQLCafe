@@ -88,8 +88,8 @@
     <Content Include="Global.asax" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
       <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -97,6 +97,14 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="Models\images\anhlogo\3.png" />
+    <Content Include="Models\images\anhsanpham\anh1.jpg" />
+    <Content Include="Models\images\anhsanpham\anh2.jpg" />
+    <Content Include="Models\images\anhsanpham\anh3.jpg" />
+    <Content Include="Models\images\anhsanpham\anh4.jpg" />
+    <Content Include="Models\images\anhsanpham\anh5.jpg" />
+    <Content Include="Models\images\anhsanpham\anh6.jpg" />
+    <Content Include="Models\images\anhsanpham\anh7.jpg" />
+    <Content Include="Models\images\anhsanpham\anh8.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

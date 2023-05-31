@@ -8,7 +8,7 @@
     <style type="text/css">
         .auto-style1 {
             width: 100%;
-            height: 999px;
+            height: 1000px;
         }
         .auto-style2 {
             text-align: center;
@@ -114,7 +114,7 @@
         }
     </style>
     </head>
-<body style="height: 1010px">
+<body style="height: 1008px">
     <form id="form1" runat="server">
     <table class="auto-style1">
         <tr style="background-color: #CB853F">
@@ -188,8 +188,7 @@
                     <tr>
                         <td class="auto-style44" style="background-color: #FFCC99"><strong>Kích cỡ</strong></td>
                         <td style="background-color: #FFCC99">
-                            <asp:DropDownList ID="ddlKichCo" runat="server" Height="30px" Width="450px">
-                            </asp:DropDownList>
+                            <asp:TextBox ID="txtKichCo" runat="server" Height="30px" Width="450px"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
@@ -209,13 +208,13 @@
                     <tr>
                         <td class="auto-style45" style="background-color: #FFCC99"><strong>Mô tả</strong></td>
                         <td style="background-color: #FFCC99">
-                            <asp:TextBox ID="txtMota" runat="server" Height="100px" Width="450px"></asp:TextBox>
+                            <asp:TextBox ID="txtMota" runat="server" Height="58px" Width="450px"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style45" style="background-color: #FFCC99"><strong>Hình ảnh</strong></td>
                         <td class="auto-style51" style="background-color: #FFCC99"><strong>
-                            <asp:FileUpload ID="fulHinhAnh" runat="server" CssClass="auto-style50" Height="35px" Width="621px" />
+                            <asp:FileUpload ID="fulHinhAnh" runat="server" CssClass="auto-style50" Height="35px" Width="591px" />
                             </strong></td>
                     </tr>
                 </table>
@@ -248,6 +247,7 @@
             <td class="auto-style38" style="background-color: #FFCC99">&nbsp;</td>
             <td style="background-color: #FFFFCC">
                 <div class="auto-style2">
+<<<<<<< HEAD
                 <asp:GridView ID="GridView1" runat="server" Height="290px" Width="1471px" AutoGenerateColumns="False" DataKeyNames="IDSanPham" DataSourceID="SqlDataSource1">
                     <Columns>
                         <asp:BoundField DataField="IDSanPham" HeaderText="ID sản phẩm" ReadOnly="True" SortExpression="IDSanPham" />
@@ -262,6 +262,23 @@
                 </asp:GridView>
                 </div>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString %>" SelectCommand="SELECT * FROM [SanPham]"></asp:SqlDataSource>
+=======
+                    <asp:GridView ID="GridViewSanPham" runat="server" AutoGenerateColumns="False" DataKeyNames="IDSanPham" DataSourceID="SqlDataSource1" Height="297px" Width="1469px" OnSelectedIndexChanged="GridViewSanPham_SelectedIndexChanged">
+                        <Columns>
+                            <asp:CommandField ShowSelectButton="True" />
+                            <asp:BoundField DataField="IDSanPham" HeaderText="IDSanPham" ReadOnly="True" SortExpression="IDSanPham" />
+                            <asp:BoundField DataField="TenSanPham" HeaderText="TenSanPham" SortExpression="TenSanPham" />
+                            <asp:BoundField DataField="IDLoai" HeaderText="IDLoai" SortExpression="IDLoai" />
+                            <asp:BoundField DataField="KichCo" HeaderText="KichCo" SortExpression="KichCo" />
+                            <asp:BoundField DataField="Soluong" HeaderText="Soluong" SortExpression="Soluong" />
+                            <asp:BoundField DataField="GiaBan" HeaderText="GiaBan" SortExpression="GiaBan" />
+                            <asp:BoundField DataField="MoTa" HeaderText="MoTa" SortExpression="MoTa" />
+                            <asp:BoundField DataField="Anh" HeaderText="Anh" SortExpression="Anh" />
+                        </Columns>
+                    </asp:GridView>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString2 %>" SelectCommand="SELECT * FROM [SanPham]"></asp:SqlDataSource>
+                </div>
+>>>>>>> 11e0bb094aa6cdd6f85341c55027da7d39dea856
             </td>
         </tr>
     </table>

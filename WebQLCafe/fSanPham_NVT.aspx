@@ -103,7 +103,18 @@
             height: 97px;
         }
         .auto-style58 {
-            height: 2px;
+            height: 43px;
+        }
+        .auto-style59 {
+            height: 43px;
+            text-align: center;
+        }
+        .auto-style60 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            text-align: center;
+            width: 492px;
+            color: #FF0000;
         }
     </style>
 </head>
@@ -172,8 +183,7 @@
                             <tr>
                                 <td class="auto-style54" style="background-color: #FFCC99"><strong>Kích cỡ</strong></td>
                                 <td style="background-color: #FFCC99">
-                            <asp:DropDownList ID="ddlKichCo" runat="server" Height="30px" Width="450px">
-                            </asp:DropDownList>
+                                    <asp:TextBox ID="txtKichCo" runat="server" Height="30px" Width="450px"></asp:TextBox>
                                 </td>
                             </tr>
                             <tr>
@@ -206,22 +216,23 @@
                         <table class="auto-style57">
                             <tr>
                                 <td class="auto-style58" style="background-color: #FFCC99"></td>
-                                <td class="auto-style58" style="background-color: #FFCC99"></td>
-                                <td class="auto-style58" style="background-color: #FFCC99"></td>
+                                <td class="auto-style59" style="background-color: #FFCC99" colspan="2"><strong>
+                            <asp:Label ID="lblThongbao" runat="server" CssClass="auto-style60" Text="Thông báo"></asp:Label>
+                            </strong></td>
                                 <td class="auto-style58" style="background-color: #FFCC99"></td>
                             </tr>
                             <tr>
                                 <td class="auto-style36" style="background-color: #FFCC99">
-                        <asp:Button ID="btnThem" runat="server" CssClass="auto-style8" Height="35px" Text="Thêm " Width="100px" />
+                        <asp:Button ID="btnThem" runat="server" CssClass="auto-style8" Height="35px" Text="Thêm " Width="100px" OnClick="btnThem_Click" />
                                 </td>
                                 <td class="auto-style36" style="background-color: #FFCC99">
-                        <asp:Button ID="btnSua" runat="server" CssClass="auto-style8" Height="35px" Text="Sửa" Width="100px" />
+                        <asp:Button ID="btnSua" runat="server" CssClass="auto-style8" Height="35px" Text="Sửa" Width="100px" OnClick="btnSua_Click" />
                                 </td>
                                 <td class="auto-style36" style="background-color: #FFCC99">
-                        <asp:Button ID="btnXoa" runat="server" CssClass="auto-style8" Height="35px" Text="Xóa" Width="100px" />
+                        <asp:Button ID="btnXoa" runat="server" CssClass="auto-style8" Height="35px" Text="Xóa" Width="100px" OnClick="btnXoa_Click" />
                                 </td>
                                 <td class="auto-style36" style="background-color: #FFCC99">
-                        <asp:Button ID="btnLamMoi" runat="server" CssClass="auto-style8" Height="35px" Text="Làm Mới" Width="100px" />
+                        <asp:Button ID="btnLamMoi" runat="server" CssClass="auto-style8" Height="35px" Text="Làm Mới" Width="100px" OnClick="btnLamMoi_Click" />
                                 </td>
                             </tr>
                             </table>
@@ -230,8 +241,22 @@
                 <tr>
                     <td class="auto-style4" style="background-color: #FFCC99">&nbsp;</td>
                     <td style="background-color: #FFFFCC">
-                        <asp:GridView ID="GridViewSanPhamNVT" runat="server" Height="290px" Width="1473px">
+                        <div class="auto-style36">
+                        <asp:GridView ID="GridViewSanPhamNVT" runat="server" Height="290px" Width="1473px" AutoGenerateColumns="False" DataKeyNames="IDSanPham" DataSourceID="SqlDataSourceSP" OnSelectedIndexChanged="GridViewSanPhamNVT_SelectedIndexChanged">
+                            <Columns>
+                                <asp:CommandField ShowSelectButton="True" />
+                                <asp:BoundField DataField="IDSanPham" HeaderText="IDSanPham" ReadOnly="True" SortExpression="IDSanPham" />
+                                <asp:BoundField DataField="TenSanPham" HeaderText="TenSanPham" SortExpression="TenSanPham" />
+                                <asp:BoundField DataField="IDLoai" HeaderText="IDLoai" SortExpression="IDLoai" />
+                                <asp:BoundField DataField="KichCo" HeaderText="KichCo" SortExpression="KichCo" />
+                                <asp:BoundField DataField="Soluong" HeaderText="Soluong" SortExpression="Soluong" />
+                                <asp:BoundField DataField="GiaBan" HeaderText="GiaBan" SortExpression="GiaBan" />
+                                <asp:BoundField DataField="MoTa" HeaderText="MoTa" SortExpression="MoTa" />
+                                <asp:BoundField DataField="Anh" HeaderText="Anh" SortExpression="Anh" />
+                            </Columns>
                         </asp:GridView>
+                        </div>
+                        <asp:SqlDataSource ID="SqlDataSourceSP" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString2 %>" SelectCommand="SELECT * FROM [SanPham]"></asp:SqlDataSource>
                     </td>
                 </tr>
             </table>

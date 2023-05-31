@@ -96,13 +96,13 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.DropDownList ddlLoaiSP;
 
         /// <summary>
-        /// ddlKichCo control.
+        /// txtKichCo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlKichCo;
+        protected global::System.Web.UI.WebControls.TextBox txtKichCo;
 
         /// <summary>
         /// txtSoLuong control.
@@ -139,6 +139,15 @@ namespace WebQLCafe
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.FileUpload fulHinhAnh;
+
+        /// <summary>
+        /// lblThongbao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblThongbao;
 
         /// <summary>
         /// btnThem control.
@@ -184,5 +193,14 @@ namespace WebQLCafe
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridViewSanPhamNVT;
+
+        /// <summary>
+        /// SqlDataSourceSP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceSP;
     }
 }

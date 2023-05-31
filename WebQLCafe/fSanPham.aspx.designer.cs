@@ -114,13 +114,13 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.DropDownList ddlLoaiSP;
 
         /// <summary>
-        /// ddlKichCo control.
+        /// txtKichCo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlKichCo;
+        protected global::System.Web.UI.WebControls.TextBox txtKichCo;
 
         /// <summary>
         /// txtSoLuong control.
@@ -204,13 +204,13 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.Button btnLamMoi;
 
         /// <summary>
-        /// GridView1 control.
+        /// GridViewSanPham control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView GridViewSanPham;
 
         /// <summary>
         /// SqlDataSource1 control.
