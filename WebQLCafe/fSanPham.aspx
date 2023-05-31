@@ -247,6 +247,22 @@
             <td class="auto-style38" style="background-color: #FFCC99">&nbsp;</td>
             <td style="background-color: #FFFFCC">
                 <div class="auto-style2">
+<<<<<<< HEAD
+                <asp:GridView ID="GridView1" runat="server" Height="290px" Width="1471px" AutoGenerateColumns="False" DataKeyNames="IDSanPham" DataSourceID="SqlDataSource1">
+                    <Columns>
+                        <asp:BoundField DataField="IDSanPham" HeaderText="ID sản phẩm" ReadOnly="True" SortExpression="IDSanPham" />
+                        <asp:BoundField DataField="TenSanPham" HeaderText="Tên sản phẩm" SortExpression="TenSanPham" />
+                        <asp:BoundField DataField="IDLoai" HeaderText="ID loại" SortExpression="IDLoai" />
+                        <asp:BoundField DataField="KichCo" HeaderText="Kích cỡ" SortExpression="KichCo" />
+                        <asp:BoundField DataField="Soluong" HeaderText="Số lượng" SortExpression="Soluong" />
+                        <asp:BoundField DataField="GiaBan" HeaderText="Giá bán" SortExpression="GiaBan" />
+                        <asp:BoundField DataField="MoTa" HeaderText="Mô tả" SortExpression="MoTa" />
+                        <asp:CommandField SelectText="Chọn" ShowSelectButton="True" />
+                    </Columns>
+                </asp:GridView>
+                </div>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString %>" SelectCommand="SELECT * FROM [SanPham]"></asp:SqlDataSource>
+=======
                     <asp:GridView ID="GridViewSanPham" runat="server" AutoGenerateColumns="False" DataKeyNames="IDSanPham" DataSourceID="SqlDataSource1" Height="297px" Width="1469px" OnSelectedIndexChanged="GridViewSanPham_SelectedIndexChanged">
                         <Columns>
                             <asp:CommandField ShowSelectButton="True" />
@@ -262,6 +278,7 @@
                     </asp:GridView>
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString2 %>" SelectCommand="SELECT * FROM [SanPham]"></asp:SqlDataSource>
                 </div>
+>>>>>>> 11e0bb094aa6cdd6f85341c55027da7d39dea856
             </td>
         </tr>
     </table>

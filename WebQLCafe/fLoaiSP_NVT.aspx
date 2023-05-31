@@ -191,7 +191,11 @@
                     </table>
                 </td>
                 <td style="background-color: #FFFFCC" class="auto-style37">
+<<<<<<< HEAD
+                    <asp:GridView ID="GridViewLoaiSPNVT" runat="server" Height="551px" Width="1469px" AutoGenerateColumns="False">
+=======
                     <asp:GridView ID="GridViewLoaiSPNVT" runat="server" Height="551px" Width="1469px" AutoGenerateColumns="False" OnSelectedIndexChanged="GridViewLoaiSPNVT_SelectedIndexChanged">
+>>>>>>> 11e0bb094aa6cdd6f85341c55027da7d39dea856
                         <Columns>
                             <asp:BoundField HeaderText="ID loại sản phẩm" />
                             <asp:BoundField HeaderText="Tên loại" />

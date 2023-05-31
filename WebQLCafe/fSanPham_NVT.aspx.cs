@@ -183,5 +183,23 @@ namespace WebQLCafe
             txtGiaBan.Text = decodedValue6;
             txtMota.Text = decodedValue7;
         }
+
+        protected void lbtLoaiSP_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("fLoaiSP_NVT.aspx");
+        }
+
+        protected void lbtSanPham_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("fSanPham_NVT.aspx");
+        }
+
+        protected void lbtHoaDon_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("fHoaDon_NVT.aspx");
+        }
     }
 }
