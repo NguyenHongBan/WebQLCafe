@@ -132,22 +132,92 @@ namespace WebQLCafe
             nv.GioiTinh = ddlGioiTinh.Text;
             nv.NgaySinh = txtNgaySinh.Text;
             nv.DienThoai = txtDienThoai.Text;
-            
+            nv.EmailNV = txtEmail.Text;
+            nv.DiaChi = txtDiaChi.Text;
+            nv.Quyen = ddlQuyenDN.Text;
+
+            db.SaveChanges();
+            lblThongbao.Text = "Đã sửa thông tin thành công!";
+            grvNhanVien.DataBind();
+
         }
 
         protected void btnXoa_Click(object sender, EventArgs e)
         {
-
+            string maNhanVien = txtMaNV.Text;
+            QLCaffe3Entities db = new QLCaffe3Entities();
+            NhanVien nhanVien = db.NhanViens.FirstOrDefault(nv => nv.MaNV == maNhanVien);
+            if (nhanVien != null)
+            {
+                db.NhanViens.Remove(nhanVien);
+                db.SaveChanges();
+                lblThongbao.Text = "Đã xóa thành công!";
+                grvNhanVien.DataBind();
+                txtMaNV.Text = string.Empty;
+                txtMatKhau.Text = string.Empty;
+                txtTenNV.Text = string.Empty;
+                ddlGioiTinh.SelectedIndex = 0;
+                txtNgaySinh.Text = string.Empty;
+                txtDienThoai.Text = string.Empty;
+                txtEmail.Text = string.Empty;
+                txtDiaChi.Text = string.Empty;
+                ddlQuyenDN.Text = string.Empty;
+            }
         }
 
         protected void btnLamMoi_Click(object sender, EventArgs e)
         {
+            txtMaNV.Text = string.Empty;
+            txtMatKhau.Text = string.Empty;
+            txtTenNV.Text = string.Empty;
+            ddlGioiTinh.SelectedIndex = 0;
+            txtNgaySinh.Text = string.Empty;
+            txtDienThoai.Text = string.Empty;
+            txtEmail.Text = string.Empty;
+            txtDiaChi.Text = string.Empty;
+            ddlQuyenDN.Text = string.Empty;
+        }
 
+        private NhanVien TimKiemNhanVienTheoMa(string maNV)
+        {
+            using (var context = new QLCaffe3Entities())
+            {
+                return context.NhanViens.FirstOrDefault(nv => nv.MaNV == maNV);
+            }
         }
 
         protected void btnTimKiem_Click(object sender, EventArgs e)
         {
-
+            string maNV = txtTimKiem.Text;
+            NhanVien nv = TimKiemNhanVienTheoMa(maNV);
+            if (nv != null)
+            {
+                txtMaNV.Text = nv.MaNV;
+                txtMatKhau.Text = nv.MatKhau;
+                txtTenNV.Text = nv.TenNhanVien;
+                ddlGioiTinh.SelectedValue = nv.GioiTinh;
+                txtNgaySinh.Text = nv.NgaySinh;
+                txtDienThoai.Text = nv.DienThoai;
+                txtEmail.Text = nv.EmailNV;
+                txtDiaChi.Text = nv.DiaChi;
+                ddlQuyenDN.SelectedValue = nv.Quyen;
+                grvNhanVien.DataBind();
+                grvNhanVien.SelectedIndex = 0;
+            }
+            else
+            {
+                txtMaNV.Text = "";
+                txtMatKhau.Text = "";
+                txtTenNV.Text = "";
+                ddlGioiTinh.SelectedIndex = 0;
+                txtNgaySinh.Text = "";
+                txtDienThoai.Text = "";
+                txtEmail.Text = "";
+                txtDiaChi.Text = "";
+                ddlQuyenDN.SelectedIndex = 0;
+                lblThongbao.Text = "Không có kết quả!";
+                grvNhanVien.DataBind();
+            }
         }
 
         protected void gvNhanVien_SelectedIndexChanged1(object sender, EventArgs e)
