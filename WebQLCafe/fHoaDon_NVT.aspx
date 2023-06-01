@@ -132,6 +132,20 @@
             text-align: center;
             width: 419px;
         }
+        .newStyle18 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .newStyle19 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .auto-style45 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: medium;
+        }
+        .newStyle20 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
     </style>
 </head>
 <body style="height: 1010px">
@@ -180,24 +194,32 @@
                             <tr>
                                 <td class="auto-style29"><strong>Mã Đơn Hàng</strong></td>
                                 <td class="auto-style30">
-                                    <asp:DropDownList ID="ddlMaDH" runat="server" CssClass="newStyle13" Height="30px" Width="450px">
+                                    <strong>
+                                    <asp:DropDownList ID="ddlMaDH" runat="server" CssClass="auto-style45" Height="30px" Width="450px">
                                     </asp:DropDownList>
+                                    </strong>
                                 </td>
                                 <td class="auto-style31"><strong>Mã Khách Hàng</strong></td>
                                 <td class="auto-style32">
-                                    <asp:DropDownList ID="ddlMaKH" runat="server" CssClass="newStyle15" Height="30px" Width="450px">
+                                    <strong>
+                                    <asp:DropDownList ID="ddlMaKH" runat="server" CssClass="auto-style45" Height="30px" Width="450px">
                                     </asp:DropDownList>
+                                    </strong>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="auto-style25"><strong>Mã Nhân Viên</strong></td>
                                 <td class="auto-style26">
-                                    <asp:DropDownList ID="ddlMaNV" runat="server" CssClass="newStyle14" Height="30px" Width="450px">
+                                    <strong>
+                                    <asp:DropDownList ID="ddlMaNV" runat="server" CssClass="auto-style45" Height="30px" Width="450px">
                                     </asp:DropDownList>
+                                    </strong>
                                 </td>
                                 <td class="auto-style27"><strong>Ngày</strong></td>
                                 <td class="auto-style28">
-                                    <asp:TextBox ID="txtNgay" runat="server" CssClass="newStyle16" Height="30px" Width="450px"></asp:TextBox>
+                                    <strong>
+                                    <asp:TextBox ID="txtNgay" runat="server" CssClass="auto-style45" Height="30px" Width="450px"></asp:TextBox>
+                                    </strong>
                                 </td>
                             </tr>
                             <tr>
@@ -215,9 +237,11 @@
                 </tr>
                 <tr>
                     <td class="auto-style3" style="background-color: #FFCC99">&nbsp;</td>
-                    <td style="background-color: #FFFFCC">
-                        <asp:GridView ID="GridViewHoaDonNVT" runat="server" Height="424px" Width="1470px">
+                    <td style="background-color: #FFFFCC" class="auto-style36">
+                        <strong>
+                        <asp:GridView ID="GridViewHoaDonNVT" runat="server" Height="424px" Width="1470px" CssClass="newStyle18">
                         </asp:GridView>
+                        </strong>
                     </td>
                 </tr>
             </table>

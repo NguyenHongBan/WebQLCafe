@@ -46,7 +46,20 @@ namespace WebQLCafe
 
         protected void btnTimKiem_Click(object sender, EventArgs e)
         {
-            
+            string ngayTimKiem = txtTKtheoNgay.Text;
+            using (var context = new QLCaffe3Entities())
+            {
+                var doanhThu = context.DoanhThus.FirstOrDefault(dt => dt.Ngay == ngayTimKiem);
+
+                if (doanhThu != null)
+                {
+                    txtTongTien.Text = doanhThu.SoTien;
+                }
+                else
+                {
+                    txtTongTien.Text = "Không có kết quả";
+                }
+            }
         }
 
         protected void btnDangXuat_Click(object sender, EventArgs e)

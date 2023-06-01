@@ -91,11 +91,6 @@
         .auto-style49 {
             height: 438px;
         }
-        .auto-style50 {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            font-size: x-large;
-            font-weight: bold;
-        }
         .auto-style51 {
             text-align: left;
         }
@@ -111,6 +106,14 @@
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-size: large;
             color: #FF0000;
+        }
+        .newStyle7 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .auto-style54 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: medium;
         }
     </style>
     </head>
@@ -169,38 +172,50 @@
                     <tr>
                         <td class="auto-style44" style="background-color: #FFCC99"><strong>Mã sản phẩm</strong></td>
                         <td style="background-color: #FFCC99">
-                            <asp:TextBox ID="txtMaSP" runat="server" Height="30px" Width="450px"></asp:TextBox>
+                            <strong>
+                            <asp:TextBox ID="txtMaSP" runat="server" Height="30px" Width="450px" CssClass="auto-style54"></asp:TextBox>
+                            </strong>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style44" style="background-color: #FFCC99"><strong>Tên sản phẩm</strong></td>
                         <td style="background-color: #FFCC99">
-                            <asp:TextBox ID="txtTenSP" runat="server" Height="30px" Width="450px"></asp:TextBox>
+                            <strong>
+                            <asp:TextBox ID="txtTenSP" runat="server" Height="30px" Width="450px" CssClass="auto-style54"></asp:TextBox>
+                            </strong>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style44" style="background-color: #FFCC99"><strong>Loại sản phẩm</strong></td>
                         <td style="background-color: #FFCC99">
-                            <asp:DropDownList ID="ddlLoaiSP" runat="server" Height="30px" Width="450px">
+                            <strong>
+                            <asp:DropDownList ID="ddlLoaiSP" runat="server" Height="30px" Width="450px" CssClass="auto-style54">
                             </asp:DropDownList>
+                            </strong>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style44" style="background-color: #FFCC99"><strong>Kích cỡ</strong></td>
                         <td style="background-color: #FFCC99">
-                            <asp:TextBox ID="txtKichCo" runat="server" Height="30px" Width="450px"></asp:TextBox>
+                            <strong>
+                            <asp:TextBox ID="txtKichCo" runat="server" Height="30px" Width="450px" CssClass="auto-style54"></asp:TextBox>
+                            </strong>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style44" style="background-color: #FFCC99"><strong>Số lượng</strong></td>
                         <td style="background-color: #FFCC99">
-                            <asp:TextBox ID="txtSoLuong" runat="server" Height="30px" Width="450px"></asp:TextBox>
+                            <strong>
+                            <asp:TextBox ID="txtSoLuong" runat="server" Height="30px" Width="450px" CssClass="auto-style54"></asp:TextBox>
+                            </strong>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style44" style="background-color: #FFCC99"><strong>Giá bán</strong></td>
                         <td style="background-color: #FFCC99">
-                            <asp:TextBox ID="txtGiaBan" runat="server" Height="30px" Width="450px"></asp:TextBox>
+                            <strong>
+                            <asp:TextBox ID="txtGiaBan" runat="server" Height="30px" Width="450px" CssClass="auto-style54"></asp:TextBox>
+                            </strong>
                         </td>
                     </tr>
                 </table>
@@ -208,13 +223,15 @@
                     <tr>
                         <td class="auto-style45" style="background-color: #FFCC99"><strong>Mô tả</strong></td>
                         <td style="background-color: #FFCC99">
-                            <asp:TextBox ID="txtMota" runat="server" Height="58px" Width="450px"></asp:TextBox>
+                            <strong>
+                            <asp:TextBox ID="txtMota" runat="server" Height="58px" Width="450px" CssClass="auto-style54"></asp:TextBox>
+                            </strong>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style45" style="background-color: #FFCC99"><strong>Hình ảnh</strong></td>
                         <td class="auto-style51" style="background-color: #FFCC99"><strong>
-                            <asp:FileUpload ID="fulHinhAnh" runat="server" CssClass="auto-style50" Height="35px" Width="591px" />
+                            <asp:FileUpload ID="fulHinhAnh" runat="server" CssClass="auto-style54" Height="35px" Width="591px" />
                             </strong></td>
                     </tr>
                 </table>

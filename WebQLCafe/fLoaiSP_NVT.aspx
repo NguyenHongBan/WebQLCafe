@@ -98,6 +98,17 @@
             height: 38px;
             text-align: center;
         }
+        .newStyle3 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .auto-style55 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: medium;
+        }
+        .newStyle4 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
     </style>
 </head>
 <body style="height: 1010px">
@@ -147,7 +158,9 @@
                                     <asp:Label ID="lblIDLoaiSP" runat="server" CssClass="newStyle2" Text="ID Loại Sản Phẩm"></asp:Label>
                                     </strong></td>
                             <td class="auto-style45">
-                                    <asp:TextBox ID="txtIDLoai" runat="server" Height="30px" Width="450px"></asp:TextBox>
+                                    <strong>
+                                    <asp:TextBox ID="txtIDLoai" runat="server" Height="30px" Width="450px" CssClass="auto-style55"></asp:TextBox>
+                                    </strong>
                             </td>
                         </tr>
                         <tr>
@@ -155,7 +168,9 @@
                                     <asp:Label ID="lblTenLoai" runat="server" CssClass="newStyle2" Text="Tên Loại"></asp:Label>
                                     </strong></td>
                             <td>
-                                    <asp:TextBox ID="txtTenLoai" runat="server" Height="30px" Width="450px"></asp:TextBox>
+                                    <strong>
+                                    <asp:TextBox ID="txtTenLoai" runat="server" Height="30px" Width="450px" CssClass="auto-style55"></asp:TextBox>
+                                    </strong>
                             </td>
                         </tr>
                         <tr>
@@ -192,13 +207,15 @@
                 <td class="auto-style3" style="background-color: #FFCC99">
                     &nbsp;</td>
                 <td style="background-color: #FFFFCC" class="auto-style37">
-                    <asp:GridView ID="GridViewLoaiSP" runat="server" Height="482px" Width="1468px" AutoGenerateColumns="False" DataKeyNames="IDLoai" DataSourceID="SqlDataSourceLSP" OnSelectedIndexChanged="GridViewLoaiSP_SelectedIndexChanged">
+                    <strong>
+                    <asp:GridView ID="GridViewLoaiSP" runat="server" Height="482px" Width="1468px" AutoGenerateColumns="False" DataKeyNames="IDLoai" DataSourceID="SqlDataSourceLSP" OnSelectedIndexChanged="GridViewLoaiSP_SelectedIndexChanged" CssClass="newStyle4">
                         <Columns>
                             <asp:CommandField ShowSelectButton="True" />
                             <asp:BoundField DataField="IDLoai" HeaderText="IDLoai" ReadOnly="True" SortExpression="IDLoai" />
                             <asp:BoundField DataField="TenLoai" HeaderText="TenLoai" SortExpression="TenLoai" />
                         </Columns>
                     </asp:GridView>
+                    </strong>
                     <asp:SqlDataSource ID="SqlDataSourceLSP" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString2 %>" SelectCommand="SELECT * FROM [LoaiSP]"></asp:SqlDataSource>
                 </td>
             </tr>

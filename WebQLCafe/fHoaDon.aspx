@@ -176,6 +176,17 @@
         .newStyle20 {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         }
+        .newStyle21 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .auto-style40 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: medium;
+        }
+        .newStyle22 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
         </style>
 </head>
 <body style="height: 1010px">
@@ -233,24 +244,32 @@
                         <tr>
                             <td class="auto-style29"><strong>Mã Đơn Hàng</strong></td>
                             <td class="auto-style30">
-                                <asp:DropDownList ID="ddlMaDH" runat="server" CssClass="newStyle13" Height="30px" Width="450px">
+                                <strong>
+                                <asp:DropDownList ID="ddlMaDH" runat="server" CssClass="auto-style40" Height="30px" Width="450px">
                                 </asp:DropDownList>
+                                </strong>
                             </td>
                             <td class="auto-style31"><strong>Mã Khách Hàng</strong></td>
                             <td class="auto-style32">
-                                <asp:DropDownList ID="ddlMaKH" runat="server" CssClass="newStyle15" Height="30px" Width="450px">
+                                <strong>
+                                <asp:DropDownList ID="ddlMaKH" runat="server" CssClass="auto-style40" Height="30px" Width="450px">
                                 </asp:DropDownList>
+                                </strong>
                             </td>
                         </tr>
                         <tr>
                             <td class="auto-style25"><strong>Mã Nhân Viên</strong></td>
                             <td class="auto-style26">
-                                <asp:DropDownList ID="ddlMaNV" runat="server" CssClass="newStyle14" Height="30px" Width="450px">
+                                <strong>
+                                <asp:DropDownList ID="ddlMaNV" runat="server" CssClass="auto-style40" Height="30px" Width="450px">
                                 </asp:DropDownList>
+                                </strong>
                             </td>
                             <td class="auto-style27"><strong>Ngày</strong></td>
                             <td class="auto-style28">
-                                <asp:TextBox ID="txtNgay" runat="server" CssClass="newStyle16" Height="30px" Width="450px"></asp:TextBox>
+                                <strong>
+                                <asp:TextBox ID="txtNgay" runat="server" CssClass="auto-style40" Height="30px" Width="450px"></asp:TextBox>
+                                </strong>
                             </td>
                         </tr>
                         <tr>
@@ -269,6 +288,8 @@
             <tr>
                 <td class="auto-style2" style="background-color: #FFCC99">&nbsp;</td>
                 <td style="background-color: #FFFFCC">
+                    <div class="auto-style4">
+                        <strong>
                     <asp:GridView ID="GridViewHoaDon" runat="server" CssClass="newStyle17" Height="430px" Width="1470px" AutoGenerateColumns="False" DataKeyNames="IDHoaDon" DataSourceID="SqlDataSourceHD">
                         <Columns>
                             <asp:BoundField DataField="IDHoaDon" HeaderText="IDHoaDon" ReadOnly="True" SortExpression="IDHoaDon"></asp:BoundField>
@@ -277,6 +298,8 @@
                             <asp:BoundField DataField="MaNV" HeaderText="MaNV" SortExpression="MaNV"></asp:BoundField>
                         </Columns>
                     </asp:GridView>
+                        </strong>
+                    </div>
                     <asp:SqlDataSource ID="SqlDataSourceHD" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString2 %>" SelectCommand="SELECT * FROM [HoaDon]"></asp:SqlDataSource>
                 </td>
             </tr>

@@ -76,6 +76,12 @@
         .auto-style44 {
             height: 226px;
         }
+        .newStyle4 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .newStyle5 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
     </style>
     </head>
 <body style="height: 1010px">
@@ -133,13 +139,17 @@
                         <tr>
                             <td class="auto-style41"><strong>Tìm kiếm theo ngày</strong></td>
                             <td>
-                                <asp:TextBox ID="txtTKtheoNgay" runat="server" Height="30px" Width="450px"></asp:TextBox>
+                                <strong>
+                                <asp:TextBox ID="txtTKtheoNgay" runat="server" Height="30px" Width="450px" CssClass="auto-style42"></asp:TextBox>
+                                </strong>
                             </td>
                         </tr>
                         <tr>
                             <td class="auto-style41"><strong>Tổng Tiền</strong></td>
                             <td>
-                                <asp:TextBox ID="txtTongTien" runat="server" Height="30px" Width="450px"></asp:TextBox>
+                                <strong>
+                                <asp:TextBox ID="txtTongTien" runat="server" Height="30px" Width="450px" CssClass="auto-style42"></asp:TextBox>
+                                </strong>
                             </td>
                         </tr>
                         <tr>
@@ -159,18 +169,20 @@
                 <td class="auto-style3" style="background-color: #FFCC99">&nbsp;</td>
                 <td style="background-color: #FFFFCC">
                     <div class="auto-style37">
-                    <asp:GridView ID="grvDoanhThu" runat="server" Height="521px" Width="1459px" AutoGenerateColumns="False" DataKeyNames="IDDoanhThu" DataSourceID="SqlDataSourceDT">
+                        <strong>
+                    <asp:GridView ID="grvDoanhThu" runat="server" Height="521px" Width="1459px" AutoGenerateColumns="False" DataKeyNames="IDDoanhThu" DataSourceID="SqlDataSourceDT" CssClass="newStyle4">
                         <Columns>
                             <asp:BoundField DataField="IDDoanhThu" HeaderText="IDDoanhThu" ReadOnly="True" SortExpression="IDDoanhThu" />
                             <asp:BoundField DataField="Ngay" HeaderText="Ngay" SortExpression="Ngay" />
                             <asp:BoundField DataField="SoTien" HeaderText="SoTien" SortExpression="SoTien" />
                         </Columns>
                     </asp:GridView>
+                        </strong>
                     </div>
                     <asp:SqlDataSource ID="SqlDataSourceDT" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString2 %>" SelectCommand="SELECT * FROM [DoanhThu]"></asp:SqlDataSource>
                 </td>
             </tr>
         </table>
     </form>
-    </body>
+</body>
 </html>

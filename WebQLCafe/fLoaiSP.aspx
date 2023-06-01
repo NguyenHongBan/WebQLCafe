@@ -78,6 +78,17 @@
             height: 36px;
             text-align: center;
         }
+        .newStyle4 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .auto-style55 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: medium;
+        }
+        .newStyle5 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
     </style>
 </head>
 <body style="height: 1010px">
@@ -135,13 +146,17 @@
                         <tr>
                             <td class="auto-style42"><strong>ID Loại sản phẩm</strong></td>
                             <td>
-                                <asp:TextBox ID="txtIDLoai" runat="server" Height="30px" Width="450px"></asp:TextBox>
+                                <strong>
+                                <asp:TextBox ID="txtIDLoai" runat="server" Height="30px" Width="450px" CssClass="auto-style55"></asp:TextBox>
+                                </strong>
                             </td>
                         </tr>
                         <tr>
                             <td class="auto-style42"><strong>Tên loại</strong></td>
                             <td>
-                                <asp:TextBox ID="txtTenLoai" runat="server" Height="30px" Width="450px"></asp:TextBox>
+                                <strong>
+                                <asp:TextBox ID="txtTenLoai" runat="server" Height="30px" Width="450px" CssClass="auto-style55"></asp:TextBox>
+                                </strong>
                             </td>
                         </tr>
                         <tr>
@@ -177,13 +192,15 @@
             <tr>
                 <td class="auto-style4" style="background-color: #FFCC99">&nbsp;</td>
                 <td style="background-color: #FFFFCC" class="auto-style41">
-                    <asp:GridView ID="grvLoaiSP" runat="server" Height="480px" Width="1470px" AutoGenerateColumns="False" DataKeyNames="IDLoai" DataSourceID="SqlDataSourceLSP" OnSelectedIndexChanged="grvLoaiSP_SelectedIndexChanged">
+                    <strong>
+                    <asp:GridView ID="grvLoaiSP" runat="server" Height="480px" Width="1470px" AutoGenerateColumns="False" DataKeyNames="IDLoai" DataSourceID="SqlDataSourceLSP" OnSelectedIndexChanged="grvLoaiSP_SelectedIndexChanged" CssClass="newStyle5">
                         <Columns>
                             <asp:CommandField ShowSelectButton="True" />
                             <asp:BoundField DataField="IDLoai" HeaderText="IDLoai" ReadOnly="True" SortExpression="IDLoai" />
                             <asp:BoundField DataField="TenLoai" HeaderText="TenLoai" SortExpression="TenLoai" />
                         </Columns>
                     </asp:GridView>
+                    </strong>
                     <asp:SqlDataSource ID="SqlDataSourceLSP" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString2 %>" SelectCommand="SELECT * FROM [LoaiSP]"></asp:SqlDataSource>
                 </td>
             </tr>

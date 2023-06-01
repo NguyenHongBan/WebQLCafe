@@ -115,9 +115,6 @@
             font-weight: bold;
             margin-bottom: 0px;
         }
-        .auto-style52 {
-            font-size: medium;
-        }
         .auto-style53 {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-size: large;
@@ -126,6 +123,12 @@
         .auto-style54 {
             height: 31px;
             text-align: center;
+        }
+        .newStyle8 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .newStyle9 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         }
         </style>
     </head>
@@ -186,56 +189,74 @@
                         <tr>
                             <td class="auto-style49"><strong>Mã nhân viên</strong></td>
                             <td class="auto-style44">
-                                <asp:TextBox ID="txtMaNV" runat="server" Height="30px" Width="300px"></asp:TextBox>
+                                <strong>
+                                <asp:TextBox ID="txtMaNV" runat="server" Height="30px" Width="300px" CssClass="auto-style42"></asp:TextBox>
+                                </strong>
                             </td>
                             <td class="auto-style49"><strong>Mật khẩu</strong></td>
                             <td class="auto-style44">
-                                <asp:TextBox ID="txtMatKhau" runat="server" Height="30px" Width="300px"></asp:TextBox>
+                                <strong>
+                                <asp:TextBox ID="txtMatKhau" runat="server" Height="30px" Width="300px" CssClass="auto-style42"></asp:TextBox>
+                                </strong>
                             </td>
                         </tr>
                         <tr>
                             <td class="auto-style49"><strong>Tên nhân viên</strong></td>
                             <td class="auto-style44">
-                                <asp:TextBox ID="txtTenNV" runat="server" Height="30px" Width="300px"></asp:TextBox>
+                                <strong>
+                                <asp:TextBox ID="txtTenNV" runat="server" Height="30px" Width="300px" CssClass="auto-style42"></asp:TextBox>
+                                </strong>
                             </td>
                             <td class="auto-style49"><strong>Điện thoại</strong></td>
                             <td class="auto-style44">
-                                <asp:TextBox ID="txtDienThoai" runat="server" Height="30px" Width="300px"></asp:TextBox>
+                                <strong>
+                                <asp:TextBox ID="txtDienThoai" runat="server" Height="30px" Width="300px" CssClass="auto-style42"></asp:TextBox>
+                                </strong>
                             </td>
                         </tr>
                         <tr>
                             <td class="auto-style49"><strong>Giới tính</strong></td>
                             <td class="auto-style44">
-                                <asp:DropDownList ID="ddlGioiTinh" runat="server" Height="30px" Width="300px" CssClass="auto-style52">
+                                <strong>
+                                <asp:DropDownList ID="ddlGioiTinh" runat="server" Height="30px" Width="300px" CssClass="auto-style42">
                                     <asp:ListItem Value="True">Nam</asp:ListItem>
                                     <asp:ListItem Value="False">Nữ</asp:ListItem>
                                 </asp:DropDownList>
+                                </strong>
                             </td>
                             <td class="auto-style49"><strong>Email</strong></td>
                             <td class="auto-style44">
-                                <asp:TextBox ID="txtEmail" runat="server" Height="30px" Width="300px"></asp:TextBox>
+                                <strong>
+                                <asp:TextBox ID="txtEmail" runat="server" Height="30px" Width="300px" CssClass="auto-style42"></asp:TextBox>
+                                </strong>
                             </td>
                         </tr>
                         <tr>
                             <td class="auto-style49"><strong>Ngày sinh</strong></td>
                             <td class="auto-style44">
-                                <asp:TextBox ID="txtNgaySinh" runat="server" Height="30px" Width="300px"></asp:TextBox>
+                                <strong>
+                                <asp:TextBox ID="txtNgaySinh" runat="server" Height="30px" Width="300px" CssClass="auto-style42"></asp:TextBox>
+                                </strong>
                             </td>
                             <td class="auto-style49"><strong>Quyền đăng nhập</strong></td>
                             <td class="auto-style44">
-                                <asp:DropDownList ID="ddlQuyenDN" runat="server" Height="30px" Width="300px" CssClass="auto-style52">
+                                <strong>
+                                <asp:DropDownList ID="ddlQuyenDN" runat="server" Height="30px" Width="300px" CssClass="auto-style42">
 
                                     <asp:ListItem>Quan Ly</asp:ListItem>
 
                                     <asp:ListItem>Nhan Vien</asp:ListItem>
 
                                 </asp:DropDownList>
+                                </strong>
                             </td>
                         </tr>
                         <tr>
                             <td class="auto-style49"><strong>Địa chỉ</strong></td>
                             <td class="auto-style44">
-                                <asp:TextBox ID="txtDiaChi" runat="server" Height="30px" Width="300px"></asp:TextBox>
+                                <strong>
+                                <asp:TextBox ID="txtDiaChi" runat="server" Height="30px" Width="300px" CssClass="auto-style42"></asp:TextBox>
+                                </strong>
                             </td>
                             <td class="auto-style49"></td>
                             <td class="auto-style44"></td>
@@ -251,7 +272,9 @@
                         <tr>
                             <td class="auto-style50"><strong>Tìm kiếm theo mã nhân viên</strong></td>
                             <td class="auto-style6">
-                                <asp:TextBox ID="txtTimKiem" runat="server" Height="30px" Width="350px"></asp:TextBox>
+                                <strong>
+                                <asp:TextBox ID="txtTimKiem" runat="server" Height="30px" Width="350px" CssClass="auto-style42"></asp:TextBox>
+                                </strong>
                             </td>
                             <td>
                                 <strong>
@@ -288,7 +311,8 @@
             <tr>
                 <td class="auto-style3" style="background-color: #FFCC99">&nbsp;</td>
                 <td style="background-color: #FFFFCC" class="auto-style7">
-                    <asp:GridView ID="grvNhanVien" runat="server" Height="348px" Width="1469px" AutoGenerateColumns="False" CssClass="auto-style52" OnSelectedIndexChanged="gvNhanVien_SelectedIndexChanged1" DataKeyNames="MaNV" DataSourceID="SqlDataSourceNV">
+                    <strong>
+                    <asp:GridView ID="grvNhanVien" runat="server" Height="348px" Width="1469px" AutoGenerateColumns="False" CssClass="newStyle9" OnSelectedIndexChanged="gvNhanVien_SelectedIndexChanged1" DataKeyNames="MaNV" DataSourceID="SqlDataSourceNV">
                         <Columns>
                             <asp:CommandField ShowSelectButton="True" />
                             <asp:BoundField DataField="MaNV" HeaderText="MaNV" ReadOnly="True" SortExpression="MaNV" />
@@ -303,6 +327,7 @@
                         </Columns>
                         
                     </asp:GridView>
+                    </strong>
                     <asp:SqlDataSource ID="SqlDataSourceNV" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString2 %>" SelectCommand="SELECT * FROM [NhanVien]"></asp:SqlDataSource>
                 </td>
             </tr>
