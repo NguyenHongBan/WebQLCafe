@@ -14,6 +14,7 @@ namespace WebQLCafe
             LoadMaHD();
             LoadMaKH();
             LoadMaNV();
+            //LoadData();
         }
 
         protected void lbtNhanVien_Click1(object sender, EventArgs e)
@@ -69,7 +70,13 @@ namespace WebQLCafe
             ddlMaNV.DataSource = lst;
             ddlMaNV.DataBind();
         }
+        //public void LoadData()
+        //{
+        //    QLCaffe3Entities db = new QLCaffe3Entities();
+        //    var hd = db.HoaDons.All();
+        //    GridViewHoaDon.DataSource = hd;
 
+        //}
         protected void btnTimKiem_Click(object sender, EventArgs e)
         {
             QLCaffe3Entities db = new QLCaffe3Entities();

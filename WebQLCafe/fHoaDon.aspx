@@ -290,13 +290,7 @@
                 <td style="background-color: #FFFFCC">
                     <div class="auto-style4">
                         <strong>
-                    <asp:GridView ID="GridViewHoaDon" runat="server" CssClass="newStyle17" Height="430px" Width="1470px" AutoGenerateColumns="False" DataKeyNames="IDHoaDon" DataSourceID="SqlDataSourceHD" OnSelectedIndexChanged="GridViewHoaDon_SelectedIndexChanged">
-                        <Columns>
-                            <asp:BoundField DataField="IDHoaDon" HeaderText="IDHoaDon" ReadOnly="True" SortExpression="IDHoaDon" />
-                            <asp:BoundField DataField="IDKhachHang" HeaderText="IDKhachHang" SortExpression="IDKhachHang" />
-                            <asp:BoundField DataField="NgayDatHang" HeaderText="NgayDatHang" SortExpression="NgayDatHang" />
-                            <asp:BoundField DataField="MaNV" HeaderText="MaNV" SortExpression="MaNV" />
-                        </Columns>
+                    <asp:GridView ID="GridViewHoaDon" runat="server" CssClass="newStyle17" Height="430px" Width="1470px" AutoGenerateColumns="False" OnSelectedIndexChanged="GridViewHoaDon_SelectedIndexChanged">
                     </asp:GridView>
                         </strong>
                     </div>
