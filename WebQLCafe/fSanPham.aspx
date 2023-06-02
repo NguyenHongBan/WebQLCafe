@@ -115,6 +115,10 @@
             font-weight: bold;
             font-size: medium;
         }
+        .newStyle8 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: medium;
+        }
     </style>
     </head>
 <body style="height: 1008px">
@@ -266,7 +270,8 @@
                 <div class="auto-style2">
                 </div>
                     <div class="auto-style2">
-                    <asp:GridView ID="GridViewSanPham" runat="server" AutoGenerateColumns="False" DataKeyNames="IDSanPham" DataSourceID="SqlDataSourceSP" Height="282px" Width="1468px" OnSelectedIndexChanged="GridViewSanPham_SelectedIndexChanged">
+                        <strong>
+                    <asp:GridView ID="GridViewSanPham" runat="server" AutoGenerateColumns="False" DataKeyNames="IDSanPham" DataSourceID="SqlDataSourceSP" Height="282px" Width="1468px" OnSelectedIndexChanged="GridViewSanPham_SelectedIndexChanged" CssClass="newStyle8">
                         <Columns>
                             <asp:CommandField ShowSelectButton="True" />
                             <asp:BoundField DataField="IDSanPham" HeaderText="IDSanPham" ReadOnly="True" SortExpression="IDSanPham" />
@@ -279,6 +284,7 @@
                             <asp:BoundField DataField="Anh" HeaderText="Anh" SortExpression="Anh" />
                         </Columns>
                     </asp:GridView>
+                        </strong>
                     </div>
                     <asp:SqlDataSource ID="SqlDataSourceSP" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString2 %>" SelectCommand="SELECT * FROM [SanPham]"></asp:SqlDataSource>
             </td>
