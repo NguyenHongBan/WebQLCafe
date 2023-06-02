@@ -69,31 +69,31 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.LinkButton lbtHoaDon;
 
         /// <summary>
-        /// ddlMaDH control.
+        /// ddlMaHD control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlMaDH;
+        protected global::System.Web.UI.WebControls.DropDownList ddlMaHD;
 
         /// <summary>
-        /// ddlMaKH control.
+        /// txtMaKH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlMaKH;
+        protected global::System.Web.UI.WebControls.TextBox txtMaKH;
 
         /// <summary>
-        /// ddlMaNV control.
+        /// txtMaNV control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlMaNV;
+        protected global::System.Web.UI.WebControls.TextBox txtMaNV;
 
         /// <summary>
         /// txtNgay control.
@@ -114,15 +114,6 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.Button btnTimKiem;
 
         /// <summary>
-        /// btnLamMoi control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLamMoi;
-
-        /// <summary>
         /// GridViewHoaDonNVT control.
         /// </summary>
         /// <remarks>
@@ -130,5 +121,14 @@ namespace WebQLCafe
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridViewHoaDonNVT;
+
+        /// <summary>
+        /// SqlDataSourceHD control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceHD;
     }
 }

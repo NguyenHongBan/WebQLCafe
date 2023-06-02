@@ -40,8 +40,8 @@ namespace WebQLCafe
 
         protected void btnThem_Click(object sender, EventArgs e)
         {
-            QLCaffe3Entities db = new QLCaffe3Entities();
-            LoaiSP lsp = new LoaiSP();
+            Data.QLCaffe3Entities db = new Data.QLCaffe3Entities();
+            Data.LoaiSP lsp = new Data.LoaiSP();
 
             var lst = (from n in db.LoaiSPs where n.IDLoai.Contains(txtIDLoai.Text) select n).ToList();
             if (lst.Count() > 0)
@@ -62,8 +62,8 @@ namespace WebQLCafe
 
         protected void btnSua_Click(object sender, EventArgs e)
         {
-            QLCaffe3Entities db = new QLCaffe3Entities();
-            LoaiSP lsp = new LoaiSP();
+            Data.QLCaffe3Entities db = new Data.QLCaffe3Entities();
+            Data.LoaiSP lsp = new Data.LoaiSP();
 
             lsp = db.LoaiSPs.Where(s => s.IDLoai == txtIDLoai.Text).Single();
             lsp.IDLoai = txtIDLoai.Text;
@@ -76,8 +76,8 @@ namespace WebQLCafe
 
         protected void btnXoa_Click(object sender, EventArgs e)
         {
-            QLCaffe3Entities db = new QLCaffe3Entities();
-            LoaiSP lsp = new LoaiSP();
+            Data.QLCaffe3Entities db = new Data.QLCaffe3Entities();
+            Data.LoaiSP lsp = new Data.LoaiSP();
             lsp = db.LoaiSPs.Where(s => s.IDLoai == txtIDLoai.Text).Single();
             lsp.IDLoai = txtIDLoai.Text;
             lsp.TenLoai = txtTenLoai.Text;

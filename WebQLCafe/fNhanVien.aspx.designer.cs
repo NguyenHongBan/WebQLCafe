@@ -33,6 +33,15 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.Image Image1;
 
         /// <summary>
+        /// btnDangXuat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnDangXuat;
+
+        /// <summary>
         /// lbtNhanVien control.
         /// </summary>
         /// <remarks>
@@ -76,15 +85,6 @@ namespace WebQLCafe
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lbtDoanhThu;
-
-        /// <summary>
-        /// btnDangXuat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDangXuat;
 
         /// <summary>
         /// txtMaNV control.

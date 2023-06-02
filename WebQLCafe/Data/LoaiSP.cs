@@ -7,27 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebQLCafe
+namespace WebQLCafe.Data
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class HoaDon
+    public partial class LoaiSP
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public HoaDon()
+        public LoaiSP()
         {
-            this.ChiTietDonHangs = new HashSet<ChiTietDonHang>();
+            this.SanPhams = new HashSet<SanPham>();
         }
     
-        public string IDHoaDon { get; set; }
-        public string IDKhachHang { get; set; }
-        public string NgayDatHang { get; set; }
-        public string MaNV { get; set; }
+        public string IDLoai { get; set; }
+        public string TenLoai { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; }
-        public virtual KhachHang KhachHang { get; set; }
-        public virtual NhanVien NhanVien { get; set; }
+        public virtual ICollection<SanPham> SanPhams { get; set; }
     }
 }

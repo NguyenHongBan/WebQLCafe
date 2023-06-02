@@ -36,7 +36,7 @@
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-weight: bold;
             color: #FF0000;
-            font-size: medium;
+            font-size: large;
         }
         .auto-style35 {
             text-align: right;
@@ -147,7 +147,9 @@
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
-                            <td class="auto-style35">&nbsp;</td>
+                            <td class="auto-style35"><strong>
+                                    <asp:Button ID="btnDangXuat" runat="server" CssClass="auto-style34" Height="40px" Text="Đăng Xuất" Width="150px" OnClick="btnDangXuat_Click" />
+                                    </strong></td>
                         </tr>
                         <tr>
                             <td class="auto-style7">
@@ -167,9 +169,7 @@
                             <td class="auto-style7"><strong>
                                 <asp:LinkButton ID="lbtDoanhThu" runat="server" CssClass="auto-style36" OnClick="lbtDoanhThu_Click">Doanh Thu</asp:LinkButton>
                                 </strong></td>
-                            <td class="auto-style7"><strong>
-                                    <asp:Button ID="btnDangXuat" runat="server" CssClass="auto-style34" Height="40px" Text="Đăng Xuất" Width="150px" OnClick="btnDangXuat_Click" />
-                                    </strong></td>
+                            <td class="auto-style7">&nbsp;</td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>

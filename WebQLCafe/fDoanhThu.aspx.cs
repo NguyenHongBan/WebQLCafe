@@ -11,7 +11,10 @@ namespace WebQLCafe
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                loadNgay();
+            }   
         }
 
         protected void lbtNhanVien_Click(object sender, EventArgs e)
@@ -44,20 +47,24 @@ namespace WebQLCafe
             Response.Redirect("fDoanhThu.aspx");
         }
 
+        public void loadNgay()
+        {
+            Data.QLCaffe3Entities db = new Data.QLCaffe3Entities();
+            var lst = (from l in db.DoanhThus select l.Ngay).ToList();
+            ddlTKTN.DataSource = lst;
+            ddlTKTN.DataBind();
+        }
+
         protected void btnTimKiem_Click(object sender, EventArgs e)
         {
-            string ngayTimKiem = txtTKtheoNgay.Text;
-            using (var context = new QLCaffe3Entities())
+            string ngayTimKiem = ddlTKTN.Text;
+            using (var context = new Data.QLCaffe3Entities())
             {
                 var doanhThu = context.DoanhThus.FirstOrDefault(dt => dt.Ngay == ngayTimKiem);
 
                 if (doanhThu != null)
                 {
                     txtTongTien.Text = doanhThu.SoTien;
-                }
-                else
-                {
-                    txtTongTien.Text = "Không có kết quả";
                 }
             }
         }

@@ -33,13 +33,13 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
 
         /// <summary>
-        /// txtMaNhanVien control.
+        /// txtMaNV control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMaNhanVien;
+        protected global::System.Web.UI.WebControls.TextBox txtMaNV;
 
         /// <summary>
         /// txtMK control.
@@ -51,30 +51,30 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.TextBox txtMK;
 
         /// <summary>
-        /// ckbHienMK control.
+        /// ckhHienMK control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox ckbHienMK;
+        protected global::System.Web.UI.WebControls.CheckBox ckhHienMK;
 
         /// <summary>
-        /// lblThongBao control.
+        /// lblThongbao control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblThongBao;
+        protected global::System.Web.UI.WebControls.Label lblThongbao;
 
         /// <summary>
-        /// btnDangNhap control.
+        /// btnDN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDangNhap;
+        protected global::System.Web.UI.WebControls.Button btnDN;
     }
 }

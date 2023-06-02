@@ -195,25 +195,23 @@
                                 <td class="auto-style29"><strong>Mã Đơn Hàng</strong></td>
                                 <td class="auto-style30">
                                     <strong>
-                                    <asp:DropDownList ID="ddlMaDH" runat="server" CssClass="auto-style45" Height="30px" Width="450px">
+                                    <asp:DropDownList ID="ddlMaHD" runat="server" CssClass="auto-style33" Height="30px" Width="450px">
                                     </asp:DropDownList>
                                     </strong>
                                 </td>
                                 <td class="auto-style31"><strong>Mã Khách Hàng</strong></td>
                                 <td class="auto-style32">
-                                    <strong>
-                                    <asp:DropDownList ID="ddlMaKH" runat="server" CssClass="auto-style45" Height="30px" Width="450px">
-                                    </asp:DropDownList>
-                                    </strong>
+                                <strong>
+                                <asp:TextBox ID="txtMaKH" runat="server" CssClass="auto-style40" Height="30px" Width="450px"></asp:TextBox>
+                                </strong>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="auto-style25"><strong>Mã Nhân Viên</strong></td>
                                 <td class="auto-style26">
-                                    <strong>
-                                    <asp:DropDownList ID="ddlMaNV" runat="server" CssClass="auto-style45" Height="30px" Width="450px">
-                                    </asp:DropDownList>
-                                    </strong>
+                                <strong>
+                                <asp:TextBox ID="txtMaNV" runat="server" CssClass="auto-style40" Height="30px" Width="450px"></asp:TextBox>
+                                </strong>
                                 </td>
                                 <td class="auto-style27"><strong>Ngày</strong></td>
                                 <td class="auto-style28">
@@ -225,11 +223,9 @@
                             <tr>
                                 <td class="auto-style11">&nbsp;</td>
                                 <td class="auto-style12">&nbsp;</td>
-                                <td class="auto-style14"><strong>
-                                    <asp:Button ID="btnTimKiem" runat="server" CssClass="auto-style33" Height="35px" Text="Tìm Kiếm" Width="100px" />
-                                    </strong></td>
+                                <td class="auto-style14">&nbsp;</td>
                                 <td class="auto-style39"><strong>
-                                    <asp:Button ID="btnLamMoi" runat="server" CssClass="auto-style33" Height="35px" Text="Làm Mới" Width="100px" />
+                                    <asp:Button ID="btnTimKiem" runat="server" CssClass="auto-style33" Height="35px" Text="Tìm Kiếm" Width="100px" OnClick="btnTimKiem_Click" />
                                     </strong></td>
                             </tr>
                         </table>
@@ -239,8 +235,15 @@
                     <td class="auto-style3" style="background-color: #FFCC99">&nbsp;</td>
                     <td style="background-color: #FFFFCC" class="auto-style36">
                         <strong>
-                        <asp:GridView ID="GridViewHoaDonNVT" runat="server" Height="424px" Width="1470px" CssClass="newStyle18">
+                        <asp:GridView ID="GridViewHoaDonNVT" runat="server" Height="424px" Width="1470px" CssClass="newStyle18" AutoGenerateColumns="False" DataKeyNames="IDHoaDon" DataSourceID="SqlDataSourceHD">
+                            <Columns>
+                                <asp:BoundField DataField="IDHoaDon" HeaderText="IDHoaDon" ReadOnly="True" SortExpression="IDHoaDon" />
+                                <asp:BoundField DataField="IDKhachHang" HeaderText="IDKhachHang" SortExpression="IDKhachHang" />
+                                <asp:BoundField DataField="NgayDatHang" HeaderText="NgayDatHang" SortExpression="NgayDatHang" />
+                                <asp:BoundField DataField="MaNV" HeaderText="MaNV" SortExpression="MaNV" />
+                            </Columns>
                         </asp:GridView>
+                        <asp:SqlDataSource ID="SqlDataSourceHD" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString3 %>" SelectCommand="SELECT * FROM [HoaDon]"></asp:SqlDataSource>
                         </strong>
                     </td>
                 </tr>

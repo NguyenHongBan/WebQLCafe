@@ -87,13 +87,13 @@ namespace WebQLCafe
         protected global::System.Web.UI.WebControls.LinkButton lbtDoanhThu;
 
         /// <summary>
-        /// txtTKtheoNgay control.
+        /// ddlTKTN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTKtheoNgay;
+        protected global::System.Web.UI.WebControls.DropDownList ddlTKTN;
 
         /// <summary>
         /// txtTongTien control.

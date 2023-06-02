@@ -17,6 +17,7 @@
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-weight: bold;
             color: #FF0000;
+            font-size: large;
         }
         .auto-style35 {
             text-align: right;

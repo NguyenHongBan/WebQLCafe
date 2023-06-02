@@ -56,8 +56,8 @@ namespace WebQLCafe
 
         protected void btnThem_Click(object sender, EventArgs e)
         {
-            QLCaffe3Entities db = new QLCaffe3Entities();
-            NhanVien nv = new NhanVien();
+            Data.QLCaffe3Entities db = new Data.QLCaffe3Entities();
+            Data.NhanVien nv = new Data.NhanVien();
             if (txtMaNV.Text == "")
             {
                 lblThongbao.Text = "Mã nhân viên đang trống!";
@@ -123,8 +123,8 @@ namespace WebQLCafe
 
         protected void btnCapNhat_Click(object sender, EventArgs e)
         {
-            QLCaffe3Entities db = new QLCaffe3Entities();
-            NhanVien nv = new NhanVien();
+            Data.QLCaffe3Entities db = new Data.QLCaffe3Entities();
+            Data.NhanVien nv = new Data.NhanVien();
             nv = db.NhanViens.Where(s => s.MaNV == txtMaNV.Text).Single();
             nv.MaNV = txtMaNV.Text;
             nv.MatKhau = txtMatKhau.Text;
@@ -145,8 +145,8 @@ namespace WebQLCafe
         protected void btnXoa_Click(object sender, EventArgs e)
         {
             string maNhanVien = txtMaNV.Text;
-            QLCaffe3Entities db = new QLCaffe3Entities();
-            NhanVien nhanVien = db.NhanViens.FirstOrDefault(nv => nv.MaNV == maNhanVien);
+            Data.QLCaffe3Entities db = new Data.QLCaffe3Entities();
+            Data.NhanVien nhanVien = db.NhanViens.FirstOrDefault(nv => nv.MaNV == maNhanVien);
             if (nhanVien != null)
             {
                 db.NhanViens.Remove(nhanVien);
@@ -178,9 +178,9 @@ namespace WebQLCafe
             ddlQuyenDN.Text = string.Empty;
         }
 
-        private NhanVien TimKiemNhanVienTheoMa(string maNV)
+        private Data.NhanVien TimKiemNhanVienTheoMa(string maNV)
         {
-            using (var context = new QLCaffe3Entities())
+            using (var context = new Data.QLCaffe3Entities())
             {
                 return context.NhanViens.FirstOrDefault(nv => nv.MaNV == maNV);
             }
@@ -189,7 +189,7 @@ namespace WebQLCafe
         protected void btnTimKiem_Click(object sender, EventArgs e)
         {
             string maNV = txtTimKiem.Text;
-            NhanVien nv = TimKiemNhanVienTheoMa(maNV);
+            Data.NhanVien nv = TimKiemNhanVienTheoMa(maNV);
             if (nv != null)
             {
                 txtMaNV.Text = nv.MaNV;

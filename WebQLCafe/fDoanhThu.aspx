@@ -25,10 +25,7 @@
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-weight: bold;
             color: #FF0000;
-        }
-        .auto-style35 {
-            text-align: right;
-            height: 50px;
+            font-size: large;
         }
         .newStyle1 {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -42,16 +39,6 @@
         }
         .auto-style37 {
             text-align: center;
-        }
-        .auto-style38 {
-            height: 22px;
-        }
-        .auto-style39 {
-            width: 100%;
-            height: 104px;
-        }
-        .auto-style40 {
-            height: 50px;
         }
         .newStyle2 {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -82,6 +69,17 @@
         .newStyle5 {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         }
+        .auto-style45 {
+            text-align: right;
+        }
+        .newStyle6 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .auto-style46 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            font-weight: bold;
+        }
     </style>
     </head>
 <body style="height: 1010px">
@@ -92,16 +90,16 @@
                     <asp:ImageButton ID="ImageButton1" runat="server" Height="141px" ImageUrl="~/Models/images/anhlogo/3.png" Width="133px" />
                 </td>
                 <td class="auto-style4">
-                    <table class="auto-style39">
+                    <table style="width:100%;">
                         <tr>
-                            <td class="auto-style40"></td>
-                            <td class="auto-style40"></td>
-                            <td class="auto-style40"></td>
-                            <td class="auto-style40"></td>
-                            <td class="auto-style40"></td>
-                            <td class="auto-style35"><strong>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td class="auto-style45"><strong>
                                     <asp:Button ID="btnDangXuat" runat="server" CssClass="auto-style34" Height="40px" Text="Đăng Xuất" Width="150px" OnClick="btnDangXuat_Click" />
-                                    </strong></td>
+                                </strong></td>
                         </tr>
                         <tr>
                             <td class="auto-style37"><strong>
@@ -122,25 +120,26 @@
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <td class="auto-style38"></td>
-                            <td class="auto-style38"></td>
-                            <td class="auto-style38"></td>
-                            <td class="auto-style38"></td>
-                            <td class="auto-style38"></td>
-                            <td class="auto-style38"></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
                         </tr>
                     </table>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style43" style="background-color: #FFCC99"></td>
+                <td class="auto-style43" style="background-color: #FFCC99">&nbsp;</td>
                 <td class="auto-style44" style="background-color: #FFCC99">
                     <table style="width:100%;">
                         <tr>
                             <td class="auto-style41"><strong>Tìm kiếm theo ngày</strong></td>
                             <td>
                                 <strong>
-                                <asp:TextBox ID="txtTKtheoNgay" runat="server" Height="30px" Width="450px" CssClass="auto-style42"></asp:TextBox>
+                                <asp:DropDownList ID="ddlTKTN" runat="server" CssClass="auto-style46" Height="30px" Width="450px">
+                                </asp:DropDownList>
                                 </strong>
                             </td>
                         </tr>
@@ -170,16 +169,16 @@
                 <td style="background-color: #FFFFCC">
                     <div class="auto-style37">
                         <strong>
-                    <asp:GridView ID="grvDoanhThu" runat="server" Height="521px" Width="1459px" AutoGenerateColumns="False" DataKeyNames="IDDoanhThu" DataSourceID="SqlDataSourceDT" CssClass="newStyle4">
+                    <asp:GridView ID="grvDoanhThu" runat="server" Height="521px" Width="1459px" AutoGenerateColumns="False" CssClass="newStyle4" DataKeyNames="IDDoanhThu" DataSourceID="SqlDataSourceDT">
                         <Columns>
                             <asp:BoundField DataField="IDDoanhThu" HeaderText="IDDoanhThu" ReadOnly="True" SortExpression="IDDoanhThu" />
                             <asp:BoundField DataField="Ngay" HeaderText="Ngay" SortExpression="Ngay" />
                             <asp:BoundField DataField="SoTien" HeaderText="SoTien" SortExpression="SoTien" />
                         </Columns>
                     </asp:GridView>
+                        <asp:SqlDataSource ID="SqlDataSourceDT" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString3 %>" SelectCommand="SELECT * FROM [DoanhThu]"></asp:SqlDataSource>
                         </strong>
                     </div>
-                    <asp:SqlDataSource ID="SqlDataSourceDT" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString2 %>" SelectCommand="SELECT * FROM [DoanhThu]"></asp:SqlDataSource>
                 </td>
             </tr>
         </table>

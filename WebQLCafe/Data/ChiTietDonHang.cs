@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebQLCafe
+namespace WebQLCafe.Data
 {
     using System;
     using System.Collections.Generic;

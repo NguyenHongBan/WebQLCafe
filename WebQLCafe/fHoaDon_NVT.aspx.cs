@@ -31,5 +31,31 @@ namespace WebQLCafe
             Session.Abandon();
             Response.Redirect("fHoaDon_NVT.aspx");
         }
+
+        public void loadMaHD()
+        {
+            Data.QLCaffe3Entities db = new Data.QLCaffe3Entities();
+            var lst = (from l in db.HoaDons select l.IDHoaDon).ToList();
+            ddlMaHD.DataSource = lst;
+            ddlMaHD.DataBind();
+        }
+
+        protected void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            string idHoaDon = ddlMaHD.Text;
+            using (var context = new Data.QLCaffe3Entities())
+            {
+                var hoaDon = (from hd in context.HoaDons
+                              where hd.IDHoaDon == idHoaDon
+                              select hd).FirstOrDefault();
+
+                if (hoaDon != null)
+                {
+                    txtMaKH.Text = hoaDon.IDKhachHang;
+                    txtMaNV.Text = hoaDon.MaNV;
+                    txtNgay.Text = hoaDon.NgayDatHang;
+                }
+            }
+        }
     }
 }

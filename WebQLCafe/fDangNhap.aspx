@@ -1,206 +1,188 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="fDangNhap.aspx.cs" Inherits="WebQLCafe.fDangNhap" %>
 
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Đăng nhập</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
     <style type="text/css">
-        .auto-style3 {
+        .auto-style1 {
+            height: 1010px;
+        }
+        .auto-style2 {
             width: 100%;
-            height: 992px;
-        }
-        .auto-style4 {
-       551px;
-        }
-        .auto-style5 {
-            width: 551px;
-            height: 225px;
-            text-align: center;
-        }
-        .auto-style6 {
-            height: 225px;
-        }
-        .auto-style7 {
-            height: 225px;
-            text-align: center;
-            font-size: 30pt;
-            width: 713px;
-        }
-        .auto-style8 {
-            width: 713px;
-        }
-        .auto-style9 {
-            width: 551px ;
-            width: 551px;
-            height: 606px;
-        }
-        .auto-style10 {
-            width: 713px;
-            height: 606px;
-        }
-        .auto-style11 {
-            height: 606px;
-        }
-        .auto-style12 {
-            width: 238px;
-            font-size: 16pt;
-            text-align: center;
-        }
-        .auto-style13 {
-            width: 100%;
-            height: 585px;
-        }
-        .auto-style14 {
-            text-align: center;
-            font-size: 24pt;
-        }
-        .auto-style15 {
-            text-align: center;
-            height: 40px;
-        }
-        .auto-style16 {
-            width: 238px;
-            height: 93px;
-            font-size: 20pt;
-            text-align: center;
-        }
-        .auto-style17 {
-            height: 93px;
-        }
-        .auto-style18 {
-            width: 238px;
-            height: 40px;
-        }
-        .auto-style19 {
-            width: 238px;
-            height: 100px;
-            font-size: 20pt;
-            text-align: center;
-        }
-        .auto-style20 {
-            height: 100px;
-        }
-        .auto-style22 {
-            text-align: center;
+            height: 1002px;
         }
         .newStyle1 {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         }
+        .auto-style4 {
+            text-align: center;
+            width: 797px;
+            height: 204px;
+        }
+        .auto-style5 {
+            width: 530px;
+        }
+        .auto-style6 {
+            width: 797px;
+        }
+        .auto-style7 {
+            width: 100%;
+        }
+        .auto-style8 {
+            height: 23px;
+            text-align: center;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: xx-large;
+        }
+        .auto-style9 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 40pt;
+        }
+        .auto-style10 {
+            text-align: center;
+        }
         .newStyle2 {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: x-large;
         }
-
-
+        .auto-style11 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: x-large;
+            text-align: center;
+            width: 306px;
+        }
+        .auto-style12 {
+            width: 306px;
+        }
         .newStyle3 {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         }
+        .auto-style13 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: x-large;
+            font-weight: bold;
+        }
         .newStyle4 {
-            background-color: #3399FF;
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            font-weight: 700;
-            font-size: 16pt;
         }
-
-
-        .auto-style23 {
-            background-color: #3399FF;
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            font-weight: 700;
-            font-size: 16pt;
-            color: #FFFFFF;
-        }
-        .auto-style24 {
+        .auto-style14 {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-size: large;
+        }
+        .auto-style15 {
+            width: 530px;
+            height: 444px;
+        }
+        .auto-style16 {
+            width: 797px;
+            height: 444px;
+        }
+        .auto-style17 {
+            height: 444px;
+        }
+        .auto-style18 {
+            width: 530px;
+            height: 204px;
+            text-align: center;
+        }
+        .auto-style19 {
+            height: 204px;
+        }
+        .auto-style21 {
+            height: 48px;
+            text-align: center;
         }
         .newStyle5 {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-size: large;
         }
+        .auto-style22 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            color: #FF0000;
+        }
         .newStyle6 {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-size: large;
         }
-        .auto-style26 {
+        .auto-style23 {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-size: large;
             font-weight: bold;
         }
-
-
-        .newStyle7 {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .auto-style27 {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            color: #FF0000;
-        }
-
-
     </style>
 </head>
-<body style="height: 1010px">
+<body>
     <form id="form1" runat="server">
-        <table class="auto-style3">
-            <tr>
-                <td class="auto-style5" style="background-color: #CD853F">
-                    <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Models/images/anhlogo/3.png" Width="200px" />
-                </td>
-                <td class="auto-style7" style="background-color: #CD853F"><strong style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">QUẢN LÝ CÀ PHÊ</strong></td>
-                <td class="auto-style6" style="background-color: #CD853F"></td>
-            </tr>
-            <tr>
-                <td class="auto-style9" style="background-color: #FFCC99"></td>
-                <td class="auto-style10" style="background-color: #FFCC99">
-                    <table class="auto-style13">
-                        <tr>
-                            <td class="auto-style14" colspan="2"><strong style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">ĐĂNG NHẬP HỆ THỐNG</strong></td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style19"><strong style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Mã Nhân Viên</strong></td>
-                            <td class="auto-style20">
-                                <strong>
-                                <asp:TextBox ID="txtMaNhanVien" runat="server" Height="35px" Width="420px" CssClass="auto-style26"></asp:TextBox>
-                                </strong>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style16"><strong style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Mật Khẩu</strong></td>
-                            <td class="auto-style17">
-                                <strong>
-                                <asp:TextBox ID="txtMK" runat="server" Height="35px" Width="420px" CssClass="auto-style26"></asp:TextBox>
-                                </strong>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style18"></td>
-                            <td class="auto-style15"><strong>
-                                <asp:CheckBox ID="ckbHienMK" runat="server" CssClass="auto-style24" Text="Hiển thị mật khẩu" AutoPostBack="True" OnCheckedChanged="ckbHienMK_CheckedChanged1" />
-                                </strong></td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style12">&nbsp;</td>
-                            <td class="auto-style22"><strong>
-                                <asp:Label ID="lblThongBao" runat="server" CssClass="auto-style27" Text="Thông báo"></asp:Label>
-                                </strong></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" class="auto-style22"><strong>
-                                <asp:Button ID="btnDangNhap" runat="server" CssClass="auto-style23" Text="Đăng Nhập" OnClick="btnDangNhap_Click" />
-                                </strong></td>
-                        </tr>
-                    </table>
-                </td>
-                <td class="auto-style11" style="background-color: #FFCC99">&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style4" style="background-color: #FFCC99">&nbsp;</td>
-                <td class="auto-style8" style="background-color: #FFCC99">&nbsp;</td>
-                <td style="background-color: #FFCC99">&nbsp;</td>
-            </tr>
-        </table>
+        <div class="auto-style1">
+            <table class="auto-style2">
+                <tr>
+                    <td class="auto-style18" style="background-color: #CB853F">
+                        <asp:ImageButton ID="ImageButton1" runat="server" Height="210px" ImageUrl="~/Models/images/anhlogo/3.png" Width="200px" />
+                    </td>
+                    <td class="auto-style4" style="background-color: #CB853F"><span class="auto-style9"><strong>QUẢN LÝ CÀ PHÊ</strong></span>&nbsp;</td>
+                    <td class="auto-style19" style="background-color: #CB853F"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style15" style="background-color: #FFCC99"></td>
+                    <td class="auto-style16" style="background-color: #FFCC99">
+                        <table class="auto-style7">
+                            <tr>
+                                <td class="auto-style8" colspan="2"><strong>ĐĂNG NHẬP HỆ THỐNG</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style12">&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style11"><strong>Mã nhân viên</strong></td>
+                                <td><strong>
+                                    <asp:TextBox ID="txtMaNV" runat="server" CssClass="auto-style23" Height="35px" Width="450px"></asp:TextBox>
+                                    </strong></td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style12">&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style11"><strong>Mật khẩu</strong></td>
+                                <td><strong>
+                                    <asp:TextBox ID="txtMK" runat="server" CssClass="auto-style23" Height="35px" TextMode="Password" Width="450px"></asp:TextBox>
+                                    </strong></td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style12">&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style12">&nbsp;</td>
+                                <td><strong>
+                                    <asp:CheckBox ID="ckhHienMK" runat="server" AutoPostBack="True" CssClass="auto-style14" OnCheckedChanged="ckhHienMK_CheckedChanged" Text="Hiển thị mật khẩu" />
+                                    </strong></td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style21" colspan="2"><strong>
+                                    <asp:Label ID="lblThongbao" runat="server" CssClass="auto-style22" Text="Thông báo"></asp:Label>
+                                    </strong></td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style10" colspan="2"><strong>
+                                    <asp:Button ID="btnDN" runat="server" BackColor="#3366FF" CssClass="auto-style13" Height="50px" OnClick="btnDN_Click" Text="Đăng nhập" Width="200px" />
+                                    </strong></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="auto-style17" style="background-color: #FFCC99"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style5" style="background-color: #FFCC99">&nbsp;</td>
+                    <td class="auto-style6" style="background-color: #FFCC99">&nbsp;</td>
+                    <td style="background-color: #FFCC99">&nbsp;</td>
+                </tr>
+            </table>
+        </div>
     </form>
 </body>
 </html>

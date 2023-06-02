@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.Entity;
 
 namespace WebQLCafe
 {
@@ -11,10 +12,10 @@ namespace WebQLCafe
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            LoadMaHD();
-            LoadMaKH();
-            LoadMaNV();
-            //LoadData();
+            if (!IsPostBack)
+            {
+                loadMaHD();
+            }
         }
 
         protected void lbtNhanVien_Click1(object sender, EventArgs e)
@@ -47,49 +48,30 @@ namespace WebQLCafe
             Response.Redirect("fDoanhThu.aspx");
         }
 
-        public void LoadMaHD()
+        public void loadMaHD()
         {
-            QLCaffe3Entities db = new QLCaffe3Entities();
-            var lst = (from i in db.HoaDons select i.IDHoaDon).ToList();
+            Data.QLCaffe3Entities db = new Data.QLCaffe3Entities();
+            var lst = (from l in db.HoaDons select l.IDHoaDon).ToList();
             ddlMaHD.DataSource = lst;
             ddlMaHD.DataBind();
         }
 
-        public void LoadMaKH()
-        {
-            QLCaffe3Entities db = new QLCaffe3Entities();
-            var lst = (from i in db.KhachHangs select i.IDKhachHang).ToList();
-            ddlMaKH.DataSource = lst;
-            ddlMaKH.DataBind();
-        }
-
-        public void LoadMaNV()
-        {
-            QLCaffe3Entities db = new QLCaffe3Entities();
-            var lst = (from i in db.NhanViens select i.MaNV).ToList();
-            ddlMaNV.DataSource = lst;
-            ddlMaNV.DataBind();
-        }
-        //public void LoadData()
-        //{
-        //    QLCaffe3Entities db = new QLCaffe3Entities();
-        //    var hd = db.HoaDons.All();
-        //    GridViewHoaDon.DataSource = hd;
-
-        //}
         protected void btnTimKiem_Click(object sender, EventArgs e)
         {
-            QLCaffe3Entities db = new QLCaffe3Entities();
-        }
+            string idHoaDon = ddlMaHD.Text;
+            using (var context = new Data.QLCaffe3Entities())
+            {
+                var hoaDon = (from hd in context.HoaDons
+                              where hd.IDHoaDon == idHoaDon
+                              select hd).FirstOrDefault();
 
-        protected void btnLamMoi_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void GridViewHoaDon_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
+                if (hoaDon != null)
+                {
+                    txtMaKH.Text = hoaDon.IDKhachHang;
+                    txtMaNV.Text = hoaDon.MaNV;
+                    txtNgay.Text = hoaDon.NgayDatHang;
+                }
+            }
         }
     }
 }

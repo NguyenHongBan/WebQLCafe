@@ -4,39 +4,39 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data.SqlClient;
-using System.Configuration;
+
 namespace WebQLCafe
 {
     public partial class fDangNhap : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
 
-        protected void btnDangNhap_Click(object sender, EventArgs e)
+        protected void btnDN_Click(object sender, EventArgs e)
         {
-            QLCaffe3Entities db = new QLCaffe3Entities();
+            Data.QLCaffe3Entities db = new Data.QLCaffe3Entities();
 
-            if (txtMaNhanVien.Text == "")
+            if (txtMaNV.Text == "")
             {
 
-                lblThongBao.Text = "Mã Nhân Viên đang trống";
-                txtMaNhanVien.Focus();
+                lblThongbao.Text = "Mã Nhân Viên đang trống";
+                txtMaNV.Focus();
 
             }
             else if (txtMK.Text == "")
             {
-                lblThongBao.Text = "Mật Khẩu đang trống";
-                txtMK.Focus();            }
+                lblThongbao.Text = "Mật Khẩu đang trống";
+                txtMK.Focus();
+            }
             else
             {
                 var query1 = from a in db.NhanViens select a.MaNV;
-                
-                foreach(var a in query1)
+
+                foreach (var a in query1)
                 {
-                    if (a == txtMaNhanVien.Text)
+                    if (a == txtMaNV.Text)
                     {
                         var query2 = from b in db.NhanViens where b.MaNV == a select b.MatKhau;
                         foreach (var b in query2)
@@ -60,22 +60,22 @@ namespace WebQLCafe
                             }
                             else
                             {
-                                lblThongBao.Text = "Mật Khẩu không chính xác!";
+                                lblThongbao.Text = "Mật Khẩu không chính xác!";
                             }
                         }
                     }
                     else
                     {
-                        lblThongBao.Text = "Mã Nhân Viên không chính xác!";
+                        lblThongbao.Text = "Mã Nhân Viên không chính xác!";
                     }
                 }
             }
             Response.Redirect("fNhanVien.aspx");
         }
 
-        protected void ckbHienMK_CheckedChanged1(object sender, EventArgs e)
+        protected void ckhHienMK_CheckedChanged(object sender, EventArgs e)
         {
-            if (ckbHienMK.Checked)
+            if (ckhHienMK.Checked)
             {
                 txtMK.TextMode = TextBoxMode.SingleLine;
             }

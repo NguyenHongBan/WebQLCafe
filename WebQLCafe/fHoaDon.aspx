@@ -150,6 +150,7 @@
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-weight: bold;
             color: #FF0000;
+            font-size: large;
         }
         .auto-style35 {
             width: 100%;
@@ -185,6 +186,13 @@
             font-size: medium;
         }
         .newStyle22 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .newStyle23 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: medium;
+        }
+        .newStyle24 {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         }
         </style>
@@ -245,15 +253,14 @@
                             <td class="auto-style29"><strong>Mã Hóa Đơn</strong></td>
                             <td class="auto-style30">
                                 <strong>
-                                <asp:DropDownList ID="ddlMaHD" runat="server" CssClass="auto-style40" Height="30px" Width="450px">
+                                <asp:DropDownList ID="ddlMaHD" runat="server" CssClass="auto-style33" Height="30px" Width="450px">
                                 </asp:DropDownList>
                                 </strong>
                             </td>
                             <td class="auto-style31"><strong>Mã Khách Hàng</strong></td>
                             <td class="auto-style32">
                                 <strong>
-                                <asp:DropDownList ID="ddlMaKH" runat="server" CssClass="auto-style40" Height="30px" Width="450px">
-                                </asp:DropDownList>
+                                <asp:TextBox ID="txtMaKH" runat="server" CssClass="auto-style40" Height="30px" Width="450px"></asp:TextBox>
                                 </strong>
                             </td>
                         </tr>
@@ -261,8 +268,7 @@
                             <td class="auto-style25"><strong>Mã Nhân Viên</strong></td>
                             <td class="auto-style26">
                                 <strong>
-                                <asp:DropDownList ID="ddlMaNV" runat="server" CssClass="auto-style40" Height="30px" Width="450px">
-                                </asp:DropDownList>
+                                <asp:TextBox ID="txtMaNV" runat="server" CssClass="auto-style40" Height="30px" Width="450px"></asp:TextBox>
                                 </strong>
                             </td>
                             <td class="auto-style27"><strong>Ngày</strong></td>
@@ -275,11 +281,9 @@
                         <tr>
                             <td class="auto-style11">&nbsp;</td>
                             <td class="auto-style12">&nbsp;</td>
-                            <td class="auto-style14"><strong>
-                                <asp:Button ID="btnTimKiem" runat="server" CssClass="auto-style33" Height="35px" Text="Tìm Kiếm" Width="100px" OnClick="btnTimKiem_Click" />
-                                </strong></td>
+                            <td class="auto-style14">&nbsp;</td>
                             <td class="auto-style39"><strong>
-                                <asp:Button ID="btnLamMoi" runat="server" CssClass="auto-style33" Height="35px" Text="Làm Mới" Width="100px" OnClick="btnLamMoi_Click" />
+                                <asp:Button ID="btnTimKiem" runat="server" CssClass="auto-style33" Height="35px" Text="Tìm Kiếm" Width="100px" OnClick="btnTimKiem_Click" />
                                 </strong></td>
                         </tr>
                     </table>
@@ -290,11 +294,17 @@
                 <td style="background-color: #FFFFCC">
                     <div class="auto-style4">
                         <strong>
-                    <asp:GridView ID="GridViewHoaDon" runat="server" CssClass="newStyle17" Height="430px" Width="1470px" AutoGenerateColumns="False" OnSelectedIndexChanged="GridViewHoaDon_SelectedIndexChanged">
+                    <asp:GridView ID="GridViewHoaDon" runat="server" CssClass="newStyle17" Height="430px" Width="1470px" AutoGenerateColumns="False" OnSelectedIndexChanged="GridViewHoaDon_SelectedIndexChanged" DataKeyNames="IDHoaDon" DataSourceID="SqlDataSourceHD">
+                        <Columns>
+                            <asp:BoundField DataField="IDHoaDon" HeaderText="IDHoaDon" ReadOnly="True" SortExpression="IDHoaDon" />
+                            <asp:BoundField DataField="IDKhachHang" HeaderText="IDKhachHang" SortExpression="IDKhachHang" />
+                            <asp:BoundField DataField="NgayDatHang" HeaderText="NgayDatHang" SortExpression="NgayDatHang" />
+                            <asp:BoundField DataField="MaNV" HeaderText="MaNV" SortExpression="MaNV" />
+                        </Columns>
                     </asp:GridView>
+                        <asp:SqlDataSource ID="SqlDataSourceHD" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString3 %>" SelectCommand="SELECT * FROM [HoaDon]"></asp:SqlDataSource>
                         </strong>
                     </div>
-                    <asp:SqlDataSource ID="SqlDataSourceHD" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString2 %>" SelectCommand="SELECT * FROM [HoaDon]"></asp:SqlDataSource>
                 </td>
             </tr>
         </table>

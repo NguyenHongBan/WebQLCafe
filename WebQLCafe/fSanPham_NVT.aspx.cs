@@ -36,7 +36,7 @@ namespace WebQLCafe
 
         public void loadSP()
         {
-            QLCaffe3Entities db = new QLCaffe3Entities();
+            Data.QLCaffe3Entities db = new Data.QLCaffe3Entities();
             var lst = (from l in db.LoaiSPs select l.IDLoai).ToList();
             ddlLoaiSP.DataSource = lst;
             ddlLoaiSP.DataBind();
@@ -44,8 +44,8 @@ namespace WebQLCafe
 
         protected void btnThem_Click(object sender, EventArgs e)
         {
-            QLCaffe3Entities db = new QLCaffe3Entities();
-            SanPham sp = new SanPham();
+            Data.QLCaffe3Entities db = new Data.QLCaffe3Entities();
+            Data.SanPham sp = new Data.SanPham();
             var lst = (from n in db.SanPhams where n.IDSanPham.Contains(txtMaSP.Text) select n).ToList();
             if (lst.Count() > 0)
             {
@@ -68,9 +68,9 @@ namespace WebQLCafe
                     string filePath = Path.Combine(directoryPath, fileName);
                     fulHinhAnh.PostedFile.SaveAs(filePath);
 
-                    using (QLCaffe3Entities db1 = new QLCaffe3Entities())
+                    using (Data.QLCaffe3Entities db1 = new Data.QLCaffe3Entities())
                     {
-                        SanPham sanPham = new SanPham
+                        Data.SanPham sanPham = new Data.SanPham
                         {
                             IDSanPham = txtMaSP.Text,
                             TenSanPham = txtTenSP.Text,
@@ -91,9 +91,9 @@ namespace WebQLCafe
             }        
         }
 
-        private SanPham GetSanPham(string maSanPham)
+        private Data.SanPham GetSanPham(string maSanPham)
         {
-            using (QLCaffe3Entities db = new QLCaffe3Entities())
+            using (Data.QLCaffe3Entities db = new Data.QLCaffe3Entities())
             {
                 return db.SanPhams.FirstOrDefault(sp => sp.IDSanPham == maSanPham);
             }
@@ -101,7 +101,7 @@ namespace WebQLCafe
         protected void btnSua_Click(object sender, EventArgs e)
         {
             string maSP = txtMaSP.Text;
-            SanPham sanPham = GetSanPham(maSP);
+            Data.SanPham sanPham = GetSanPham(maSP);
             if (sanPham != null)
             {
                 sanPham.TenSanPham = txtTenSP.Text;
@@ -118,7 +118,7 @@ namespace WebQLCafe
                     fulHinhAnh.SaveAs(fileName);
                     sanPham.Anh = fileName;
                 }
-                using (QLCaffe3Entities db = new QLCaffe3Entities())
+                using (Data.QLCaffe3Entities db = new Data.QLCaffe3Entities())
                 {
                     db.Entry(sanPham).State = EntityState.Modified;
                     db.SaveChanges();
@@ -131,9 +131,9 @@ namespace WebQLCafe
         protected void btnXoa_Click(object sender, EventArgs e)
         {
             string maSanPham = txtMaSP.Text;
-            using (QLCaffe3Entities db = new QLCaffe3Entities())
+            using (Data.QLCaffe3Entities db = new Data.QLCaffe3Entities())
             {
-                SanPham sanPham = db.SanPhams.FirstOrDefault(sp => sp.IDSanPham == maSanPham);
+                Data.SanPham sanPham = db.SanPhams.FirstOrDefault(sp => sp.IDSanPham == maSanPham);
                 if (sanPham != null)
                 {
                     db.SanPhams.Remove(sanPham);
