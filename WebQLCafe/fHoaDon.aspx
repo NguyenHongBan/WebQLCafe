@@ -242,10 +242,10 @@
                 <td class="auto-style9">
                     <table class="auto-style7">
                         <tr>
-                            <td class="auto-style29"><strong>Mã Đơn Hàng</strong></td>
+                            <td class="auto-style29"><strong>Mã Hóa Đơn</strong></td>
                             <td class="auto-style30">
                                 <strong>
-                                <asp:DropDownList ID="ddlMaDH" runat="server" CssClass="auto-style40" Height="30px" Width="450px">
+                                <asp:DropDownList ID="ddlMaHD" runat="server" CssClass="auto-style40" Height="30px" Width="450px">
                                 </asp:DropDownList>
                                 </strong>
                             </td>
@@ -276,10 +276,10 @@
                             <td class="auto-style11">&nbsp;</td>
                             <td class="auto-style12">&nbsp;</td>
                             <td class="auto-style14"><strong>
-                                <asp:Button ID="btnTimKiem" runat="server" CssClass="auto-style33" Height="35px" Text="Tìm Kiếm" Width="100px" />
+                                <asp:Button ID="btnTimKiem" runat="server" CssClass="auto-style33" Height="35px" Text="Tìm Kiếm" Width="100px" OnClick="btnTimKiem_Click" />
                                 </strong></td>
                             <td class="auto-style39"><strong>
-                                <asp:Button ID="btnLamMoi" runat="server" CssClass="auto-style33" Height="35px" Text="Làm Mới" Width="100px" />
+                                <asp:Button ID="btnLamMoi" runat="server" CssClass="auto-style33" Height="35px" Text="Làm Mới" Width="100px" OnClick="btnLamMoi_Click" />
                                 </strong></td>
                         </tr>
                     </table>
@@ -290,12 +290,12 @@
                 <td style="background-color: #FFFFCC">
                     <div class="auto-style4">
                         <strong>
-                    <asp:GridView ID="GridViewHoaDon" runat="server" CssClass="newStyle17" Height="430px" Width="1470px" AutoGenerateColumns="False" DataKeyNames="IDHoaDon" DataSourceID="SqlDataSourceHD">
+                    <asp:GridView ID="GridViewHoaDon" runat="server" CssClass="newStyle17" Height="430px" Width="1470px" AutoGenerateColumns="False" DataKeyNames="IDHoaDon" DataSourceID="SqlDataSourceHD" OnSelectedIndexChanged="GridViewHoaDon_SelectedIndexChanged">
                         <Columns>
-                            <asp:BoundField DataField="IDHoaDon" HeaderText="IDHoaDon" ReadOnly="True" SortExpression="IDHoaDon"></asp:BoundField>
-                            <asp:BoundField DataField="IDKhachHang" HeaderText="IDKhachHang" SortExpression="IDKhachHang"></asp:BoundField>
-                            <asp:BoundField DataField="NgayDatHang" HeaderText="NgayDatHang" SortExpression="NgayDatHang"></asp:BoundField>
-                            <asp:BoundField DataField="MaNV" HeaderText="MaNV" SortExpression="MaNV"></asp:BoundField>
+                            <asp:BoundField DataField="IDHoaDon" HeaderText="IDHoaDon" ReadOnly="True" SortExpression="IDHoaDon" />
+                            <asp:BoundField DataField="IDKhachHang" HeaderText="IDKhachHang" SortExpression="IDKhachHang" />
+                            <asp:BoundField DataField="NgayDatHang" HeaderText="NgayDatHang" SortExpression="NgayDatHang" />
+                            <asp:BoundField DataField="MaNV" HeaderText="MaNV" SortExpression="MaNV" />
                         </Columns>
                     </asp:GridView>
                         </strong>
