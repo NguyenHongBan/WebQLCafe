@@ -21,14 +21,9 @@
             width: 797px;
             height: 204px;
         }
-        .auto-style5 {
-            width: 530px;
-        }
-        .auto-style6 {
-            width: 797px;
-        }
         .auto-style7 {
             width: 100%;
+            height: 372px;
         }
         .auto-style8 {
             height: 23px;
@@ -167,12 +162,7 @@
                     </td>
                     <td class="auto-style17" style="background-color: #FFCC99"></td>
                 </tr>
-                <tr>
-                    <td class="auto-style5" style="background-color: #FFCC99">&nbsp;</td>
-                    <td class="auto-style6" style="background-color: #FFCC99">&nbsp;</td>
-                    <td style="background-color: #FFCC99">&nbsp;</td>
-                </tr>
-            </table>
+                </table>
         </div>
     </form>
 </body>
