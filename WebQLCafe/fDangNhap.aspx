@@ -63,13 +63,10 @@
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-size: x-large;
             font-weight: bold;
+            color: #FFFFFF;
         }
         .newStyle4 {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .auto-style14 {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            font-size: large;
         }
         .auto-style15 {
             width: 530px;
@@ -155,12 +152,6 @@
                             <tr>
                                 <td class="auto-style12">&nbsp;</td>
                                 <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style12">&nbsp;</td>
-                                <td><strong>
-                                    <asp:CheckBox ID="ckhHienMK" runat="server" AutoPostBack="True" CssClass="auto-style14" OnCheckedChanged="ckhHienMK_CheckedChanged" Text="Hiển thị mật khẩu" />
-                                    </strong></td>
                             </tr>
                             <tr>
                                 <td class="auto-style21" colspan="2"><strong>

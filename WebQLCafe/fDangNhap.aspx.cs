@@ -72,17 +72,5 @@ namespace WebQLCafe
             }
             Response.Redirect("fNhanVien.aspx");
         }
-
-        protected void ckhHienMK_CheckedChanged(object sender, EventArgs e)
-        {
-            if (ckhHienMK.Checked)
-            {
-                txtMK.TextMode = TextBoxMode.SingleLine;
-            }
-            else
-            {
-                txtMK.TextMode = TextBoxMode.Password;
-            }
-        }
     }
 }

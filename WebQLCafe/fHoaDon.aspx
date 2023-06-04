@@ -195,6 +195,10 @@
         .newStyle24 {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         }
+        .newStyle25 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
         </style>
 </head>
 <body style="height: 1010px">
@@ -294,16 +298,16 @@
                 <td style="background-color: #FFFFCC">
                     <div class="auto-style4">
                         <strong>
-                    <asp:GridView ID="GridViewHoaDon" runat="server" CssClass="newStyle17" Height="430px" Width="1470px" AutoGenerateColumns="False" OnSelectedIndexChanged="GridViewHoaDon_SelectedIndexChanged" DataKeyNames="IDHoaDon" DataSourceID="SqlDataSourceHD">
-                        <Columns>
-                            <asp:BoundField DataField="IDHoaDon" HeaderText="IDHoaDon" ReadOnly="True" SortExpression="IDHoaDon" />
-                            <asp:BoundField DataField="IDKhachHang" HeaderText="IDKhachHang" SortExpression="IDKhachHang" />
-                            <asp:BoundField DataField="NgayDatHang" HeaderText="NgayDatHang" SortExpression="NgayDatHang" />
-                            <asp:BoundField DataField="MaNV" HeaderText="MaNV" SortExpression="MaNV" />
-                        </Columns>
-                    </asp:GridView>
-                        <asp:SqlDataSource ID="SqlDataSourceHD" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString3 %>" SelectCommand="SELECT * FROM [HoaDon]"></asp:SqlDataSource>
+                        <asp:GridView ID="grvHoaDon" runat="server" AutoGenerateColumns="False" CssClass="newStyle25" DataKeyNames="IDHoaDon" DataSourceID="SqlDataSourceHD" Height="420px" Width="1469px">
+                            <Columns>
+                                <asp:BoundField DataField="IDHoaDon" HeaderText="IDHoaDon" ReadOnly="True" SortExpression="IDHoaDon" />
+                                <asp:BoundField DataField="IDKhachHang" HeaderText="IDKhachHang" SortExpression="IDKhachHang" />
+                                <asp:BoundField DataField="NgayDatHang" HeaderText="NgayDatHang" SortExpression="NgayDatHang" />
+                                <asp:BoundField DataField="MaNV" HeaderText="MaNV" SortExpression="MaNV" />
+                            </Columns>
+                        </asp:GridView>
                         </strong>
+                        <asp:SqlDataSource ID="SqlDataSourceHD" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString3 %>" SelectCommand="SELECT * FROM [HoaDon]"></asp:SqlDataSource>
                     </div>
                 </td>
             </tr>
