@@ -9,9 +9,9 @@
         <EntityTypeShape EntityType="QLCaffe3Model1.DoanhThu" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
         <EntityTypeShape EntityType="QLCaffe3Model1.HoaDon" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="QLCaffe3Model1.KhachHang" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLCaffe3Model1.LoaiSP" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCaffe3Model1.LoaiSP" Width="1.5" PointX="6.625" PointY="7.5" IsExpanded="true" />
         <EntityTypeShape EntityType="QLCaffe3Model1.NhanVien" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLCaffe3Model1.SanPham" Width="1.5" PointX="3" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCaffe3Model1.SanPham" Width="1.5" PointX="8.75" PointY="4.625" IsExpanded="true" />
         <EntityTypeShape EntityType="QLCaffe3Model1.sysdiagram" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
         <AssociationConnector Association="QLCaffe3Model1.FK__ChiTietDo__IDHoa__398D8EEE" ManuallyRouted="false" />
         <AssociationConnector Association="QLCaffe3Model1.FK__ChiTietDo__IDSan__3A81B327" ManuallyRouted="false" />

@@ -120,6 +120,10 @@
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-size: medium;
         }
+        .image{
+            height: 10rem;
+            width: 10rem;
+        }
     </style>
     </head>
 <body style="height: 1008px">
@@ -282,7 +286,8 @@
                             <asp:BoundField DataField="Soluong" HeaderText="Soluong" SortExpression="Soluong" />
                             <asp:BoundField DataField="GiaBan" HeaderText="GiaBan" SortExpression="GiaBan" />
                             <asp:BoundField DataField="MoTa" HeaderText="MoTa" SortExpression="MoTa" />
-                            <asp:BoundField DataField="Anh" HeaderText="Anh" SortExpression="Anh" />
+                            <asp:ImageField DataImageUrlField="Anh" HeaderText="Anh" DataImageUrlFormatString="~/Images/{0}" ControlStyle-CssClass="image">
+                            </asp:ImageField>
                         </Columns>
                     </asp:GridView>
                         </strong>
