@@ -76,15 +76,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Data\QLCaFeModel.Context.tt">
+    <Content Include="Data\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QLCaFeModel.edmx</DependentUpon>
-      <LastGenOutput>QLCaFeModel.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Data\QLCaFeModel.tt">
+    <Content Include="Data\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QLCaFeModel.edmx</DependentUpon>
-      <LastGenOutput>QLCaFeModel.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="fDangNhap.aspx" />
     <Content Include="fDoanhThu.aspx" />
@@ -109,43 +109,40 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\ChiTietDonHang.cs">
-      <DependentUpon>QLCaFeModel.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\DoanhThu.cs">
-      <DependentUpon>QLCaFeModel.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\HoaDon.cs">
-      <DependentUpon>QLCaFeModel.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\KhachHang.cs">
-      <DependentUpon>QLCaFeModel.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\LoaiSP.cs">
-      <DependentUpon>QLCaFeModel.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Data\NhanVien.cs">
-      <DependentUpon>QLCaFeModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\QLCaFeModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLCaFeModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\QLCaFeModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLCaFeModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\QLCaFeModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLCaFeModel.edmx</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\SanPham.cs">
-      <DependentUpon>QLCaFeModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\sysdiagram.cs">
-      <DependentUpon>QLCaFeModel.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="fDangNhap.aspx.cs">
       <DependentUpon>fDangNhap.aspx</DependentUpon>
@@ -216,12 +213,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="Data\QLCaFeModel.edmx">
+    <EntityDeploy Include="Data\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>QLCaFeModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Data\QLCaFeModel.edmx.diagram">
-      <DependentUpon>QLCaFeModel.edmx</DependentUpon>
+    <Content Include="Data\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">

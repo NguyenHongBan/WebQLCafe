@@ -210,9 +210,9 @@
                     <strong>
                     <asp:GridView ID="GridViewLoaiSP" runat="server" Height="482px" Width="1468px" AutoGenerateColumns="False" DataKeyNames="IDLoai" DataSourceID="SqlDataSourceLSP" OnSelectedIndexChanged="GridViewLoaiSP_SelectedIndexChanged" CssClass="newStyle4">
                         <Columns>
-                            <asp:CommandField ShowSelectButton="True" />
                             <asp:BoundField DataField="IDLoai" HeaderText="IDLoai" ReadOnly="True" SortExpression="IDLoai" />
                             <asp:BoundField DataField="TenLoai" HeaderText="TenLoai" SortExpression="TenLoai" />
+                            <asp:CommandField ShowSelectButton="True" SelectText="chọn" />
                         </Columns>
                     </asp:GridView>
                     </strong>

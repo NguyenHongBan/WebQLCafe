@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="93ff31b5c17d4108856d7d8010e2e579" Name="Diagram1">
+        <EntityTypeShape EntityType="QLCaffe3Model.ChiTietDonHang" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCaffe3Model.DoanhThu" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCaffe3Model.HoaDon" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCaffe3Model.KhachHang" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCaffe3Model.LoaiSP" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCaffe3Model.NhanVien" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCaffe3Model.SanPham" Width="1.5" PointX="3" PointY="9.875" IsExpanded="true" />
+        <AssociationConnector Association="QLCaffe3Model.FK__ChiTietDo__IDHoa__32E0915F" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCaffe3Model.FK__ChiTietDo__IDSan__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCaffe3Model.FK__HoaDon__IDKhachH__2F10007B" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCaffe3Model.FK__HoaDon__MaNV__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCaffe3Model.FK__SanPham__IDLoai__267ABA7A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

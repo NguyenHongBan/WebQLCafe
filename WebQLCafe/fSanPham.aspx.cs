@@ -16,7 +16,17 @@ namespace WebQLCafe
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            loadSP();
+            if (!IsPostBack)
+            {
+                using (var dbContext = new Data.QLCaffe3Entities()) 
+                {
+                    var loaiSanPhamList = dbContext.LoaiSPs.ToList();
+                    ddlLoaiSP.DataSource = loaiSanPhamList;
+                    ddlLoaiSP.DataTextField = "TenLoai";
+                    ddlLoaiSP.DataValueField = "IDLoai";
+                    ddlLoaiSP.DataBind();
+                }
+            }
         }
 
         public void kiemTraform()
@@ -46,14 +56,6 @@ namespace WebQLCafe
                 lblThongbao.Text = "Mô tả đang trống!";
                 txtMota.Focus();
             }
-        }
-
-        public void loadSP()
-        {
-            Data.QLCaffe3Entities db = new Data.QLCaffe3Entities();
-            var lst = (from l in db.LoaiSPs select l.IDLoai).ToList();
-            ddlLoaiSP.DataSource = lst;
-            ddlLoaiSP.DataBind();
         }
 
         protected void lbtNhanVien_Click(object sender, EventArgs e)
@@ -135,41 +137,35 @@ namespace WebQLCafe
             }  
         }
 
-        private Data.SanPham GetSanPham(string maSanPham)
-        {
-            using (Data.QLCaffe3Entities db = new Data.QLCaffe3Entities())
-            {
-                return db.SanPhams.FirstOrDefault(sp => sp.IDSanPham == maSanPham);
-            }
-        }
-
         protected void btnSua_Click(object sender, EventArgs e)
         {
             string maSP = txtMaSP.Text;
-            Data.SanPham sanPham = GetSanPham(maSP);
-            if (sanPham != null)
+            string tenSP = txtTenSP.Text;
+            string idLoaiSP = ddlLoaiSP.SelectedValue;
+            string kichCo = txtKichCo.Text;
+            int soLuong = int.Parse(txtSoLuong.Text);
+            string giaBan = txtGiaBan.Text;
+            string moTa = txtMota.Text;
+            
+            using (var dbContext = new Data.QLCaffe3Entities()) 
             {
-                sanPham.TenSanPham = txtTenSP.Text;
-                sanPham.IDLoai = ddlLoaiSP.SelectedValue;
-                sanPham.KichCo = txtKichCo.Text;
-                sanPham.Soluong = int.Parse(txtSoLuong.Text);
-                sanPham.GiaBan = txtGiaBan.Text;
-                sanPham.MoTa = txtMota.Text;
-
-                if (fulHinhAnh.HasFile)
+                var sanPham = dbContext.SanPhams.FirstOrDefault(sp => sp.IDSanPham == maSP);
+                if (sanPham != null)
                 {
-                    string fileName = Path.GetFileName(fulHinhAnh.FileName);
-                    string filePath = Server.MapPath("~/Images/" + fileName);
-                    fulHinhAnh.SaveAs(fileName);
-                    sanPham.Anh = fileName;
+                   
+                    sanPham.TenSanPham = tenSP;
+                    sanPham.IDLoai = idLoaiSP;
+                    sanPham.KichCo = kichCo;
+                    sanPham.Soluong = soLuong;
+                    sanPham.GiaBan = giaBan;
+                    sanPham.MoTa = moTa;
+                    
+                    dbContext.SaveChanges();
+                    
+                    lblThongbao.Text = "Cập nhật thông tin thành công!";
+                    
+                    GridViewSanPham.DataBind();
                 }
-                using (Data.QLCaffe3Entities db = new Data.QLCaffe3Entities())
-                {
-                    db.Entry(sanPham).State = EntityState.Modified;
-                    db.SaveChanges();
-                    lblThongbao.Text = "Đã Sửa thông tin thành công";
-                }
-                GridViewSanPham.DataBind();
             }
         }
 
@@ -216,29 +212,29 @@ namespace WebQLCafe
 
             GridViewRow selectedRow = GridViewSanPham.Rows[selectedIndex];
 
-            string value1 = selectedRow.Cells[1].Text;
-            string value2 = selectedRow.Cells[2].Text;
-            string value3 = selectedRow.Cells[3].Text;
-            string value4 = selectedRow.Cells[4].Text;
-            string value5 = selectedRow.Cells[5].Text;
-            string value6 = selectedRow.Cells[6].Text;
-            string value7 = selectedRow.Cells[7].Text;
+            string maSP = selectedRow.Cells[0].Text;
+            string TenSP = selectedRow.Cells[1].Text;
+            string maLoai = selectedRow.Cells[2].Text;
+            string kichCo = selectedRow.Cells[3].Text;
+            string soLuong = selectedRow.Cells[4].Text;
+            string giaBan = selectedRow.Cells[5].Text;
+            string mota = selectedRow.Cells[6].Text;
 
-            string decodedValue1 = HttpUtility.HtmlDecode(value1);
-            string decodedValue2 = HttpUtility.HtmlDecode(value2);
-            string decodedValue3 = HttpUtility.HtmlDecode(value3);
-            string decodedValue4 = HttpUtility.HtmlDecode(value4);
-            string decodedValue5 = HttpUtility.HtmlDecode(value5);
-            string decodedValue6 = HttpUtility.HtmlDecode(value6);
-            string decodedValue7 = HttpUtility.HtmlDecode(value7);
+            string decodedMaSP = HttpUtility.HtmlDecode(maSP);
+            string decodedTenSP = HttpUtility.HtmlDecode(TenSP);
+            string decodedMaLoai = HttpUtility.HtmlDecode(maLoai);
+            string decodedKichCo = HttpUtility.HtmlDecode(kichCo);
+            string decodedSoLuong = HttpUtility.HtmlDecode(soLuong);
+            string decodedGiaBan = HttpUtility.HtmlDecode(giaBan);
+            string decodedMota = HttpUtility.HtmlDecode(mota);
 
-            txtMaSP.Text = decodedValue1;
-            txtTenSP.Text = decodedValue2;
-            ddlLoaiSP.Text = decodedValue3;
-            txtKichCo.Text = decodedValue4;
-            txtSoLuong.Text = decodedValue5;
-            txtGiaBan.Text = decodedValue6;
-            txtMota.Text = decodedValue7;          
+            txtMaSP.Text = decodedMaSP;
+            txtTenSP.Text = decodedTenSP;
+            ddlLoaiSP.Text = decodedMaLoai;
+            txtKichCo.Text = decodedKichCo;
+            txtSoLuong.Text = decodedSoLuong;
+            txtGiaBan.Text = decodedGiaBan;
+            txtMota.Text = decodedMota;          
         }
     }
 }

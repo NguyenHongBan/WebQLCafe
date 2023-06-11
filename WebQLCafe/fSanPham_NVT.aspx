@@ -123,6 +123,10 @@
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-size: medium;
         }
+        .image{
+            height: 10rem;
+            width: 10rem;
+        }
     </style>
 </head>
 <body>
@@ -266,7 +270,6 @@
                             <strong>
                         <asp:GridView ID="GridViewSanPhamNVT" runat="server" Height="290px" Width="1473px" AutoGenerateColumns="False" DataKeyNames="IDSanPham" DataSourceID="SqlDataSourceSP" OnSelectedIndexChanged="GridViewSanPhamNVT_SelectedIndexChanged" CssClass="newStyle5">
                             <Columns>
-                                <asp:CommandField ShowSelectButton="True" />
                                 <asp:BoundField DataField="IDSanPham" HeaderText="IDSanPham" ReadOnly="True" SortExpression="IDSanPham" />
                                 <asp:BoundField DataField="TenSanPham" HeaderText="TenSanPham" SortExpression="TenSanPham" />
                                 <asp:BoundField DataField="IDLoai" HeaderText="IDLoai" SortExpression="IDLoai" />
@@ -274,7 +277,9 @@
                                 <asp:BoundField DataField="Soluong" HeaderText="Soluong" SortExpression="Soluong" />
                                 <asp:BoundField DataField="GiaBan" HeaderText="GiaBan" SortExpression="GiaBan" />
                                 <asp:BoundField DataField="MoTa" HeaderText="MoTa" SortExpression="MoTa" />
-                                <asp:BoundField DataField="Anh" HeaderText="Anh" SortExpression="Anh" />
+                                <asp:ImageField DataImageUrlField="Anh" DataImageUrlFormatString="~/Images/{0}" HeaderText="Anh" ControlStyle-CssClass="image">
+                                </asp:ImageField>
+                                <asp:CommandField ShowSelectButton="True" SelectText="chọn" />
                             </Columns>
                         </asp:GridView>
                             </strong>

@@ -114,14 +114,14 @@ namespace WebQLCafe
         {
             int selectedIndex = grvLoaiSP.SelectedIndex;
             GridViewRow selectedRow = grvLoaiSP.Rows[selectedIndex];
+            string value = selectedRow.Cells[0].Text;
             string value1 = selectedRow.Cells[1].Text;
-            string value2 = selectedRow.Cells[2].Text;
 
+            string decodedValue = HttpUtility.HtmlDecode(value);
             string decodedValue1 = HttpUtility.HtmlDecode(value1);
-            string decodedValue2 = HttpUtility.HtmlDecode(value2);
 
-            txtIDLoai.Text = decodedValue1;
-            txtTenLoai.Text = decodedValue2;
+            txtIDLoai.Text = decodedValue;
+            txtTenLoai.Text = decodedValue1;
         }
     }
 }

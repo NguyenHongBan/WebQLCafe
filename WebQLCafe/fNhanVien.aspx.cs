@@ -222,29 +222,19 @@ namespace WebQLCafe
 
         protected void gvNhanVien_SelectedIndexChanged1(object sender, EventArgs e)
         {
-            txtMaNV.Text = string.Empty;
-            txtMatKhau.Text = string.Empty;
-            txtTenNV.Text = string.Empty;
-            ddlGioiTinh.SelectedIndex = 0;
-            txtNgaySinh.Text = string.Empty;
-            txtDienThoai.Text = string.Empty;
-            txtEmail.Text = string.Empty;
-            txtDiaChi.Text = string.Empty;
-            ddlQuyenDN.Text = string.Empty;
-
             int selectedIndex = grvNhanVien.SelectedIndex;
 
             GridViewRow selectedRow = grvNhanVien.Rows[selectedIndex];
 
-            string maMV = selectedRow.Cells[1].Text;
-            string matKhau = selectedRow.Cells[2].Text;
-            string tenNV = selectedRow.Cells[3].Text;
-            string gioiTinh = selectedRow.Cells[4].Text;
-            string ngaySinh = selectedRow.Cells[5].Text;
-            string dienThoai = selectedRow.Cells[6].Text;
-            string emailNV = selectedRow.Cells[7].Text;
-            string diaChi = selectedRow.Cells[8].Text;
-            string quyen = selectedRow.Cells[9].Text;
+            string maMV = selectedRow.Cells[0].Text;
+            string matKhau = selectedRow.Cells[1].Text;
+            string tenNV = selectedRow.Cells[2].Text;
+            string gioiTinh = selectedRow.Cells[3].Text;
+            string ngaySinh = selectedRow.Cells[4].Text;
+            string dienThoai = selectedRow.Cells[5].Text;
+            string emailNV = selectedRow.Cells[6].Text;
+            string diaChi = selectedRow.Cells[7].Text;
+            string quyen = selectedRow.Cells[8].Text;
 
             string decodedmaNV = HttpUtility.HtmlDecode(maMV);
             string decodedmatKhau = HttpUtility.HtmlDecode(matKhau);

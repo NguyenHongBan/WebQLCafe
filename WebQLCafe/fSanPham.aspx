@@ -124,6 +124,15 @@
             height: 10rem;
             width: 10rem;
         }
+        .newStyle9 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
+        .auto-style55 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            font-weight: bold;
+        }
     </style>
     </head>
 <body style="height: 1008px">
@@ -198,7 +207,7 @@
                         <td class="auto-style44" style="background-color: #FFCC99"><strong>Loại sản phẩm</strong></td>
                         <td style="background-color: #FFCC99">
                             <strong>
-                            <asp:DropDownList ID="ddlLoaiSP" runat="server" Height="30px" Width="450px" CssClass="auto-style54">
+                            <asp:DropDownList ID="ddlLoaiSP" runat="server" CssClass="auto-style55" Height="30px" Width="450px">
                             </asp:DropDownList>
                             </strong>
                         </td>
@@ -278,7 +287,6 @@
                         <strong>
                     <asp:GridView ID="GridViewSanPham" runat="server" AutoGenerateColumns="False" DataKeyNames="IDSanPham" DataSourceID="SqlDataSourceSP" Height="282px" Width="1468px" OnSelectedIndexChanged="GridViewSanPham_SelectedIndexChanged" CssClass="newStyle8">
                         <Columns>
-                            <asp:CommandField ShowSelectButton="True" />
                             <asp:BoundField DataField="IDSanPham" HeaderText="IDSanPham" ReadOnly="True" SortExpression="IDSanPham" />
                             <asp:BoundField DataField="TenSanPham" HeaderText="TenSanPham" SortExpression="TenSanPham" />
                             <asp:BoundField DataField="IDLoai" HeaderText="IDLoai" SortExpression="IDLoai" />
@@ -286,13 +294,14 @@
                             <asp:BoundField DataField="Soluong" HeaderText="Soluong" SortExpression="Soluong" />
                             <asp:BoundField DataField="GiaBan" HeaderText="GiaBan" SortExpression="GiaBan" />
                             <asp:BoundField DataField="MoTa" HeaderText="MoTa" SortExpression="MoTa" />
-                            <asp:ImageField DataImageUrlField="Anh" HeaderText="Anh" DataImageUrlFormatString="~/Images/{0}" ControlStyle-CssClass="image">
+                            <asp:ImageField DataImageUrlField="Anh" DataImageUrlFormatString="~/Images/{0}" HeaderText="Anh" ControlStyle-CssClass="image">
                             </asp:ImageField>
+                            <asp:CommandField ShowSelectButton="True" />
                         </Columns>
                     </asp:GridView>
+                        <asp:SqlDataSource ID="SqlDataSourceSP" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString4 %>" SelectCommand="SELECT * FROM [SanPham]"></asp:SqlDataSource>
                         </strong>
                     </div>
-                    <asp:SqlDataSource ID="SqlDataSourceSP" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString2 %>" SelectCommand="SELECT * FROM [SanPham]"></asp:SqlDataSource>
             </td>
         </tr>
     </table>

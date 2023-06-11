@@ -314,7 +314,6 @@
                     <strong>
                     <asp:GridView ID="grvNhanVien" runat="server" Height="348px" Width="1469px" AutoGenerateColumns="False" CssClass="newStyle9" OnSelectedIndexChanged="gvNhanVien_SelectedIndexChanged1" DataKeyNames="MaNV" DataSourceID="SqlDataSourceNV">
                         <Columns>
-                            <asp:CommandField ShowSelectButton="True" />
                             <asp:BoundField DataField="MaNV" HeaderText="MaNV" ReadOnly="True" SortExpression="MaNV" />
                             <asp:BoundField DataField="MatKhau" HeaderText="MatKhau" SortExpression="MatKhau" />
                             <asp:BoundField DataField="TenNhanVien" HeaderText="TenNhanVien" SortExpression="TenNhanVien" />
@@ -324,11 +323,12 @@
                             <asp:BoundField DataField="EmailNV" HeaderText="EmailNV" SortExpression="EmailNV" />
                             <asp:BoundField DataField="DiaChi" HeaderText="DiaChi" SortExpression="DiaChi" />
                             <asp:BoundField DataField="Quyen" HeaderText="Quyen" SortExpression="Quyen" />
+                            <asp:CommandField SelectText="chọn" ShowSelectButton="True" />
                         </Columns>
                         
                     </asp:GridView>
+                    <asp:SqlDataSource ID="SqlDataSourceNV" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString4 %>" SelectCommand="SELECT * FROM [NhanVien]"></asp:SqlDataSource>
                     </strong>
-                    <asp:SqlDataSource ID="SqlDataSourceNV" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString2 %>" SelectCommand="SELECT * FROM [NhanVien]"></asp:SqlDataSource>
                 </td>
             </tr>
         </table>
