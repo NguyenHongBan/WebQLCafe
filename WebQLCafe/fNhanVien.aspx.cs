@@ -222,6 +222,16 @@ namespace WebQLCafe
 
         protected void gvNhanVien_SelectedIndexChanged1(object sender, EventArgs e)
         {
+            txtMaNV.Text = string.Empty;
+            txtMatKhau.Text = string.Empty;
+            txtTenNV.Text = string.Empty;
+            ddlGioiTinh.SelectedIndex = 0;
+            txtNgaySinh.Text = string.Empty;
+            txtDienThoai.Text = string.Empty;
+            txtEmail.Text = string.Empty;
+            txtDiaChi.Text = string.Empty;
+            ddlQuyenDN.Text = string.Empty;
+
             int selectedIndex = grvNhanVien.SelectedIndex;
 
             GridViewRow selectedRow = grvNhanVien.Rows[selectedIndex];

@@ -211,33 +211,72 @@ namespace WebQLCafe
 
         protected void GridViewSanPham_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int selectedIndex = GridViewSanPham.SelectedIndex;
+            
+            Data.QLCaffe3Entities db = new Data.QLCaffe3Entities();
+            var query = from s in db.SanPhams select s.IDLoai;
 
-            GridViewRow selectedRow = GridViewSanPham.Rows[selectedIndex];
+            foreach (var a in query)
+            {
+                if (a == "")
+                {
+                    int selectedIndex = GridViewSanPham.SelectedIndex;
 
-            string value1 = selectedRow.Cells[1].Text;
-            string value2 = selectedRow.Cells[2].Text;
-            string value3 = selectedRow.Cells[3].Text;
-            string value4 = selectedRow.Cells[4].Text;
-            string value5 = selectedRow.Cells[5].Text;
-            string value6 = selectedRow.Cells[6].Text;
-            string value7 = selectedRow.Cells[7].Text;          
+                    GridViewRow selectedRow = GridViewSanPham.Rows[selectedIndex];
 
-            string decodedValue1 = HttpUtility.HtmlDecode(value1);
-            string decodedValue2 = HttpUtility.HtmlDecode(value2);
-            string decodedValue3 = HttpUtility.HtmlDecode(value3);
-            string decodedValue4 = HttpUtility.HtmlDecode(value4);
-            string decodedValue5 = HttpUtility.HtmlDecode(value5);
-            string decodedValue6 = HttpUtility.HtmlDecode(value6);
-            string decodedValue7 = HttpUtility.HtmlDecode(value7);
+                    string value1 = selectedRow.Cells[1].Text;
+                    string value2 = selectedRow.Cells[2].Text;
+                    string value4 = selectedRow.Cells[4].Text;
+                    string value5 = selectedRow.Cells[5].Text;
+                    string value6 = selectedRow.Cells[6].Text;
+                    string value7 = selectedRow.Cells[7].Text;
 
-            txtMaSP.Text = decodedValue1;
-            txtTenSP.Text = decodedValue2;
-            ddlLoaiSP.Text = decodedValue3;
-            txtKichCo.Text = decodedValue4;
-            txtSoLuong.Text = decodedValue5;
-            txtGiaBan.Text = decodedValue6;
-            txtMota.Text = decodedValue7;
+                    string decodedValue1 = HttpUtility.HtmlDecode(value1);
+                    string decodedValue2 = HttpUtility.HtmlDecode(value2);
+                    string decodedValue4 = HttpUtility.HtmlDecode(value4);
+                    string decodedValue5 = HttpUtility.HtmlDecode(value5);
+                    string decodedValue6 = HttpUtility.HtmlDecode(value6);
+                    string decodedValue7 = HttpUtility.HtmlDecode(value7);
+
+                    txtMaSP.Text = decodedValue1;
+                    txtTenSP.Text = decodedValue2;
+                    txtKichCo.Text = decodedValue4;
+                    txtSoLuong.Text = decodedValue5;
+                    txtGiaBan.Text = decodedValue6;
+                    txtMota.Text = decodedValue7;
+                }
+                else
+                {
+                    int selectedIndex = GridViewSanPham.SelectedIndex;
+
+                    GridViewRow selectedRow = GridViewSanPham.Rows[selectedIndex];
+
+                    string value1 = selectedRow.Cells[1].Text;
+                    string value2 = selectedRow.Cells[2].Text;
+                    string value3 = selectedRow.Cells[3].Text;
+                    string value4 = selectedRow.Cells[4].Text;
+                    string value5 = selectedRow.Cells[5].Text;
+                    string value6 = selectedRow.Cells[6].Text;
+                    string value7 = selectedRow.Cells[7].Text;
+
+                    string decodedValue1 = HttpUtility.HtmlDecode(value1);
+                    string decodedValue2 = HttpUtility.HtmlDecode(value2);
+                    string decodedValue3 = HttpUtility.HtmlDecode(value3);
+                    string decodedValue4 = HttpUtility.HtmlDecode(value4);
+                    string decodedValue5 = HttpUtility.HtmlDecode(value5);
+                    string decodedValue6 = HttpUtility.HtmlDecode(value6);
+                    string decodedValue7 = HttpUtility.HtmlDecode(value7);
+
+                    txtMaSP.Text = decodedValue1;
+                    txtTenSP.Text = decodedValue2;
+                    ddlLoaiSP.Text = decodedValue3;
+                    txtKichCo.Text = decodedValue4;
+                    txtSoLuong.Text = decodedValue5;
+                    txtGiaBan.Text = decodedValue6;
+                    txtMota.Text = decodedValue7;
+                }
+            }
+
+                      
         }
     }
 }

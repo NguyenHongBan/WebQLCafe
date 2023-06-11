@@ -96,7 +96,6 @@ namespace WebQLCafe
             lsp = db.LoaiSPs.Where(s => s.IDLoai == txtIDLoai.Text).Single();
             lsp.IDLoai = txtIDLoai.Text;
             lsp.TenLoai = txtTenLoai.Text;
-
             db.LoaiSPs.Remove(lsp);
             db.SaveChanges();
             lblThongbao.Text = "Đã xóa thành công";
