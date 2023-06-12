@@ -104,6 +104,17 @@
             font-size: large;
             font-weight: bold;
         }
+        .auto-style24 {
+            width: 306px;
+            height: 23px;
+        }
+        .auto-style25 {
+            height: 23px;
+        }
+        .newStyle7 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
     </style>
 </head>
 <body>
@@ -145,8 +156,8 @@
                                     </strong></td>
                             </tr>
                             <tr>
-                                <td class="auto-style12">&nbsp;</td>
-                                <td>&nbsp;</td>
+                                <td class="auto-style24"></td>
+                                <td class="auto-style25"></td>
                             </tr>
                             <tr>
                                 <td class="auto-style21" colspan="2"><strong>

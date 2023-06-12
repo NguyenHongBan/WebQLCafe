@@ -20,57 +20,42 @@ namespace WebQLCafe
 
             if (txtMaNV.Text == "")
             {
-
-                lblThongbao.Text = "Mã Nhân Viên đang trống";
+                lblThongbao.Text = "Mã nhân viên đang trống";
                 txtMaNV.Focus();
-
             }
-            else if (txtMK.Text == "")
+            else if(txtMK.Text == "")
             {
-                lblThongbao.Text = "Mật Khẩu đang trống";
+                lblThongbao.Text = "Mật khẩu đang trống";
                 txtMK.Focus();
             }
             else
             {
-                var query1 = from a in db.NhanViens select a.MaNV;
-
-                foreach (var a in query1)
+                var nhanVien = db.NhanViens.FirstOrDefault(nv => nv.MaNV == txtMaNV.Text);
+                if(nhanVien == null)
                 {
-                    if (a == txtMaNV.Text)
+                    lblThongbao.Text = "Sai mã nhân viên vui lòng nhập lại";
+                    txtMaNV.Focus();
+                }
+                else if (nhanVien.MatKhau == txtMK.Text)
+                {
+                    if (nhanVien.Quyen == "Quan Ly")
                     {
-                        var query2 = from b in db.NhanViens where b.MaNV == a select b.MatKhau;
-                        foreach (var b in query2)
-                        {
-                            if (b == txtMK.Text)
-                            {
-                                var query3 = from c in db.NhanViens where c.MaNV == a select c.Quyen;
-                                foreach (var c in query3)
-                                {
-                                    if (c == "Quan Ly")
-                                    {
-                                        Session.Abandon();
-                                        Response.Redirect("fNhanVien.aspx");
-                                    }
-                                    else if (c == "Nhan Vien")
-                                    {
-                                        Session.Abandon();
-                                        Response.Redirect("fLoaiSP_NVT.aspx");
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                lblThongbao.Text = "Mật Khẩu không chính xác!";
-                            }
-                        }
+                        Session.Abandon();
+                        Response.Redirect("fNhanVien.aspx");
                     }
-                    else
+                    else if(nhanVien.Quyen == "Nhan Vien")
                     {
-                        lblThongbao.Text = "Mã Nhân Viên không chính xác!";
+                        Session.Abandon();
+                        Response.Redirect("fLoaiSP_NVT.aspx");
                     }
                 }
+                else
+                {
+                    lblThongbao.Text = "Sai mật khẩu vui lòng nhập lại";
+                    txtMK.Focus();
+                }
+                
             }
-            Response.Redirect("fNhanVien.aspx");
         }
     }
 }
