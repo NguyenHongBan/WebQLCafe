@@ -130,10 +130,10 @@
                         </tr>
                         <tr>
                             <td class="auto-style39"><strong>
-                                <asp:LinkButton ID="lbtLoaiSP" runat="server" CssClass="auto-style36">Loại Sản Phẩm</asp:LinkButton>
+                                <asp:LinkButton ID="lbtLoaiSP" runat="server" CssClass="auto-style36" OnClick="lbtLoaiSP_Click1">Loại Sản Phẩm</asp:LinkButton>
                                 </strong></td>
                             <td class="auto-style37"><strong>
-                                <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style36">Sản Phẩm</asp:LinkButton>
+                                <asp:LinkButton ID="lbtSanPham" runat="server" CssClass="auto-style36" OnClick="lbtSanPham_Click1">Sản Phẩm</asp:LinkButton>
                                 </strong></td>
                             <td class="auto-style41"><strong>
                                 <asp:LinkButton ID="lbtHoaDon" runat="server" CssClass="auto-style36" OnClick="lbtHoaDon_Click1">Hóa Đơn</asp:LinkButton>

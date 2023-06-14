@@ -14,13 +14,13 @@ namespace WebQLCafe
 
         }
 
-        protected void lbtLoaiSP_Click(object sender, EventArgs e)
+        protected void lbtLoaiSP_Click1(object sender, EventArgs e)
         {
             Session.Abandon();
             Response.Redirect("fLoaiSPnvt.aspx");
         }
 
-        protected void lbtSanPham_Click(object sender, EventArgs e)
+        protected void lbtSanPham_Click1(object sender, EventArgs e)
         {
             Session.Abandon();
             Response.Redirect("fSanPhamnvt.aspx");
@@ -114,5 +114,7 @@ namespace WebQLCafe
             }
             Response.Redirect("fDangNhap.aspx");
         }
+
+ 
     }
 }
