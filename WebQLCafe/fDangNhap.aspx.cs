@@ -40,7 +40,7 @@ namespace WebQLCafe
                 }
                 else if (nhanVien.Quyen == "Nhan Vien")
                 {
-                    Response.Redirect("fLoaiSP_NVT.aspx");
+                    Response.Redirect("fLoaiSPnvt.aspx");
                 }
 
                 HttpCookie userCookie = new HttpCookie("UserInfo");

@@ -100,7 +100,9 @@ namespace WebQLCafe
             }
             else
             {
-                var lst = (from n in db.NhanViens where n.MaNV.Contains(txtMaNV.Text) select n).ToList();
+                var lst = (from n in db.NhanViens 
+                           where n.MaNV.Contains(txtMaNV.Text) 
+                           select n).ToList();
                 if (lst.Count() > 0)
                 {
                     lblThongbao.Text = "Mã nhân viên đã tồn tại";
