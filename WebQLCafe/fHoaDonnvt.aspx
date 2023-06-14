@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="fHoaDon_NVT.aspx.cs" Inherits="WebQLCafe.fHoaDon_NVT" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="fHoaDonnvt.aspx.cs" Inherits="WebQLCafe.fHoaDon_NVT" %>
 
 <!DOCTYPE html>
 

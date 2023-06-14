@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="fLoaiSP_NVT.aspx.cs" Inherits="WebQLCafe.fLoaiSP_NVT" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="fLoaiSPnvt.aspx.cs" Inherits="WebQLCafe.fLoaiSP_NVT" %>
 
 <!DOCTYPE html>
 

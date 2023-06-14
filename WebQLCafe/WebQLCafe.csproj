@@ -89,12 +89,12 @@
     <Content Include="fDangNhap.aspx" />
     <Content Include="fDoanhThu.aspx" />
     <Content Include="fHoaDon.aspx" />
-    <Content Include="fHoaDon_NVT.aspx" />
+    <Content Include="fHoaDonnvt.aspx" />
     <Content Include="fLoaiSP.aspx" />
-    <Content Include="fLoaiSP_NVT.aspx" />
+    <Content Include="fLoaiSPnvt.aspx" />
     <Content Include="fNhanVien.aspx" />
     <Content Include="fSanPham.aspx" />
-    <Content Include="fSanPham_NVT.aspx" />
+    <Content Include="fSanPhamnvt.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Models\images\anhlogo\3.png" />
     <Content Include="Models\images\anhsanpham\anh1.jpg" />
@@ -165,12 +165,12 @@
     <Compile Include="fHoaDon.aspx.designer.cs">
       <DependentUpon>fHoaDon.aspx</DependentUpon>
     </Compile>
-    <Compile Include="fHoaDon_NVT.aspx.cs">
-      <DependentUpon>fHoaDon_NVT.aspx</DependentUpon>
+    <Compile Include="fHoaDonnvt.aspx.cs">
+      <DependentUpon>fHoaDonnvt.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="fHoaDon_NVT.aspx.designer.cs">
-      <DependentUpon>fHoaDon_NVT.aspx</DependentUpon>
+    <Compile Include="fHoaDonnvt.aspx.designer.cs">
+      <DependentUpon>fHoaDonnvt.aspx</DependentUpon>
     </Compile>
     <Compile Include="fLoaiSP.aspx.cs">
       <DependentUpon>fLoaiSP.aspx</DependentUpon>
@@ -179,12 +179,12 @@
     <Compile Include="fLoaiSP.aspx.designer.cs">
       <DependentUpon>fLoaiSP.aspx</DependentUpon>
     </Compile>
-    <Compile Include="fLoaiSP_NVT.aspx.cs">
-      <DependentUpon>fLoaiSP_NVT.aspx</DependentUpon>
+    <Compile Include="fLoaiSPnvt.aspx.cs">
+      <DependentUpon>fLoaiSPnvt.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="fLoaiSP_NVT.aspx.designer.cs">
-      <DependentUpon>fLoaiSP_NVT.aspx</DependentUpon>
+    <Compile Include="fLoaiSPnvt.aspx.designer.cs">
+      <DependentUpon>fLoaiSPnvt.aspx</DependentUpon>
     </Compile>
     <Compile Include="fNhanVien.aspx.cs">
       <DependentUpon>fNhanVien.aspx</DependentUpon>
@@ -200,12 +200,12 @@
     <Compile Include="fSanPham.aspx.designer.cs">
       <DependentUpon>fSanPham.aspx</DependentUpon>
     </Compile>
-    <Compile Include="fSanPham_NVT.aspx.cs">
-      <DependentUpon>fSanPham_NVT.aspx</DependentUpon>
+    <Compile Include="fSanPhamnvt.aspx.cs">
+      <DependentUpon>fSanPhamnvt.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="fSanPham_NVT.aspx.designer.cs">
-      <DependentUpon>fSanPham_NVT.aspx</DependentUpon>
+    <Compile Include="fSanPhamnvt.aspx.designer.cs">
+      <DependentUpon>fSanPhamnvt.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

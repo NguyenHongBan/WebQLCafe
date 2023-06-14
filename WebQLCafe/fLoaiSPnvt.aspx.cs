@@ -17,25 +17,19 @@ namespace WebQLCafe
         protected void lbtLoaiSP_Click(object sender, EventArgs e)
         {
             Session.Abandon();
-            Response.Redirect("fLoaiSP_NVT.aspx");
+            Response.Redirect("fLoaiSPnvt.aspx");
         }
 
         protected void lbtSanPham_Click(object sender, EventArgs e)
         {
             Session.Abandon();
-            Response.Redirect("fSanPham_NVT.aspx");
-        }
-
-        protected void lbtHoaDon_Click(object sender, EventArgs e)
-        {
-            Session.Abandon();
-            Response.Redirect("fHoaDon_NVT.aspx");
+            Response.Redirect("fSanPhamnvt.aspx");
         }
 
         protected void lbtHoaDon_Click1(object sender, EventArgs e)
         {
             Session.Abandon();
-            Response.Redirect("fHoaDon_NVT.aspx");
+            Response.Redirect("fHoaDonnvt.aspx");
         }
 
         protected void btnThem_Click(object sender, EventArgs e)
