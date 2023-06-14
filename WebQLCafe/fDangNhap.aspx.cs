@@ -16,45 +16,38 @@ namespace WebQLCafe
 
         protected void btnDN_Click(object sender, EventArgs e)
         {
-            Data.QLCaffe3Entities db = new Data.QLCaffe3Entities();
+            string maNV = txtMaNV.Text;
+            string matKhau = txtMK.Text;
 
-            if (txtMaNV.Text == "")
+            using (Data.QLCaffe3Entities db = new Data.QLCaffe3Entities())
             {
-                lblThongbao.Text = "Mã nhân viên đang trống";
-                txtMaNV.Focus();
-            }
-            else if(txtMK.Text == "")
-            {
-                lblThongbao.Text = "Mật khẩu đang trống";
-                txtMK.Focus();
-            }
-            else
-            {
-                var nhanVien = db.NhanViens.FirstOrDefault(nv => nv.MaNV == txtMaNV.Text);
-                if(nhanVien == null)
+                var nhanVien = db.NhanViens.FirstOrDefault(nv => nv.MaNV == maNV);
+                if (nhanVien == null)
                 {
-                    lblThongbao.Text = "Sai mã nhân viên vui lòng nhập lại";
-                    txtMaNV.Focus();
+                    lblThongbao.Text = "Sai mã nhân viên, vui lòng nhập lại.";
+                    return;
                 }
-                else if (nhanVien.MatKhau == txtMK.Text)
+
+                if (nhanVien.MatKhau != matKhau)
                 {
-                    if (nhanVien.Quyen == "Quan Ly")
-                    {
-                        Session.Abandon();
-                        Response.Redirect("fNhanVien.aspx");
-                    }
-                    else if(nhanVien.Quyen == "Nhan Vien")
-                    {
-                        Session.Abandon();
-                        Response.Redirect("fLoaiSP_NVT.aspx");
-                    }
+                    lblThongbao.Text = "Sai mật khẩu, vui lòng nhập lại.";
+                    return;
                 }
-                else
+
+                if (nhanVien.Quyen == "Quan Ly")
                 {
-                    lblThongbao.Text = "Sai mật khẩu vui lòng nhập lại";
-                    txtMK.Focus();
+                    Response.Redirect("fNhanVien.aspx");
                 }
-                
+                else if (nhanVien.Quyen == "Nhan Vien")
+                {
+                    Response.Redirect("fLoaiSP_NVT.aspx");
+                }
+
+                HttpCookie userCookie = new HttpCookie("UserInfo");
+                userCookie["MaNV"] = nhanVien.MaNV;
+                userCookie["MatKhau"] = nhanVien.MatKhau;
+                userCookie.Expires = DateTime.Now.AddDays(1);
+                Response.Cookies.Add(userCookie);
             }
         }
     }

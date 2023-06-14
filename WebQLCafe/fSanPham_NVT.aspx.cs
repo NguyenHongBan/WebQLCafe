@@ -191,5 +191,16 @@ namespace WebQLCafe
             txtGiaBan.Text = decodedGiaBan;
             txtMota.Text = decodedMota;
         }
+
+        protected void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            if (Request.Cookies["UserInfo"] != null)
+            {
+                HttpCookie userCookie = new HttpCookie("UserInfo");
+                userCookie.Expires = DateTime.Now.AddDays(-1);
+                Response.Cookies.Add(userCookie);
+            }
+            Response.Redirect("fDangNhap.aspx");
+        }
     }
 }

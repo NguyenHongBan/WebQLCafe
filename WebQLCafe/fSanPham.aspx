@@ -151,7 +151,7 @@
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                         <td class="auto-style35"><strong>
-                                    <asp:Button ID="btnDangXuat" runat="server" CssClass="auto-style34" Height="40px" Text="Đăng Xuất" Width="150px" />
+                                    <asp:Button ID="btnDangXuat" runat="server" CssClass="auto-style34" Height="40px" Text="Đăng Xuất" Width="150px" OnClick="btnDangXuat_Click" />
                                     </strong></td>
                     </tr>
                     <tr>
