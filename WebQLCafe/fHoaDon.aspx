@@ -306,8 +306,8 @@
                                 <asp:BoundField DataField="MaNV" HeaderText="MaNV" SortExpression="MaNV" />
                             </Columns>
                         </asp:GridView>
+                        <asp:SqlDataSource ID="SqlDataSourceHD" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString4 %>" SelectCommand="SELECT * FROM [HoaDon]"></asp:SqlDataSource>
                         </strong>
-                        <asp:SqlDataSource ID="SqlDataSourceHD" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString3 %>" SelectCommand="SELECT * FROM [HoaDon]"></asp:SqlDataSource>
                     </div>
                 </td>
             </tr>

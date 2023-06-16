@@ -295,8 +295,9 @@
                             <asp:BoundField DataField="GiaBan" HeaderText="GiaBan" SortExpression="GiaBan" />
                             <asp:BoundField DataField="MoTa" HeaderText="MoTa" SortExpression="MoTa" />
                             <asp:ImageField DataImageUrlField="Anh" DataImageUrlFormatString="~/Images/{0}" HeaderText="Anh" ControlStyle-CssClass="image">
+<ControlStyle CssClass="image"></ControlStyle>
                             </asp:ImageField>
-                            <asp:CommandField ShowSelectButton="True" />
+                            <asp:CommandField ShowSelectButton="True" SelectText="chọn" />
                         </Columns>
                     </asp:GridView>
                         <asp:SqlDataSource ID="SqlDataSourceSP" runat="server" ConnectionString="<%$ ConnectionStrings:QLCaffe3ConnectionString4 %>" SelectCommand="SELECT * FROM [SanPham]"></asp:SqlDataSource>
