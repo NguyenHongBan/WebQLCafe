@@ -219,8 +219,8 @@
                             <td class="auto-style44">
                                 <strong>
                                 <asp:DropDownList ID="ddlGioiTinh" runat="server" Height="30px" Width="300px" CssClass="auto-style42">
-                                    <asp:ListItem Value="True">Nam</asp:ListItem>
-                                    <asp:ListItem Value="False">Nữ</asp:ListItem>
+                                    <asp:ListItem Value="Nam">Nam</asp:ListItem>
+                                    <asp:ListItem Value="Nữ">Nữ</asp:ListItem>
                                 </asp:DropDownList>
                                 </strong>
                             </td>
